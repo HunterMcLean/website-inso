@@ -14377,7 +14377,7 @@ window.INSPIRATION_DATA = {
     },
     {
       "id": "lowe-s-innovation-lab-lowesinnovationlabs-com",
-      "name": "Lowe’s Innovation Lab",
+      "name": "Lowe\u2019s Innovation Lab",
       "url": "https://www.lowesinnovationlabs.com/",
       "domain": "lowesinnovationlabs.com",
       "screenshot": "assets/screenshots/lowe-s-innovation-lab-lowesinnovationlabs-com.jpg",
@@ -17734,7 +17734,7 @@ window.INSPIRATION_DATA = {
     },
     {
       "id": "shopify-editions-summer-25-shopify-com",
-      "name": "Shopify Editions [Summer ‘25]",
+      "name": "Shopify Editions [Summer \u201825]",
       "url": "https://www.shopify.com/editions/summer2025",
       "domain": "shopify.com",
       "screenshot": "assets/screenshots/shopify-editions-summer-25-shopify-com.jpg",
@@ -21874,6 +21874,321 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "createdAt": "April 27, 2026 10:05 PM",
       "screenshotCapturedAt": "2026-04-27T22:05:13Z"
+    },
+    {
+      "id": "mistral-mistral-ai",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai",
+      "domain": "mistral.ai",
+      "screenshot": "assets/screenshots/mistral-mistral-ai.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Gradient Usage",
+          "Microinteractions/Interactive UI"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Technical",
+        "Modern",
+        "Premium",
+        "Authoritative",
+        "Established"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:45Z"
+    },
+    {
+      "id": "integratedbio-integratedbio-com",
+      "name": "Integrated Biosciences",
+      "url": "https://integratedbio.com",
+      "domain": "integratedbio.com",
+      "screenshot": "assets/screenshots/integratedbio-integratedbio-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Healthcare"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Photography Usage"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Primary Navigation"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Technical",
+        "Authoritative",
+        "Serious",
+        "Modern",
+        "Elite"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:47Z"
+    },
+    {
+      "id": "bricx-bricxlabs-com",
+      "name": "Bricx Labs",
+      "url": "https://bricxlabs.com",
+      "domain": "bricxlabs.com",
+      "screenshot": "assets/screenshots/bricx-bricxlabs-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Agency"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats",
+          "Blog/Resource Cards",
+          "Icon/Image Cards"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Primary Navigation",
+          "Accordions/FAQs",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Dynamic",
+        "Friendly",
+        "Technical"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:44Z"
+    },
+    {
+      "id": "osome-osome-com",
+      "name": "Osome",
+      "url": "https://osome.com/sg/",
+      "domain": "osome.com",
+      "screenshot": "assets/screenshots/osome-osome-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Illustrations/Animations"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Friendly",
+        "Approachable",
+        "Modern",
+        "Established",
+        "Serious"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:45Z"
+    },
+    {
+      "id": "scotchpos-scotchpos-com",
+      "name": "Scotch POS",
+      "url": "https://scotchpos.com",
+      "domain": "scotchpos.com",
+      "screenshot": "assets/screenshots/scotchpos-scotchpos-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Restaurants/Hospitality/Tourism"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Tabbed Switcher",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Serious",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:49Z"
+    },
+    {
+      "id": "poly-poly-app",
+      "name": "Poly",
+      "url": "https://poly.app",
+      "domain": "poly.app",
+      "screenshot": "assets/screenshots/poly-poly-app.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Microinteractions/Interactive UI",
+          "Scroll Experience"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Premium",
+        "Subtle",
+        "Unconventional"
+      ],
+      "industryLeader": false,
+      "unconventional": true,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:50Z"
+    },
+    {
+      "id": "drata-drata-com",
+      "name": "Drata",
+      "url": "https://drata.com",
+      "domain": "drata.com",
+      "screenshot": "assets/screenshots/drata-drata-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Cybersecurity"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Gradient Usage"
+        ],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Modern",
+        "Serious",
+        "Premium",
+        "Established"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "2026-04-27T22:11:23Z",
+      "screenshotCapturedAt": "2026-04-27T22:15:52Z"
     }
   ]
 };
