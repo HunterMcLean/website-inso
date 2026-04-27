@@ -1,0 +1,307 @@
+{
+  "totalFiles": 173,
+  "uniqueCompanies": 158,
+  "matched": 96,
+  "unmatched": [
+    {
+      "file": "Normative.jpg",
+      "base": "Normative"
+    },
+    {
+      "file": "Duna.jpg",
+      "base": "Duna"
+    },
+    {
+      "file": "Zoox.jpg",
+      "base": "Zoox"
+    },
+    {
+      "file": "Superhuman.jpg",
+      "base": "Superhuman"
+    },
+    {
+      "file": "Gradient Labs.jpg",
+      "base": "Gradient Labs"
+    },
+    {
+      "file": "Okta-1.jpg",
+      "base": "Okta"
+    },
+    {
+      "file": "Lattice.jpg",
+      "base": "Lattice"
+    },
+    {
+      "file": "Airtable.jpg",
+      "base": "Airtable"
+    },
+    {
+      "file": "Going.jpg",
+      "base": "Going"
+    },
+    {
+      "file": "Handshake.jpg",
+      "base": "Handshake"
+    },
+    {
+      "file": "Deepnote.jpg",
+      "base": "Deepnote"
+    },
+    {
+      "file": "rollups.jpg",
+      "base": "rollups"
+    },
+    {
+      "file": "Zapier V2.jpg",
+      "base": "Zapier"
+    },
+    {
+      "file": "Vanta-1.jpg",
+      "base": "Vanta"
+    },
+    {
+      "file": "Factory.ai.jpg",
+      "base": "Factory.ai"
+    },
+    {
+      "file": "Palantir-1.jpg",
+      "base": "Palantir"
+    },
+    {
+      "file": "Miter.jpg",
+      "base": "Miter"
+    },
+    {
+      "file": "Linktree V2.jpg",
+      "base": "Linktree"
+    },
+    {
+      "file": "Braze.jpg",
+      "base": "Braze"
+    },
+    {
+      "file": "Airtasker.jpg",
+      "base": "Airtasker"
+    },
+    {
+      "file": "Distributional.jpg",
+      "base": "Distributional"
+    },
+    {
+      "file": "Deezer.jpg",
+      "base": "Deezer"
+    },
+    {
+      "file": "Cursor.jpg",
+      "base": "Cursor"
+    },
+    {
+      "file": "Paypal Business.jpg",
+      "base": "Paypal Business"
+    },
+    {
+      "file": "Front.jpg",
+      "base": "Front"
+    },
+    {
+      "file": "MongoDB.jpg",
+      "base": "MongoDB"
+    },
+    {
+      "file": "Sana Labs.jpg",
+      "base": "Sana Labs"
+    },
+    {
+      "file": "Justworks.jpg",
+      "base": "Justworks"
+    },
+    {
+      "file": "Headroom.jpg",
+      "base": "Headroom"
+    },
+    {
+      "file": "delto.jpg",
+      "base": "delto"
+    },
+    {
+      "file": "Outseta.jpg",
+      "base": "Outseta"
+    },
+    {
+      "file": "Chargetrip.jpg",
+      "base": "Chargetrip"
+    },
+    {
+      "file": "Mues.ai.jpg",
+      "base": "Mues.ai"
+    },
+    {
+      "file": "zeroheight.jpg",
+      "base": "zeroheight"
+    },
+    {
+      "file": "Paypal.jpg",
+      "base": "Paypal"
+    },
+    {
+      "file": "Basedash.jpg",
+      "base": "Basedash"
+    },
+    {
+      "file": "Northlane.jpg",
+      "base": "Northlane"
+    },
+    {
+      "file": "Cohere.jpg",
+      "base": "Cohere"
+    },
+    {
+      "file": "Mural.jpg",
+      "base": "Mural"
+    },
+    {
+      "file": "Clay.jpg",
+      "base": "Clay"
+    },
+    {
+      "file": "Toggl.jpg",
+      "base": "Toggl"
+    },
+    {
+      "file": "Cloudflare Workers.jpg",
+      "base": "Cloudflare Workers"
+    },
+    {
+      "file": "Public.jpg",
+      "base": "Public"
+    },
+    {
+      "file": "Miro.jpg",
+      "base": "Miro"
+    },
+    {
+      "file": "Garden Intel.jpg",
+      "base": "Garden Intel"
+    },
+    {
+      "file": "SmarterSociety.jpg",
+      "base": "SmarterSociety"
+    },
+    {
+      "file": "Outchat.ai.jpg",
+      "base": "Outchat.ai"
+    },
+    {
+      "file": "Calendly.jpg",
+      "base": "Calendly"
+    },
+    {
+      "file": "Sanity.jpg",
+      "base": "Sanity"
+    },
+    {
+      "file": "Wiz.jpg",
+      "base": "Wiz"
+    },
+    {
+      "file": "Dysrupt.jpg",
+      "base": "Dysrupt"
+    },
+    {
+      "file": "ChiliPiper.jpg",
+      "base": "ChiliPiper"
+    },
+    {
+      "file": "TARS.jpg",
+      "base": "TARS"
+    },
+    {
+      "file": "Quicknote.jpg",
+      "base": "Quicknote"
+    },
+    {
+      "file": "Wonder.jpg",
+      "base": "Wonder"
+    },
+    {
+      "file": "Rox.jpg",
+      "base": "Rox"
+    },
+    {
+      "file": "Speakeasy.jpg",
+      "base": "Speakeasy"
+    },
+    {
+      "file": "Telescope.jpg",
+      "base": "Telescope"
+    },
+    {
+      "file": "Legora.jpg",
+      "base": "Legora"
+    },
+    {
+      "file": "Reducto.jpg",
+      "base": "Reducto"
+    },
+    {
+      "file": "Fin.jpg",
+      "base": "Fin"
+    },
+    {
+      "file": "Perk.jpg",
+      "base": "Perk"
+    }
+  ],
+  "matchedSamples": [
+    {
+      "file": "Cosmos.jpg",
+      "id": "cosmos-cosmos-network",
+      "name": "Cosmos"
+    },
+    {
+      "file": "Column.jpg",
+      "id": "column-column-com",
+      "name": "Column"
+    },
+    {
+      "file": "Evervault.jpg",
+      "id": "evervault-evervault-com",
+      "name": "Evervault"
+    },
+    {
+      "file": "CashApp.jpg",
+      "id": "cash-app-cash-app",
+      "name": "Cash App"
+    },
+    {
+      "file": "Vention.jpg",
+      "id": "vention-ventionteams-com",
+      "name": "Vention"
+    },
+    {
+      "file": "Hopscotch.jpg",
+      "id": "hopscotch-gohopscotch-com",
+      "name": "Hopscotch"
+    },
+    {
+      "file": "Antimetal.jpg",
+      "id": "antimetal-antimetal-com",
+      "name": "Antimetal"
+    },
+    {
+      "file": "Kota.jpg",
+      "id": "kota-kota-io",
+      "name": "Kota"
+    },
+    {
+      "file": "TechSpeed.jpg",
+      "id": "techspeed-techspeed-com",
+      "name": "Techspeed"
+    },
+    {
+      "file": "CultureAmp.jpg",
+      "id": "culture-amp-cultureamp-com",
+      "name": "Culture Amp"
+    }
+  ]
+}

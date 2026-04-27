@@ -1,0 +1,23 @@
+# Netlify build + functions config
+# When linked to a GitHub repo, every push to the main branch triggers a rebuild.
+
+[build]
+  publish = "."
+  # Regenerates data/inspiration.js from the (canonical) data/inspiration.json
+  # so the file:// double-click flow stays in sync after each editor save.
+  command = "node scripts/build-inspiration-js.js"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Cache static assets aggressively; the JSON / JS data files should always be fresh.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/assets/screenshots/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

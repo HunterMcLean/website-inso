@@ -1,0 +1,25 @@
+# Secrets
+scripts/.env
+
+# Internal state (regenerated each run)
+data/_pending_add.json
+data/_submissions_state.json
+data/inspiration.json.bak
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node / Netlify
+node_modules/
+.netlify/
