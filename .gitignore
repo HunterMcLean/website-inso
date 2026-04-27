@@ -3,6 +3,7 @@ scripts/.env
 
 # Internal state (regenerated each run)
 data/_pending_add.json
+data/_pending_batch.json
 data/_submissions_state.json
 data/inspiration.json.bak
 

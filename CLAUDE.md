@@ -208,21 +208,22 @@ Popover positioning is `position: fixed` so coordinates remain viewport-relative
 
 ### Adding a URL via chat (most common)
 
-Playbook: `scripts/drop_in_workflow.md`. Short version:
+**Fully automated — no approval step, no manual commands.**
 
+Single URL:
 1. WebFetch the URL.
 2. Score against `data/schema.json`. Only canonical values. Leave fields blank if uncertain.
-3. Show Hunter the proposed entry as JSON in chat.
-4. On approval, write the JSON to `data/_pending_add.json` (use Edit/Write tool).
-5. Tell Hunter to run from the project root:
-   ```sh
-   python3 scripts/add_url.py
-   git add data/inspiration.json assets/screenshots/<id>.jpg
-   git commit -m "Add <Name>"
-   git push
-   ```
-   `add_url.py` validates, dedupes, appends, captures screenshot via Playwright, regenerates `inspiration.js`, deletes the pending file.
-6. Confirm the deploy by visiting the live URL.
+3. Write the entry to `data/_pending_add.json` (Write tool).
+4. Run `python3 scripts/add_and_push.py` via Bash tool.
+   This pulls, validates, appends, captures screenshot, commits, and pushes. Live in ~30s.
+
+Multiple URLs (sent at once):
+1. WebFetch all URLs in parallel.
+2. Score each against schema.
+3. Write all entries as a JSON array to `data/_pending_batch.json` (Write tool).
+4. Run `python3 scripts/add_and_push.py --batch` via Bash tool.
+
+If the Bash tool is unavailable or the run fails (e.g. Playwright timeout), fall back to telling Hunter to run the command manually.
 
 ### Adding via the in-site form
 
