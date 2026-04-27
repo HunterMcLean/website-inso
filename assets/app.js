@@ -19,6 +19,8 @@
     dirty: new Set(),         // entry ids that have been edited this session
     detailId: null,           // currently-open detail modal entry id
     detailEditing: false,     // detail modal is in edit mode
+    favorites: new Set(),     // entry ids saved to localStorage
+    showFavorites: false,     // when true, grid shows only favorites
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -59,11 +61,57 @@
     state.entries = data.entries;
     state.schema = data.schema;
     initEditToken();
+    loadFavorites();
     buildSidebar();
     buildFilterBar();
     attachEvents();
     paintCollage();
     applyEditAuthUI();
+    render();
+  }
+
+  // ------- Favorites -------
+  function loadFavorites() {
+    try {
+      const saved = localStorage.getItem("inspoFavorites");
+      if (saved) {
+        const ids = JSON.parse(saved);
+        if (Array.isArray(ids)) state.favorites = new Set(ids);
+      }
+    } catch(e) {}
+    updateFavoritesNav();
+  }
+  function saveFavorites() {
+    try { localStorage.setItem("inspoFavorites", JSON.stringify(Array.from(state.favorites))); }
+    catch(e) {}
+  }
+  function toggleFavorite(id) {
+    if (state.favorites.has(id)) state.favorites.delete(id);
+    else state.favorites.add(id);
+    saveFavorites();
+    updateFavoritesNav();
+    if (state.showFavorites) { render(); return; }
+    // Update heart buttons in place without full re-render
+    const on = state.favorites.has(id);
+    document.querySelectorAll(`.card-fav-btn[data-fav-id="${cssEscape(id)}"]`).forEach(btn => {
+      btn.classList.toggle("active", on);
+      btn.setAttribute("aria-label", on ? "Remove from favorites" : "Add to favorites");
+    });
+    document.querySelectorAll(`.detail-fav-btn[data-fav-id="${cssEscape(id)}"]`).forEach(btn => {
+      btn.classList.toggle("active", on);
+      btn.textContent = on ? "♥ Favorited" : "♡ Favorite";
+    });
+  }
+  function updateFavoritesNav() {
+    const badge = document.getElementById("fav-count");
+    if (badge) badge.textContent = state.favorites.size;
+    badge && badge.classList.toggle("has-count", state.favorites.size > 0);
+  }
+  function setShowFavorites(val) {
+    state.showFavorites = val;
+    state.page = 1;
+    document.getElementById("nav-home").classList.toggle("active", !val);
+    document.getElementById("nav-favorites").classList.toggle("active", val);
     render();
   }
 
@@ -210,6 +258,7 @@
       for (const v of f[cat]) if (ev.includes(v)) return true;
       return false;
     }
+    if (state.showFavorites && !state.favorites.has(e.id)) return false;
     if (!hasAny("companyType", x => x.companyType || [])) return false;
     if (!hasAny("companyIndustry", x => x.companyIndustry || [])) return false;
     if (!hasAny("designAesthetic", x => x.designAesthetic || [])) return false;
@@ -269,9 +318,19 @@
       tableWrap.hidden = true;
       grid.innerHTML = paged.map(renderCard).join("");
       grid.querySelectorAll(".card").forEach(c => c.addEventListener("click", () => openDetail(c.dataset.id)));
+      grid.querySelectorAll(".card-fav-btn").forEach(btn => btn.addEventListener("click", e => {
+        e.stopPropagation();
+        toggleFavorite(btn.dataset.favId);
+      }));
     }
 
-    document.getElementById("empty").classList.toggle("hidden", all.length > 0);
+    const emptyEl = document.getElementById("empty");
+    emptyEl.classList.toggle("hidden", all.length > 0);
+    if (all.length === 0 && state.showFavorites) {
+      emptyEl.innerHTML = `<p>No favorites yet. Click the ♥ on any site to save it here.</p>`;
+    } else if (all.length === 0) {
+      emptyEl.innerHTML = `<p>No sites match these filters.</p><button class="link-btn" type="button" onclick="window.WebInspo.resetFilters()">Reset filters</button>`;
+    }
     renderPagination(state.page, totalPages);
     renderActiveChips();
   }
@@ -673,6 +732,7 @@
       ? `<div class="card-foot-tags">${industryHtml}${wordHtml}${flagChips.join("")}</div>`
       : `<div class="card-foot-tags card-foot-empty"><span class="card-tag tag-muted">untagged</span></div>`;
 
+    const faved = state.favorites.has(e.id);
     const thumb = e.screenshot
       ? `<img src="${escapeHtml(e.screenshot)}" alt="${escapeHtml(e.name)} screenshot" loading="lazy" />`
       : `<div class="placeholder"><span class="ph-domain">${escapeHtml(e.domain || e.name)}</span><span class="ph-note">screenshot pending</span></div>`;
@@ -683,7 +743,12 @@
           <div class="card-title">${escapeHtml(e.name)}</div>
           <span class="card-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
-        <div class="card-thumb">${thumb}</div>
+        <div class="card-thumb">
+          ${thumb}
+          <button type="button" class="card-fav-btn${faved ? " active" : ""}" data-fav-id="${escapeHtml(e.id)}" aria-label="${faved ? "Remove from favorites" : "Add to favorites"}">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 12S1.5 8 1.5 4.5a3 3 0 0 1 5.5-1.7A3 3 0 0 1 12.5 4.5C12.5 8 7 12 7 12z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
         <div class="card-foot">${tagsHtml}</div>
       </article>`;
   }
@@ -805,6 +870,8 @@
          </a>`
       : `<button class="detail-action" type="button" disabled>Download screenshot</button>`;
     const editBtn = `<button type="button" class="detail-edit-toggle${editing ? " active" : ""}" data-edit-toggle>${editing ? "Done editing" : "Edit tags"}</button>`;
+    const faved = state.favorites.has(e.id);
+    const favBtn = `<button type="button" class="detail-fav-btn${faved ? " active" : ""}" data-fav-id="${escapeHtml(e.id)}">${faved ? "♥ Favorited" : "♡ Favorite"}</button>`;
 
     const domainLine = e.url
       ? `<div class="detail-domain"><a href="${visitHref}" target="_blank" rel="noopener">${escapeHtml(e.domain || e.url)} ↗</a></div>`
@@ -884,6 +951,7 @@
           ${domainLine}
         </div>
         <div class="detail-actions">
+          ${favBtn}
           ${editBtn}
           ${visitBtn}
           ${downloadBtn}
@@ -899,6 +967,12 @@
         state.detailEditing = !state.detailEditing;
         renderDetail();
       });
+    }
+
+    // Wire up favorite button in detail
+    const favBtnEl = body.querySelector(".detail-fav-btn");
+    if (favBtnEl) {
+      favBtnEl.addEventListener("click", () => toggleFavorite(favBtnEl.dataset.favId));
     }
 
     if (editing) {
@@ -973,6 +1047,8 @@
     document.getElementById("search").addEventListener("input", e => { state.search = e.target.value.trim(); state.page = 1; render(); });
     document.getElementById("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
     document.getElementById("reset-filters").addEventListener("click", resetFilters);
+    document.getElementById("nav-home").addEventListener("click", e => { e.preventDefault(); setShowFavorites(false); });
+    document.getElementById("nav-favorites").addEventListener("click", e => { e.preventDefault(); setShowFavorites(true); });
     document.querySelectorAll("dialog .dialog-close").forEach(b => b.addEventListener("click", () => b.closest("dialog").close()));
     document.getElementById("detail").addEventListener("click", e => { if (e.target.tagName === "DIALOG") e.target.close(); });
     document.getElementById("detail").addEventListener("close", () => {

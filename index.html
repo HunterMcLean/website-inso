@@ -26,11 +26,18 @@
   <div class="layout">
     <aside class="sidebar" aria-label="Filters">
       <nav class="side-nav">
-        <a class="side-link active" href="#">
+        <a class="side-link active" href="#" id="nav-home">
           <span class="ico">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 6L7 1.5L12.5 6V12H1.5V6Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
           </span>
           Home
+        </a>
+        <a class="side-link" href="#" id="nav-favorites">
+          <span class="ico">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 12S1.5 8 1.5 4.5a3 3 0 0 1 5.5-1.7A3 3 0 0 1 12.5 4.5C12.5 8 7 12 7 12z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          </span>
+          Favorites
+          <span class="side-link-badge" id="fav-count">0</span>
         </a>
       </nav>
 
