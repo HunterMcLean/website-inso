@@ -306,14 +306,13 @@ button { font-family: inherit; }
 .card:hover .card-arrow { color: var(--text); }
 
 .card-thumb {
-  aspect-ratio: 16 / 11;
   background: var(--surface-2);
   position: relative; overflow: hidden;
   margin: 0 14px;
   border-radius: 8px;
   border: 1px solid var(--border);
 }
-.card-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.card-thumb img { width: 100%; height: auto; display: block; }
 .card-thumb .placeholder {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
