@@ -1058,7 +1058,7 @@
         }
         // file:// won't have Netlify form handling — surface a useful hint
         if (location.protocol === "file:") {
-          if (errEl) errEl.textContent = "Form submissions only work on the deployed site (whimsical-cupcake-98eda4.netlify.app).";
+          if (errEl) errEl.textContent = "Form submissions only work on the deployed site (webstacks-inspolibrary.netlify.app).";
         }
       } finally {
         submitBtn.disabled = false;

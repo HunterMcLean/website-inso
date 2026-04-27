@@ -63,7 +63,7 @@ def api_get(path: str, token: str):
 def resolve_site_id(env, token):
     if env.get("NETLIFY_SITE_ID"):
         return env["NETLIFY_SITE_ID"]
-    site_name = env.get("NETLIFY_SITE_NAME", "whimsical-cupcake-98eda4")
+    site_name = env.get("NETLIFY_SITE_NAME", "webstacks-inspolibrary")
     sites = api_get(f"/sites?name={site_name}", token)
     if not sites:
         sys.exit(f"No site found with name '{site_name}'")

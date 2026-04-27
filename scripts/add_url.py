@@ -195,7 +195,7 @@ def main():
     print(f"Total entries: {len(db['entries'])}")
     if not args.no_deploy_hint:
         print()
-        print("Next: ./scripts/deploy.sh   (push to whimsical-cupcake-98eda4.netlify.app)")
+        print("Next: ./scripts/deploy.sh   (push to webstacks-inspolibrary.netlify.app)")
 
 
 if __name__ == "__main__":

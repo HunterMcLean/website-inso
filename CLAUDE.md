@@ -10,7 +10,7 @@ If anything below is out of date, update this file as part of the change.
 
 A static, sortable/filterable web microsite the Webstacks design team uses to browse website inspiration. Source of truth: `data/inspiration.json` (~470 entries at last count, growing).
 
-- **Live URL**: https://whimsical-cupcake-98eda4.netlify.app
+- **Live URL**: https://webstacks-inspolibrary.netlify.app
 - **Owner**: Hunter (hmclean@webstacks.com)
 - **Audience**: Webstacks designers + curated submissions
 - **Stack**: vanilla HTML/CSS/JS, no build step in the editor; Netlify hosts; one Netlify Function for live editor saves; one Netlify Form for designer submissions.
@@ -23,7 +23,7 @@ The criteria for what an "entry" looks like (taxonomy, fields) come from a doc H
 
 ```
                           ┌─────────────────────────────────────────┐
-                          │ whimsical-cupcake-98eda4.netlify.app    │
+                          │ webstacks-inspolibrary.netlify.app    │
                           │  · static HTML/CSS/JS                   │
                           │  · Netlify Form: "submit-url"           │
                           │  · Netlify Function: save-inspiration   │
@@ -327,7 +327,7 @@ For changes to the editor's edit/save flow, test the round-trip end-to-end befor
 
 - **Entries**: 470 (391 Notion-seeded + 78 Figma-export stubs + 1 manual add: Gradial)
 - **Screenshots**: 450+ captured (~95% coverage)
-- **Live URL**: https://whimsical-cupcake-98eda4.netlify.app
+- **Live URL**: https://webstacks-inspolibrary.netlify.app
 - **Last deploy method**: zip via `scripts/deploy.sh`
 - **GitHub link**: pending Hunter creating the repo + connecting Netlify (in flight as of this doc)
 - **Function**: code in repo but not yet deployed — first push to GitHub will activate it
@@ -403,13 +403,13 @@ node --check assets/app.js
 node --check netlify/functions/save-inspiration.js
 
 # 5. Live site is up
-curl -fsSI https://whimsical-cupcake-98eda4.netlify.app | head -1
+curl -fsSI https://webstacks-inspolibrary.netlify.app | head -1
 
 # 6. Function endpoint responds (returns 401 without a token, which is correct)
-curl -is -X POST https://whimsical-cupcake-98eda4.netlify.app/.netlify/functions/save-inspiration | head -1
+curl -is -X POST https://webstacks-inspolibrary.netlify.app/.netlify/functions/save-inspiration | head -1
 
 # 7. Form is detected (look for "submit-url" in the HTML)
-curl -fsS https://whimsical-cupcake-98eda4.netlify.app | grep -c 'name="submit-url"'
+curl -fsS https://webstacks-inspolibrary.netlify.app | grep -c 'name="submit-url"'
 ```
 
 Healthy looks like: 470+ entries, build succeeds, JS parses, 200 from site, 401 from function, ≥1 from grep.

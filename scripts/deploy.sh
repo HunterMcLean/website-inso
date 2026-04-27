@@ -29,7 +29,7 @@ if [[ -z "${NETLIFY_AUTH_TOKEN:-}" ]]; then
   exit 1
 fi
 
-NETLIFY_SITE_NAME="${NETLIFY_SITE_NAME:-whimsical-cupcake-98eda4}"
+NETLIFY_SITE_NAME="${NETLIFY_SITE_NAME:-webstacks-inspolibrary}"
 
 # --- Resolve site ID if not provided ---
 if [[ -z "${NETLIFY_SITE_ID:-}" ]]; then

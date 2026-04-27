@@ -211,7 +211,7 @@ def main():
     run(["git", "commit", "-m", f"Add {label}"])
     run(["git", "push", push_url, branch])
 
-    print(f"\n✓ Done — live at https://whimsical-cupcake-98eda4.netlify.app in ~30s")
+    print(f"\n✓ Done — live at https://webstacks-inspolibrary.netlify.app in ~30s")
     print(f"  Added: {', '.join(e['name'] for e in added)}")
 
 

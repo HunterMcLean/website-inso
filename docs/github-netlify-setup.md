@@ -85,7 +85,7 @@ After adding, click **Trigger deploy** → **Clear cache and deploy site** so th
 Visit:
 
 ```
-https://whimsical-cupcake-98eda4.netlify.app/?edit=PASTE_EDIT_SECRET_HERE
+https://webstacks-inspolibrary.netlify.app/?edit=PASTE_EDIT_SECRET_HERE
 ```
 
 The page strips the `?edit=` param from the URL after reading it and stores the token in `localStorage`. From now on, every visit to that URL in that browser shows the **Browse / Edit** toggle and can save.
