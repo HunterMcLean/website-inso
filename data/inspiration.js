@@ -21659,6 +21659,56 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "screenshot": "assets/screenshots/gradial-gradial-com.jpg",
       "screenshotCapturedAt": "2026-04-27T19:04:00Z"
+    },
+    {
+      "id": "cresta-cresta-com",
+      "name": "Cresta",
+      "url": "https://cresta.com",
+      "domain": "cresta.com",
+      "screenshot": "assets/screenshots/cresta-cresta-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Sales Tech"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Gradient Usage",
+          "Microinteractions/Interactive UI"
+        ],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Premium",
+        "Modern",
+        "Technical",
+        "Serious",
+        "Established"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "April 27, 2026 09:39 PM",
+      "screenshotCapturedAt": "2026-04-27T21:40:02Z"
     }
   ],
   "schema": {
