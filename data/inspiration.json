@@ -21822,6 +21822,57 @@
       "source": "claude-add",
       "createdAt": "April 27, 2026 09:39 PM",
       "screenshotCapturedAt": "2026-04-27T21:40:02Z"
+    },
+    {
+      "id": "harvest-getharvest-com",
+      "name": "Harvest",
+      "url": "https://www.getharvest.com",
+      "domain": "getharvest.com",
+      "screenshot": "assets/screenshots/harvest-getharvest-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Grids"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Photography Usage"
+        ],
+        "Atoms/Molecules/Organisms": [
+          "Stats",
+          "Blog/Resource Cards"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Primary Navigation",
+          "Mega Menu",
+          "Conversion Panel"
+        ],
+        "Pages": [
+          "Pricing Page"
+        ]
+      },
+      "wordAssociations": [
+        "Friendly",
+        "Approachable",
+        "Modern",
+        "Established",
+        "Serious"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "April 27, 2026 10:05 PM",
+      "screenshotCapturedAt": "2026-04-27T22:05:13Z"
     }
   ]
 }

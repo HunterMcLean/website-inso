@@ -1,5 +1,120 @@
 // Auto-generated. Same data as inspiration.json, exposed as window.INSPIRATION_DATA.
 window.INSPIRATION_DATA = {
+  "schema": {
+    "companyType": [
+      "B2B",
+      "B2C"
+    ],
+    "companyIndustry": [
+      "AI",
+      "ML",
+      "Blockchain/Web3",
+      "FinTech",
+      "eCommerce",
+      "MarTech",
+      "Legal",
+      "Energy/Infrastructure",
+      "Real Estate",
+      "Manufacturing",
+      "Restaurants/Hospitality/Tourism",
+      "Logistics",
+      "Cybersecurity",
+      "Healthcare",
+      "Automotive/EV",
+      "HR Tech",
+      "Entertainment",
+      "Activism",
+      "Sales Tech",
+      "Dev Tools",
+      "Agency"
+    ],
+    "siteStructure": [
+      "Traditional Grid",
+      "Unconventional Grid",
+      "Scroll-Based Experience",
+      "Unconventional"
+    ],
+    "designAesthetic": [
+      "Minimalist",
+      "Maximalist",
+      "Editorial",
+      "Grids",
+      "Skeuomorphism",
+      "Dark Mode"
+    ],
+    "standoutElements": {
+      "Overall Styles": [
+        "Color Usage",
+        "Photography Usage",
+        "Gradient Usage",
+        "Microinteractions/Interactive UI",
+        "Scroll Experience",
+        "Illustrations/Animations",
+        "Loading Animation",
+        "Data Visualization",
+        "3D Graphics"
+      ],
+      "Atoms/Molecules/Organisms": [
+        "Buttons",
+        "Eyebrows",
+        "Stats",
+        "Blog/Resource Cards",
+        "Icon/Image Cards",
+        "Contact Form"
+      ],
+      "Components": [
+        "Hero",
+        "Search Experience/Search Results",
+        "Accordions/FAQs",
+        "Testimonials Section",
+        "Timed Switchers",
+        "Primary Navigation",
+        "Mega Menu",
+        "Dropdown Menu",
+        "Tabbed Switcher",
+        "Trustbar",
+        "Switchback",
+        "Case Study Section",
+        "Footer",
+        "Conversion Panel"
+      ],
+      "Pages": [
+        "About Page",
+        "Product/Solution Page",
+        "Pricing Page",
+        "Careers Page"
+      ]
+    },
+    "wordAssociations": [
+      "Established",
+      "Youthful",
+      "Bright",
+      "Subtle",
+      "Punchy/Bold",
+      "Trendy",
+      "Classic",
+      "Authoritative",
+      "Friendly",
+      "Expensive",
+      "Economical",
+      "Serious",
+      "Playful",
+      "Mainstream",
+      "Unconventional",
+      "Natural",
+      "Industrial",
+      "Elite",
+      "Approachable",
+      "Modern",
+      "Traditional",
+      "Technical",
+      "Experiential",
+      "Dynamic",
+      "Static",
+      "Premium",
+      "Editorial"
+    ]
+  },
   "entries": [
     {
       "id": "pipe-technologies-pipe-com",
@@ -21644,7 +21759,6 @@ window.INSPIRATION_DATA = {
       },
       "wordAssociations": [
         "Modern",
-        "Authoritative",
         "Premium",
         "Technical",
         "Established"
@@ -21709,121 +21823,57 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "createdAt": "April 27, 2026 09:39 PM",
       "screenshotCapturedAt": "2026-04-27T21:40:02Z"
-    }
-  ],
-  "schema": {
-    "companyType": [
-      "B2B",
-      "B2C"
-    ],
-    "companyIndustry": [
-      "AI",
-      "ML",
-      "Blockchain/Web3",
-      "FinTech",
-      "eCommerce",
-      "MarTech",
-      "Legal",
-      "Energy/Infrastructure",
-      "Real Estate",
-      "Manufacturing",
-      "Restaurants/Hospitality/Tourism",
-      "Logistics",
-      "Cybersecurity",
-      "Healthcare",
-      "Automotive/EV",
-      "HR Tech",
-      "Entertainment",
-      "Activism",
-      "Sales Tech",
-      "Dev Tools",
-      "Agency"
-    ],
-    "siteStructure": [
-      "Traditional Grid",
-      "Unconventional Grid",
-      "Scroll-Based Experience",
-      "Unconventional"
-    ],
-    "designAesthetic": [
-      "Minimalist",
-      "Maximalist",
-      "Editorial",
-      "Grids",
-      "Skeuomorphism",
-      "Dark Mode"
-    ],
-    "standoutElements": {
-      "Overall Styles": [
-        "Color Usage",
-        "Photography Usage",
-        "Gradient Usage",
-        "Microinteractions/Interactive UI",
-        "Scroll Experience",
-        "Illustrations/Animations",
-        "Loading Animation",
-        "Data Visualization",
-        "3D Graphics"
-      ],
-      "Atoms/Molecules/Organisms": [
-        "Buttons",
-        "Eyebrows",
-        "Stats",
-        "Blog/Resource Cards",
-        "Icon/Image Cards",
-        "Contact Form"
-      ],
-      "Components": [
-        "Hero",
-        "Search Experience/Search Results",
-        "Accordions/FAQs",
-        "Testimonials Section",
-        "Timed Switchers",
-        "Primary Navigation",
-        "Mega Menu",
-        "Dropdown Menu",
-        "Tabbed Switcher",
-        "Trustbar",
-        "Switchback",
-        "Case Study Section",
-        "Footer",
-        "Conversion Panel"
-      ],
-      "Pages": [
-        "About Page",
-        "Product/Solution Page",
-        "Pricing Page",
-        "Careers Page"
-      ]
     },
-    "wordAssociations": [
-      "Established",
-      "Youthful",
-      "Bright",
-      "Subtle",
-      "Punchy/Bold",
-      "Trendy",
-      "Classic",
-      "Authoritative",
-      "Friendly",
-      "Expensive",
-      "Economical",
-      "Serious",
-      "Playful",
-      "Mainstream",
-      "Unconventional",
-      "Natural",
-      "Industrial",
-      "Elite",
-      "Approachable",
-      "Modern",
-      "Traditional",
-      "Technical",
-      "Experiential",
-      "Dynamic",
-      "Static",
-      "Premium",
-      "Editorial"
-    ]
-  }
+    {
+      "id": "harvest-getharvest-com",
+      "name": "Harvest",
+      "url": "https://www.getharvest.com",
+      "domain": "getharvest.com",
+      "screenshot": "assets/screenshots/harvest-getharvest-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Grids"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Photography Usage"
+        ],
+        "Atoms/Molecules/Organisms": [
+          "Stats",
+          "Blog/Resource Cards"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section",
+          "Primary Navigation",
+          "Mega Menu",
+          "Conversion Panel"
+        ],
+        "Pages": [
+          "Pricing Page"
+        ]
+      },
+      "wordAssociations": [
+        "Friendly",
+        "Approachable",
+        "Modern",
+        "Established",
+        "Serious"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "April 27, 2026 10:05 PM",
+      "screenshotCapturedAt": "2026-04-27T22:05:13Z"
+    }
+  ]
 };
