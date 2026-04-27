@@ -14377,7 +14377,7 @@ window.INSPIRATION_DATA = {
     },
     {
       "id": "lowe-s-innovation-lab-lowesinnovationlabs-com",
-      "name": "Lowe\u2019s Innovation Lab",
+      "name": "Lowe’s Innovation Lab",
       "url": "https://www.lowesinnovationlabs.com/",
       "domain": "lowesinnovationlabs.com",
       "screenshot": "assets/screenshots/lowe-s-innovation-lab-lowesinnovationlabs-com.jpg",
@@ -17734,7 +17734,7 @@ window.INSPIRATION_DATA = {
     },
     {
       "id": "shopify-editions-summer-25-shopify-com",
-      "name": "Shopify Editions [Summer \u201825]",
+      "name": "Shopify Editions [Summer ‘25]",
       "url": "https://www.shopify.com/editions/summer2025",
       "domain": "shopify.com",
       "screenshot": "assets/screenshots/shopify-editions-summer-25-shopify-com.jpg",
@@ -22189,6 +22189,48 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
       "screenshotCapturedAt": "2026-04-27T22:15:52Z"
+    },
+    {
+      "id": "datum-datum-xyz",
+      "name": "Datum",
+      "url": "https://datum.xyz",
+      "domain": "datum.xyz",
+      "screenshot": "assets/screenshots/datum-datum-xyz.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Real Estate"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Icon/Image Cards"
+        ],
+        "Components": [
+          "Hero",
+          "Primary Navigation",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Technical",
+        "Serious",
+        "Modern",
+        "Authoritative",
+        "Subtle"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "April 27, 2026 10:27 PM",
+      "screenshotCapturedAt": "2026-04-27T22:27:37Z"
     }
   ]
 };
