@@ -21,6 +21,8 @@
     detailEditing: false,     // detail modal is in edit mode
     favorites: new Set(),     // entry ids saved to localStorage
     showFavorites: false,     // when true, grid shows only favorites
+    customTags: {},           // { tagName: siteId[] } — persisted to localStorage
+    activeCustomTags: new Set(), // tag names currently active as filters
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -62,6 +64,7 @@
     state.schema = data.schema;
     initEditToken();
     loadFavorites();
+    loadCustomTags();
     buildSidebar();
     buildFilterBar();
     attachEvents();
@@ -110,9 +113,142 @@
   function setShowFavorites(val) {
     state.showFavorites = val;
     state.page = 1;
+    if (!val) state.activeCustomTags.clear();
     document.getElementById("nav-home").classList.toggle("active", !val);
     document.getElementById("nav-favorites").classList.toggle("active", val);
+    updateCustomTagsDropdown();
     render();
+  }
+
+  // ------- Custom Tags -------
+  function loadCustomTags() {
+    try {
+      const raw = localStorage.getItem("inspoCustomTags");
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed))
+          state.customTags = parsed;
+      }
+    } catch(e) {}
+  }
+  function saveCustomTags() {
+    try { localStorage.setItem("inspoCustomTags", JSON.stringify(state.customTags)); }
+    catch(e) {}
+  }
+  function getTagsForSite(siteId) {
+    return Object.keys(state.customTags).filter(t => (state.customTags[t] || []).includes(siteId));
+  }
+  function getAllTagNames() {
+    return Object.keys(state.customTags).sort((a, b) => a.localeCompare(b));
+  }
+  function addSiteToTag(tagName, siteId) {
+    const name = tagName.trim();
+    if (!name || !siteId) return;
+    if (!state.customTags[name]) state.customTags[name] = [];
+    if (!state.customTags[name].includes(siteId)) state.customTags[name].push(siteId);
+    saveCustomTags();
+    updateCustomTagsDropdown();
+  }
+  function removeSiteFromTag(tagName, siteId) {
+    if (!state.customTags[tagName]) return;
+    state.customTags[tagName] = state.customTags[tagName].filter(id => id !== siteId);
+    if (state.customTags[tagName].length === 0) {
+      delete state.customTags[tagName];
+      state.activeCustomTags.delete(tagName);
+    }
+    saveCustomTags();
+    updateCustomTagsDropdown();
+  }
+  function toggleCustomTagFilter(tagName) {
+    if (state.activeCustomTags.has(tagName)) state.activeCustomTags.delete(tagName);
+    else state.activeCustomTags.add(tagName);
+    state.page = 1;
+    updateCustomTagsDropdown();
+    render();
+  }
+  function updateCustomTagsDropdown() {
+    const drop = document.getElementById("filter-custom-tags");
+    if (!drop) return;
+    const tagNames = getAllTagNames();
+    drop.hidden = tagNames.length === 0 || !state.showFavorites;
+    if (drop.hidden) drop.open = false;
+    const opts = drop.querySelector(".drop-options");
+    if (!opts) return;
+    opts.innerHTML = "";
+    tagNames.forEach(tag => {
+      const count = (state.customTags[tag] || []).length;
+      const active = state.activeCustomTags.has(tag);
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "filter-chip";
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+      btn.innerHTML = `${escapeHtml(tag)}<span class="count">${count}</span>`;
+      btn.addEventListener("click", e => { e.stopPropagation(); toggleCustomTagFilter(tag); });
+      opts.appendChild(btn);
+    });
+  }
+  function renderCustomTagSectionHtml(siteId) {
+    const tags = getTagsForSite(siteId);
+    const chips = tags.map(t =>
+      `<span class="custom-tag-chip">${escapeHtml(t)}<button type="button" class="custom-tag-remove" data-tag="${escapeHtml(t)}" aria-label="Remove tag ${escapeHtml(t)}">×</button></span>`
+    ).join("");
+    const suggestions = getAllTagNames().filter(t => !tags.includes(t))
+      .map(t => `<option value="${escapeHtml(t)}">`).join("");
+    return `
+      <div class="detail-section custom-tags-section">
+        <h4>My Tags</h4>
+        <div class="custom-tag-chips">${chips || '<span class="custom-tag-empty">No tags yet</span>'}</div>
+        <div class="custom-tag-input-row">
+          <input type="text" class="custom-tag-input" list="ct-dl-${escapeHtml(siteId)}" placeholder="Add a tag…" autocomplete="off" />
+          <datalist id="ct-dl-${escapeHtml(siteId)}">${suggestions}</datalist>
+          <button type="button" class="custom-tag-add-btn">Add</button>
+        </div>
+      </div>`;
+  }
+  function wireCustomTagSection(scope, siteId) {
+    function refreshChips() {
+      const tags = getTagsForSite(siteId);
+      const container = scope.querySelector(".custom-tag-chips");
+      if (!container) return;
+      container.innerHTML = tags.length
+        ? tags.map(t =>
+            `<span class="custom-tag-chip">${escapeHtml(t)}<button type="button" class="custom-tag-remove" data-tag="${escapeHtml(t)}" aria-label="Remove tag ${escapeHtml(t)}">×</button></span>`
+          ).join("")
+        : '<span class="custom-tag-empty">No tags yet</span>';
+      container.querySelectorAll(".custom-tag-remove").forEach(btn => {
+        btn.addEventListener("click", e => {
+          e.stopPropagation();
+          removeSiteFromTag(btn.dataset.tag, siteId);
+          refreshChips(); refreshSuggestions();
+        });
+      });
+    }
+    function refreshSuggestions() {
+      const dl = scope.querySelector(`datalist[id^="ct-dl"]`);
+      if (!dl) return;
+      const current = getTagsForSite(siteId);
+      dl.innerHTML = getAllTagNames().filter(t => !current.includes(t))
+        .map(t => `<option value="${escapeHtml(t)}">`).join("");
+    }
+    // Wire initial removes
+    scope.querySelectorAll(".custom-tag-remove").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.stopPropagation();
+        removeSiteFromTag(btn.dataset.tag, siteId);
+        refreshChips(); refreshSuggestions();
+      });
+    });
+    const input = scope.querySelector(".custom-tag-input");
+    const addBtn = scope.querySelector(".custom-tag-add-btn");
+    function doAdd() {
+      const val = input ? input.value.trim() : "";
+      if (!val) return;
+      addSiteToTag(val, siteId);
+      if (input) input.value = "";
+      refreshChips(); refreshSuggestions();
+    }
+    if (addBtn) addBtn.addEventListener("click", doAdd);
+    if (input) input.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); doAdd(); } });
   }
 
   // ------- Edit auth (token in URL → localStorage) -------
@@ -191,6 +327,14 @@
   function buildFilterBar() {
     document.querySelectorAll(".filter-drop").forEach(drop => {
       const cat = drop.dataset.cat;
+      // My Tags dropdown: content is managed by updateCustomTagsDropdown(); just wire open/close here
+      if (cat === "customTags") {
+        drop.addEventListener("toggle", () => {
+          if (drop.open) document.querySelectorAll(".filter-drop").forEach(d => { if (d !== drop) d.open = false; });
+        });
+        document.addEventListener("click", e => { if (drop.open && !drop.contains(e.target)) drop.open = false; });
+        return;
+      }
       const opts = drop.querySelector(".drop-options");
       if (cat === "standoutElements") {
         const groups = state.schema.standoutElements;
@@ -276,6 +420,10 @@
       if (f.flags.has("industryLeader") && e.industryLeader) any = true;
       if (f.flags.has("unconventional") && e.unconventional) any = true;
       if (!any) return false;
+    }
+    if (state.activeCustomTags.size) {
+      const siteTags = getTagsForSite(e.id);
+      if (!siteTags.some(t => state.activeCustomTags.has(t))) return false;
     }
     if (state.search) {
       const q = state.search.toLowerCase();
@@ -798,9 +946,15 @@
         chips.push(`<button class="active-chip" data-cat="${escapeHtml(cat)}" data-val="${escapeHtml(v)}">${escapeHtml(display)}</button>`);
       });
     });
+    state.activeCustomTags.forEach(tag => {
+      chips.push(`<button class="active-chip" data-custom-tag="${escapeHtml(tag)}">🏷 ${escapeHtml(tag)}</button>`);
+    });
     if (state.search) chips.push(`<button class="active-chip" data-clear-search>"${escapeHtml(state.search)}"</button>`);
     root.innerHTML = chips.join("");
     root.querySelectorAll(".active-chip").forEach(c => c.addEventListener("click", () => {
+      if (c.dataset.customTag !== undefined) {
+        toggleCustomTagFilter(c.dataset.customTag); return;
+      }
       if (c.dataset.clearSearch !== undefined) {
         state.search = ""; document.getElementById("search").value = ""; state.page = 1; render(); return;
       }
@@ -968,6 +1122,7 @@
           ${downloadBtn}
         </div>
       </div>
+      ${faved ? renderCustomTagSectionHtml(e.id) : ""}
       ${sections}
     `;
 
@@ -983,8 +1138,15 @@
     // Wire up favorite button in detail
     const favBtnEl = body.querySelector(".detail-fav-btn");
     if (favBtnEl) {
-      favBtnEl.addEventListener("click", () => toggleFavorite(favBtnEl.dataset.favId));
+      favBtnEl.addEventListener("click", () => {
+        toggleFavorite(favBtnEl.dataset.favId);
+        // Show/hide custom tags section when fav state changes
+        renderDetail();
+      });
     }
+
+    // Wire custom tag section (only present when favorited)
+    if (faved) wireCustomTagSection(body, e.id);
 
     if (editing) {
       // Type single-pick — partial update, no full re-render
@@ -1155,9 +1317,11 @@
   }
   function resetFilters() {
     Object.values(state.filters).forEach(s => s.clear());
+    state.activeCustomTags.clear();
     state.search = ""; state.page = 1;
     document.getElementById("search").value = "";
     document.querySelectorAll('[aria-pressed="true"]').forEach(c => c.setAttribute("aria-pressed","false"));
+    updateCustomTagsDropdown();
     render();
   }
 
