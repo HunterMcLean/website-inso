@@ -834,6 +834,16 @@
     const dlg = document.getElementById("detail");
     if (typeof dlg.showModal === "function" && !dlg.open) dlg.showModal();
     else if (!dlg.open) dlg.setAttribute("open","");
+    upgradeDownloadToFull(dlg, id);
+  }
+
+  function upgradeDownloadToFull(dlg, id) {
+    const fullSrc = `assets/screenshots/full/${id}.jpg`;
+    fetch(fullSrc, { method: "HEAD" }).then(r => {
+      if (!r.ok) return;
+      const a = dlg.querySelector(`a.detail-action[data-full-src]`);
+      if (a) a.href = fullSrc;
+    }).catch(() => {});
   }
 
   function renderDetail() {
@@ -863,8 +873,9 @@
          </a>`
       : `<button class="detail-action primary" type="button" disabled>Visit site</button>`;
     const downloadName = `${e.id || slugify(e.name)}.jpg`;
-    const downloadBtn = e.screenshot
-      ? `<a class="detail-action" href="${escapeHtml(e.screenshot)}" download="${escapeHtml(downloadName)}">
+    const fullShotPath = e.id ? `assets/screenshots/full/${e.id}.jpg` : null;
+    const downloadBtn = e.screenshot || fullShotPath
+      ? `<a class="detail-action" href="${escapeHtml(e.screenshot || '')}" download="${escapeHtml(downloadName)}" data-full-src="${escapeHtml(fullShotPath || '')}">
            Download screenshot
            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v9M3.5 6.5L7 10l3.5-3.5M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
          </a>`

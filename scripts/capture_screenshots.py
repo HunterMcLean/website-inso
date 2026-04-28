@@ -17,6 +17,9 @@ Flags:
     --limit N            stop after N captures (useful for smoke tests)
     --timeout MS         per-page timeout in milliseconds (default 25000)
     --concurrency N      number of pages in flight (default 4)
+    --full               capture full-page screenshots into assets/screenshots/full/
+                         (800px wide, full scroll height, JPEG q=80)
+                         Does NOT update inspiration.json paths; hero crops are unchanged.
 """
 import argparse
 import json
@@ -44,6 +47,8 @@ JSON_PATH = ROOT / "data" / "inspiration.json"
 JS_PATH = ROOT / "data" / "inspiration.js"
 SHOTS_DIR = ROOT / "assets" / "screenshots"
 SHOTS_DIR.mkdir(parents=True, exist_ok=True)
+FULL_SHOTS_DIR = ROOT / "assets" / "screenshots" / "full"
+FULL_SHOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 REPORT_PATH = ROOT / "data" / "screenshot-capture-report.json"
 
@@ -64,6 +69,7 @@ def parse_args():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--timeout", type=int, default=25000)
     ap.add_argument("--concurrency", type=int, default=4)
+    ap.add_argument("--full", action="store_true", help="capture full-page screenshots into assets/screenshots/full/")
     return ap.parse_args()
 
 
@@ -75,8 +81,13 @@ def select_entries(data, args):
             if e["id"] in only:
                 out.append(e)
             continue
-        if not args.redo and e.get("screenshot"):
-            continue
+        if args.full:
+            # full-page mode: skip if full shot already exists unless --redo
+            if not args.redo and (FULL_SHOTS_DIR / f"{e['id']}.jpg").exists():
+                continue
+        else:
+            if not args.redo and e.get("screenshot"):
+                continue
         if not e.get("url"):
             continue
         out.append(e)
@@ -96,18 +107,21 @@ def normalize_url(url: str) -> str:
 def shot_path_for(entry):
     return SHOTS_DIR / f"{entry['id']}.jpg"
 
+def full_shot_path_for(entry):
+    return FULL_SHOTS_DIR / f"{entry['id']}.jpg"
 
-def downscale_to_jpeg(png_bytes: bytes, out_path: Path):
+
+def downscale_to_jpeg(png_bytes: bytes, out_path: Path, quality=JPEG_QUALITY):
     with Image.open(BytesIO(png_bytes)) as im:
         im = im.convert("RGB")
         if im.width > TARGET_WIDTH:
             ratio = TARGET_WIDTH / im.width
             new_size = (TARGET_WIDTH, int(im.height * ratio))
             im = im.resize(new_size, Image.LANCZOS)
-        im.save(out_path, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+        im.save(out_path, "JPEG", quality=quality, optimize=True, progressive=True)
 
 
-def capture_one(playwright, entry, timeout_ms):
+def capture_one(playwright, entry, timeout_ms, full_page=False):
     """Capture a single entry. Returns (ok, info_dict)."""
     url = normalize_url(entry["url"])
     info = {"id": entry["id"], "name": entry["name"], "url": url}
@@ -117,13 +131,12 @@ def capture_one(playwright, entry, timeout_ms):
         page = ctx.new_page()
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-            # Let above-the-fold lazy images settle
             try:
                 page.wait_for_load_state("networkidle", timeout=4000)
             except PWTimeout:
                 pass
             time.sleep(1.0)
-            png_bytes = page.screenshot(full_page=False, type="png")
+            png_bytes = page.screenshot(full_page=full_page, type="png")
         except PWTimeout as e:
             return False, {**info, "error": f"timeout: {e}"}
         except Exception as e:
@@ -133,14 +146,16 @@ def capture_one(playwright, entry, timeout_ms):
     finally:
         browser.close()
 
-    out_path = shot_path_for(entry)
+    out_path = full_shot_path_for(entry) if full_page else shot_path_for(entry)
+    quality = 80 if full_page else JPEG_QUALITY
     try:
-        downscale_to_jpeg(png_bytes, out_path)
+        downscale_to_jpeg(png_bytes, out_path, quality=quality)
     except Exception as e:
         return False, {**info, "error": f"image processing: {e}"}
 
     info["bytes"] = out_path.stat().st_size
-    info["path"] = f"assets/screenshots/{out_path.name}"
+    rel = "full" if full_page else ""
+    info["path"] = f"assets/screenshots/{'full/' if full_page else ''}{out_path.name}"
     return True, info
 
 
@@ -159,16 +174,17 @@ def main():
         print("Nothing to capture.")
         return
 
-    print(f"Capturing {len(targets)} screenshots → {SHOTS_DIR}")
+    dest_dir = FULL_SHOTS_DIR if args.full else SHOTS_DIR
+    mode_label = "full-page" if args.full else "hero"
+    print(f"Capturing {len(targets)} {mode_label} screenshots → {dest_dir}")
     print(f"Concurrency: {args.concurrency}, timeout: {args.timeout}ms\n")
 
     by_id = {e["id"]: e for e in data["entries"]}
     results_ok, results_fail = [], []
 
     def worker(entry):
-        # each thread owns its own playwright runtime
         with sync_playwright() as p:
-            return capture_one(p, entry, args.timeout)
+            return capture_one(p, entry, args.timeout, full_page=args.full)
 
     started = time.time()
     done = 0
@@ -183,19 +199,21 @@ def main():
             done += 1
             if ok:
                 results_ok.append(info)
-                # update entry in-place
-                by_id[info["id"]]["screenshot"] = info["path"]
-                by_id[info["id"]]["screenshotCapturedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+                if not args.full:
+                    # only update inspiration.json paths for hero crops
+                    by_id[info["id"]]["screenshot"] = info["path"]
+                    by_id[info["id"]]["screenshotCapturedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
                 size_kb = info["bytes"] // 1024
                 print(f"[{done:>3}/{len(targets)}] OK   {info['name'][:30]:30}  {size_kb}KB")
             else:
                 results_fail.append(info)
                 print(f"[{done:>3}/{len(targets)}] FAIL {info['name'][:30]:30}  {info.get('error','?')[:60]}")
-            # save progress every 10 successes
-            if ok and len(results_ok) % 10 == 0:
+            # save progress every 10 successes (hero mode only)
+            if ok and not args.full and len(results_ok) % 10 == 0:
                 write_outputs(data)
 
-    write_outputs(data)
+    if not args.full:
+        write_outputs(data)
     elapsed = time.time() - started
 
     REPORT_PATH.write_text(json.dumps({
