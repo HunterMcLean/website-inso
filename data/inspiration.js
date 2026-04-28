@@ -166,7 +166,8 @@ window.INSPIRATION_DATA = {
         "Suisse Font"
       ],
       "createdAt": "March 28, 2024 12:49 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:08:32Z"
     },
     {
       "id": "workmade-workmade-com",
@@ -212,7 +213,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:13 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:48:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:33Z"
     },
     {
       "id": "walkie-talkie-walkie-talkie-io",
@@ -251,7 +252,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:48:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:29Z"
     },
     {
       "id": "composer-composer-trade",
@@ -298,7 +299,8 @@ window.INSPIRATION_DATA = {
         "Neue Haas Grotesk"
       ],
       "createdAt": "March 28, 2024 1:27 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:08:30Z"
     },
     {
       "id": "due-opendue-com",
@@ -344,7 +346,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:32 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:48:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:34Z"
     },
     {
       "id": "mercury-mercury-com",
@@ -390,7 +392,8 @@ window.INSPIRATION_DATA = {
         "Neue Montreal"
       ],
       "createdAt": "March 28, 2024 1:40 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:08:36Z"
     },
     {
       "id": "mymind-mymind-com",
@@ -434,7 +437,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:44 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:48:44Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:38Z"
     },
     {
       "id": "studio-ai-studio-ai",
@@ -481,7 +484,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:47 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:48:48Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:40Z"
     },
     {
       "id": "webimpact-webimpact-llc",
@@ -532,7 +535,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:49 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:23Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:37Z"
     },
     {
       "id": "stripe-sessions-stripesessions-com",
@@ -578,7 +581,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:25Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:42Z"
     },
     {
       "id": "labaton-keller-sucharow-labaton-com",
@@ -625,7 +628,8 @@ window.INSPIRATION_DATA = {
         "Instrument Sans"
       ],
       "createdAt": "March 28, 2024 1:59 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:08:42Z"
     },
     {
       "id": "cadro-cadro-com",
@@ -671,7 +675,8 @@ window.INSPIRATION_DATA = {
         "Aeonik"
       ],
       "createdAt": "March 28, 2024 2:02 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:08:45Z"
     },
     {
       "id": "integrated-reasoning-integrated-reasoning-com",
@@ -714,7 +719,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:43Z"
     },
     {
       "id": "talisman-gettalisman-com",
@@ -759,7 +764,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:26Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:48Z"
     },
     {
       "id": "shardeum-shardeum-instawp-xyz",
@@ -808,7 +813,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:13 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:26Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:46Z"
     },
     {
       "id": "panascais-panascais-net",
@@ -858,7 +863,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:15 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:27Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:47Z"
     },
     {
       "id": "significo-significo-com",
@@ -906,7 +911,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:31Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:51Z"
     },
     {
       "id": "feniix-feniix-co",
@@ -954,7 +959,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:24 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:49Z"
     },
     {
       "id": "bvectors-group-vectors-group-com",
@@ -1004,7 +1009,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 4:35 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:35Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:54Z"
     },
     {
       "id": "rew-technology-rewtechnology-com",
@@ -1054,7 +1059,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 4:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:31Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:51Z"
     },
     {
       "id": "shopify-winter-2024-shopify-com",
@@ -1102,7 +1107,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:00 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:54Z"
     },
     {
       "id": "assemblio-assemblio-com",
@@ -1149,7 +1154,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:05 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:37Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:57Z"
     },
     {
       "id": "otofilm-otofilm-pl",
@@ -1193,7 +1198,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:07 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:40Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:00Z"
     },
     {
       "id": "bentoml-bentoml-com",
@@ -1239,7 +1244,8 @@ window.INSPIRATION_DATA = {
         "Replica"
       ],
       "createdAt": "March 28, 2024 5:09 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:08:58Z"
     },
     {
       "id": "edtch-edtch-com",
@@ -1284,7 +1290,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:11 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:40Z"
+      "screenshotCapturedAt": "2026-04-28T00:08:59Z"
     },
     {
       "id": "ecopia-ecopiatech-com",
@@ -1336,7 +1342,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:15 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:03Z"
     },
     {
       "id": "woodcliffe-woodcliffe-ca",
@@ -1383,7 +1389,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:40Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:01Z"
     },
     {
       "id": "hugo-hugoinc-com",
@@ -1426,7 +1432,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:05Z"
     },
     {
       "id": "wyse-meter-wysemeter-com",
@@ -1481,7 +1487,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:25 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:06Z"
     },
     {
       "id": "retool-retool-com",
@@ -1530,7 +1536,8 @@ window.INSPIRATION_DATA = {
         "Sohne Var"
       ],
       "createdAt": "March 28, 2024 5:28 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:08Z"
     },
     {
       "id": "phunk-phunk-co-uk",
@@ -1582,7 +1589,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:31 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:10Z"
     },
     {
       "id": "creativecue-creativecue-co",
@@ -1630,7 +1637,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:50Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:11Z"
     },
     {
       "id": "sketch-studios-sketchstudios-co-uk",
@@ -1676,7 +1683,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:35 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:51Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:10Z"
     },
     {
       "id": "happyops-happyops-com",
@@ -1778,7 +1785,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:42 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:54Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:16Z"
     },
     {
       "id": "remote-remote-madebyburo-com",
@@ -1828,7 +1835,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:44 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:56Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:14Z"
     },
     {
       "id": "ride-out-rideout-amsterdam",
@@ -1875,7 +1882,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:46 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:18Z"
     },
     {
       "id": "milk-network-milknetwork-com",
@@ -1920,7 +1927,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:49 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:58Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:19Z"
     },
     {
       "id": "synchrodogs-synchrodogs-com",
@@ -1967,7 +1974,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 6:03 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:50:59Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:18Z"
     },
     {
       "id": "dhn-dhnn-com",
@@ -2017,7 +2024,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 11:17 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:05Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:24Z"
     },
     {
       "id": "spendesk-spendesk-com",
@@ -2063,7 +2070,8 @@ window.INSPIRATION_DATA = {
         "Twemoji Country Flags"
       ],
       "createdAt": "March 29, 2024 11:52 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:24Z"
     },
     {
       "id": "hashicorp-hashicorp-com",
@@ -2111,7 +2119,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:07 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:26Z"
     },
     {
       "id": "linear-linear-app",
@@ -2159,7 +2167,8 @@ window.INSPIRATION_DATA = {
         "SF Pro Display"
       ],
       "createdAt": "March 29, 2024 12:11 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:24Z"
     },
     {
       "id": "mixpanel-mixpanel-com",
@@ -2206,7 +2215,8 @@ window.INSPIRATION_DATA = {
         "Garnett"
       ],
       "createdAt": "March 29, 2024 12:13 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:30Z"
     },
     {
       "id": "vercel-vercel-com",
@@ -2252,7 +2262,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:03Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:28Z"
     },
     {
       "id": "strut-strut-so",
@@ -2304,7 +2314,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:19 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:06Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:31Z"
     },
     {
       "id": "robinhood-robinhood-com",
@@ -2349,7 +2359,8 @@ window.INSPIRATION_DATA = {
         "ITC Garamond Std"
       ],
       "createdAt": "March 29, 2024 12:23 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:32Z"
     },
     {
       "id": "deso-deso-com",
@@ -2398,7 +2409,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:39Z"
     },
     {
       "id": "cosmos-cosmos-network",
@@ -2448,7 +2459,8 @@ window.INSPIRATION_DATA = {
         "Inter"
       ],
       "createdAt": "March 29, 2024 12:31 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:36Z"
     },
     {
       "id": "coinbase-coinbase-com",
@@ -2493,7 +2505,8 @@ window.INSPIRATION_DATA = {
         "Coinbase Sans"
       ],
       "createdAt": "March 29, 2024 12:33 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:09:34Z"
     },
     {
       "id": "good-meat-goodmeat-co",
@@ -2537,7 +2550,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:36 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:11Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:39Z"
     },
     {
       "id": "eindhoven-design-district-eindhovendesigndistrict-com",
@@ -2587,7 +2600,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:07 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:10Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:40Z"
     },
     {
       "id": "smalltribe-studio-smalltribe-studio",
@@ -2638,7 +2651,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:12Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:39Z"
     },
     {
       "id": "gsap-gsap-com",
@@ -2689,7 +2702,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:16Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:45Z"
     },
     {
       "id": "rudy-capital-rudy-capital",
@@ -2739,7 +2752,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:14 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:19Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:52Z"
     },
     {
       "id": "shape-madebyshape-co-uk",
@@ -2784,7 +2797,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:19Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:46Z"
     },
     {
       "id": "formastudio-for-ma-studio",
@@ -2833,7 +2846,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:20 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:44Z"
     },
     {
       "id": "kairos-fund-kairosfund-io",
@@ -2881,7 +2894,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:24Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:50Z"
     },
     {
       "id": "flow-party-joinflowparty-com",
@@ -2930,7 +2943,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:24 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:49Z"
     },
     {
       "id": "runaway-runway-com",
@@ -2986,7 +2999,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:25Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:52Z"
     },
     {
       "id": "fabric-fabric-vc",
@@ -3037,7 +3050,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 2:00 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:26Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:54Z"
     },
     {
       "id": "openbook-openbook-im",
@@ -3085,7 +3098,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 2:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:27Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:55Z"
     },
     {
       "id": "north-star-northstarpinball-com",
@@ -3134,7 +3147,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 2:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:31Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:59Z"
     },
     {
       "id": "market-vision-marketvision-ca",
@@ -3180,7 +3193,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 2:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:30Z"
+      "screenshotCapturedAt": "2026-04-28T00:09:57Z"
     },
     {
       "id": "pizzato-pizzatoits-it",
@@ -3225,7 +3238,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:00 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:33Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:03Z"
     },
     {
       "id": "pixelmatters-10years-pixelmatters-com",
@@ -3323,7 +3336,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:05Z"
     },
     {
       "id": "rockmuse-rockmuse-co",
@@ -3370,7 +3383,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:31 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:33Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:01Z"
     },
     {
       "id": "trionn-trionn-com",
@@ -3415,7 +3428,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:11Z"
     },
     {
       "id": "zkpass-zkpass-org",
@@ -3463,7 +3476,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:38 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:39Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:09Z"
     },
     {
       "id": "trona-tronaeast-com",
@@ -3511,7 +3524,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:42 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:38Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:10Z"
     },
     {
       "id": "relume-relume-io",
@@ -3561,7 +3574,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:44 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:16Z"
     },
     {
       "id": "vention-ventionteams-com",
@@ -3609,7 +3622,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "March 29, 2024 3:47 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:16Z"
     },
     {
       "id": "readymag-readymag-com",
@@ -3656,7 +3670,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:50 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:18Z"
     },
     {
       "id": "wegrow-wegrow-design",
@@ -3703,7 +3717,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:21Z"
     },
     {
       "id": "tailwind-tailwindui-com",
@@ -3748,7 +3762,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:56 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:20Z"
     },
     {
       "id": "kota-kota-io",
@@ -3798,7 +3812,8 @@ window.INSPIRATION_DATA = {
         "RB Faktum Neue"
       ],
       "createdAt": "March 29, 2024 4:06 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:23Z"
     },
     {
       "id": "popwork-pop-work",
@@ -3840,7 +3855,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 4:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:24Z"
     },
     {
       "id": "tines-tines-com",
@@ -3885,7 +3900,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 4:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:50Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:27Z"
     },
     {
       "id": "column-column-com",
@@ -3934,7 +3949,8 @@ window.INSPIRATION_DATA = {
         "Suisse Font"
       ],
       "createdAt": "March 29, 2024 4:14 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:32Z"
     },
     {
       "id": "flexe-flexe-com",
@@ -3981,7 +3997,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 4:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:52Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:30Z"
     },
     {
       "id": "outerbase-outerbase-com",
@@ -4133,7 +4149,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 31, 2024 11:21 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:54Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:33Z"
     },
     {
       "id": "hotjar-hotjar-com",
@@ -4177,7 +4193,8 @@ window.INSPIRATION_DATA = {
         "Roboto"
       ],
       "createdAt": "April 1, 2024 9:10 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:37Z"
     },
     {
       "id": "scale-scale-com",
@@ -4229,7 +4246,8 @@ window.INSPIRATION_DATA = {
         "Inter"
       ],
       "createdAt": "April 1, 2024 9:18 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:39Z"
     },
     {
       "id": "nuro-nuro-ai",
@@ -4280,7 +4298,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 9:51 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:40Z"
     },
     {
       "id": "block-block-xyz",
@@ -4329,7 +4347,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 9:55 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:51:58Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:41Z"
     },
     {
       "id": "folk-folk-app",
@@ -4429,7 +4447,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 10:29 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:46Z"
     },
     {
       "id": "3coresec-3coresec-com",
@@ -4479,7 +4497,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 5:43 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:54Z"
     },
     {
       "id": "launchdarkly-launchdarkly-com",
@@ -4530,7 +4548,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 5:48 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:49Z"
     },
     {
       "id": "bambassadors-bambassadors-com",
@@ -4577,7 +4595,8 @@ window.INSPIRATION_DATA = {
         "Roobert"
       ],
       "createdAt": "April 1, 2024 5:53 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:53Z"
     },
     {
       "id": "clickup-clickup-com",
@@ -4625,7 +4644,8 @@ window.INSPIRATION_DATA = {
         "Axiforma"
       ],
       "createdAt": "April 1, 2024 5:56 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:57Z"
     },
     {
       "id": "kive-kive-ai",
@@ -4672,7 +4692,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 6:37 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:07Z"
+      "screenshotCapturedAt": "2026-04-28T00:10:59Z"
     },
     {
       "id": "winden-winden-co",
@@ -4724,7 +4744,8 @@ window.INSPIRATION_DATA = {
         "SF Pro Text"
       ],
       "createdAt": "April 1, 2024 6:39 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:10:58Z"
     },
     {
       "id": "intercom-intercom-com",
@@ -4781,7 +4802,8 @@ window.INSPIRATION_DATA = {
         "SF Pro Text"
       ],
       "createdAt": "April 1, 2024 6:42 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:15Z"
     },
     {
       "id": "hyperactive-design-studio-hyperactive-studio",
@@ -4825,7 +4847,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:11 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:09Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:04Z"
     },
     {
       "id": "newpeace-newpeace-jp",
@@ -4877,7 +4899,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:17 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:10Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:11Z"
     },
     {
       "id": "metronome-metronome-com",
@@ -4930,7 +4952,8 @@ window.INSPIRATION_DATA = {
         "Simplon Mono"
       ],
       "createdAt": "April 1, 2024 8:33 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:06Z"
     },
     {
       "id": "quilter-quilter-ai",
@@ -4981,7 +5004,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:43 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:13Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:11Z"
     },
     {
       "id": "sprig-sprig-com",
@@ -5031,7 +5054,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:45 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:12Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:10Z"
     },
     {
       "id": "alloy-alloy-com",
@@ -5084,7 +5107,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:05 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:16Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:15Z"
     },
     {
       "id": "moov-moov-io",
@@ -5141,7 +5164,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:09 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:15Z"
     },
     {
       "id": "clerk-clerk-com",
@@ -5190,7 +5213,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:13 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:18Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:18Z"
     },
     {
       "id": "replit-replit-com",
@@ -5236,7 +5259,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:17 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:18Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:22Z"
     },
     {
       "id": "watershed-watershed-com",
@@ -5289,7 +5312,8 @@ window.INSPIRATION_DATA = {
         "Messina Sans Mono"
       ],
       "createdAt": "April 2, 2024 11:21 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:22Z"
     },
     {
       "id": "langchain-langchain-com",
@@ -5338,7 +5362,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:26 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:21Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:23Z"
     },
     {
       "id": "scratchpad-scratchpad-com",
@@ -5381,7 +5405,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:35 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:27Z"
     },
     {
       "id": "sardine-sardine-ai",
@@ -5434,7 +5458,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:42 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:24Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:29Z"
     },
     {
       "id": "mindbloom-mindbloom-com",
@@ -5485,7 +5509,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:45 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:24Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:30Z"
     },
     {
       "id": "triple-whale-triplewhale-com",
@@ -5533,7 +5557,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:48 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:26Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:31Z"
     },
     {
       "id": "orum-orum-com",
@@ -5589,7 +5613,8 @@ window.INSPIRATION_DATA = {
         "Neue Rational"
       ],
       "createdAt": "April 9, 2024 11:52 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:35Z"
     },
     {
       "id": "wrapbook-wrapbook-com",
@@ -5641,7 +5666,8 @@ window.INSPIRATION_DATA = {
         "Untitled Serif"
       ],
       "createdAt": "April 9, 2024 11:55 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:41Z"
     },
     {
       "id": "stash-stash-com",
@@ -5689,7 +5715,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:59 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:36Z"
     },
     {
       "id": "carta-carta-com",
@@ -5738,7 +5764,8 @@ window.INSPIRATION_DATA = {
         "SangBleu Versailles"
       ],
       "createdAt": "April 9, 2024 12:02 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:39Z"
     },
     {
       "id": "evernote-evernote-com",
@@ -5784,7 +5811,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 12:05 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:30Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:41Z"
     },
     {
       "id": "greenhouse-greenhouse-com",
@@ -5833,7 +5860,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 12:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:31Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:45Z"
     },
     {
       "id": "shopify-shopify-com",
@@ -5886,7 +5913,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 12:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:43Z"
     },
     {
       "id": "unicorn-studio-unicorn-studio",
@@ -5929,7 +5956,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 2:51 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:35Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:48Z"
     },
     {
       "id": "energy-park-energy-park-co-uk",
@@ -5984,7 +6011,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 2:54 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:50Z"
     },
     {
       "id": "rogo-data-rogodata-com",
@@ -6040,7 +6067,8 @@ window.INSPIRATION_DATA = {
         "Rooftop Mono"
       ],
       "createdAt": "April 9, 2024 2:57 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:11:50Z"
     },
     {
       "id": "kohort-pay-en-kohortpay-com",
@@ -6136,7 +6164,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:07 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:32Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:48Z"
     },
     {
       "id": "antimetal-antimetal-com",
@@ -6189,7 +6217,8 @@ window.INSPIRATION_DATA = {
         "TWK Lausanne"
       ],
       "createdAt": "April 9, 2024 3:10 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:00Z"
     },
     {
       "id": "one-guard-oneg-org",
@@ -6285,7 +6314,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:53Z"
     },
     {
       "id": "1337-1337-org",
@@ -6328,7 +6357,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:38Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:57Z"
     },
     {
       "id": "lightship-lightshiprv-com",
@@ -6386,7 +6415,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:27 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:11:58Z"
     },
     {
       "id": "quantum-wallet-quantumwallet-tech",
@@ -6430,7 +6459,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:29 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:01Z"
     },
     {
       "id": "custo-custo-io",
@@ -6479,7 +6508,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:04Z"
     },
     {
       "id": "qonto-qonto-com",
@@ -6529,7 +6558,8 @@ window.INSPIRATION_DATA = {
         "Poly Sans"
       ],
       "createdAt": "April 9, 2024 3:50 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:04Z"
     },
     {
       "id": "flecto-flecto-io",
@@ -6586,7 +6616,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:54 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:06Z"
     },
     {
       "id": "para-para-co",
@@ -6632,7 +6662,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:04Z"
     },
     {
       "id": "trullion-trullion-com",
@@ -6685,7 +6715,8 @@ window.INSPIRATION_DATA = {
         "Rules"
       ],
       "createdAt": "April 9, 2024 4:01 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:12Z"
     },
     {
       "id": "profounders-capital-profounderscapital-com",
@@ -6733,7 +6764,8 @@ window.INSPIRATION_DATA = {
         "Poly Sans"
       ],
       "createdAt": "April 9, 2024 4:04 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:07Z"
     },
     {
       "id": "moon-mortgage-moonmortgage-io",
@@ -6781,7 +6813,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:49Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:10Z"
     },
     {
       "id": "half-past-nine-halfpastnine-io",
@@ -6841,7 +6873,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:14 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:48Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:11Z"
     },
     {
       "id": "checkout-com-checkout-com",
@@ -6891,7 +6923,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:11Z"
     },
     {
       "id": "flashform-flshfrm-com",
@@ -6945,7 +6977,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:21 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:49Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:15Z"
     },
     {
       "id": "hydra-hydra-so",
@@ -6999,7 +7031,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:26 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:53Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:14Z"
     },
     {
       "id": "etherfuse-etherfuse-com",
@@ -7055,7 +7087,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:29 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:52Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:15Z"
     },
     {
       "id": "metadrop-metadrop-com",
@@ -7105,7 +7137,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:51Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:15Z"
     },
     {
       "id": "bequant-bequant-com",
@@ -7158,7 +7190,8 @@ window.INSPIRATION_DATA = {
         "GT America Mono"
       ],
       "createdAt": "April 9, 2024 4:39 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:22Z"
     },
     {
       "id": "vercel-ship-events-vercel-com",
@@ -7206,7 +7239,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:46 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:53Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:20Z"
     },
     {
       "id": "wope-wope-com",
@@ -7266,7 +7299,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:50 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:22Z"
     },
     {
       "id": "framer-framer-com",
@@ -7321,7 +7354,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:56Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:21Z"
     },
     {
       "id": "ventriloc-ventriloc-ca",
@@ -7376,7 +7409,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 5:01 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:01Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:26Z"
     },
     {
       "id": "figma-figma-com",
@@ -7428,7 +7461,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 10, 2024 12:42 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:52:59Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:27Z"
     },
     {
       "id": "bertch-capital-bertchcapital-com",
@@ -7481,7 +7514,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 12:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:26Z"
     },
     {
       "id": "stereolabs-stereolabs-com",
@@ -7531,7 +7564,8 @@ window.INSPIRATION_DATA = {
         "NB Akademie Pro Medium"
       ],
       "createdAt": "April 16, 2024 1:01 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:29Z"
     },
     {
       "id": "joselow-associates-ajoselowpc-com",
@@ -7632,7 +7666,8 @@ window.INSPIRATION_DATA = {
         "Cash Sans"
       ],
       "createdAt": "April 16, 2024 1:06 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:32Z"
     },
     {
       "id": "bolt-bolt-com",
@@ -7683,7 +7718,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:03Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:32Z"
     },
     {
       "id": "formless-formless-xyz",
@@ -7737,7 +7772,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:10Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:37Z"
     },
     {
       "id": "whimsical-whimsical-com",
@@ -7795,7 +7830,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:03Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:33Z"
     },
     {
       "id": "authkit-authkit-com",
@@ -7843,7 +7878,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:15 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:36Z"
     },
     {
       "id": "brainsave-brainsave-ai",
@@ -7896,7 +7931,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:07Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:36Z"
     },
     {
       "id": "koikreative-sanlitun-koikreative-com",
@@ -7930,7 +7965,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 1:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:21Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:54Z"
     },
     {
       "id": "zaptech-zaptec-com",
@@ -7982,7 +8017,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:31 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:11Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:43Z"
     },
     {
       "id": "unifi-protocol-unifiprotocol-com",
@@ -8033,7 +8068,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:39 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:13Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:43Z"
     },
     {
       "id": "siriusxm-media-siriusxmmedia-com",
@@ -8083,7 +8118,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:45 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:17Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:46Z"
     },
     {
       "id": "the-swaddle-theswaddle-com",
@@ -8126,7 +8161,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 1:47 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:47Z"
     },
     {
       "id": "whatsapp-whatsapp-com",
@@ -8172,7 +8207,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 16, 2024 2:08 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:47Z"
     },
     {
       "id": "spotify-web-player-webplayer-byspotify-com",
@@ -8215,7 +8251,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 3:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:16Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:50Z"
     },
     {
       "id": "jeff-koons-moon-phases-jeffkoonsmoonphases-com",
@@ -8261,7 +8297,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:01 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:18Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:53Z"
     },
     {
       "id": "webex-cisco-webex-com",
@@ -8310,7 +8346,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:03 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:18Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:50Z"
     },
     {
       "id": "enpower-trading-enpowertrading-co-za",
@@ -8363,7 +8399,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:04Z"
     },
     {
       "id": "catona-climate-catona-com",
@@ -8411,7 +8447,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:23Z"
+      "screenshotCapturedAt": "2026-04-28T00:12:54Z"
     },
     {
       "id": "guild-guild-com",
@@ -8457,7 +8493,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:25Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:00Z"
     },
     {
       "id": "chainzoku-chainzoku-io",
@@ -8501,7 +8537,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:15 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:02Z"
     },
     {
       "id": "current-current-com",
@@ -8554,7 +8590,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 16, 2024 4:17 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:12:58Z"
     },
     {
       "id": "bowery-bowery-co",
@@ -8657,7 +8694,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:23 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:30Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:06Z"
     },
     {
       "id": "jams-basic-dept-jams-basicagency-com",
@@ -8699,7 +8736,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:26 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:33Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:06Z"
     },
     {
       "id": "flox-flox-dev",
@@ -8750,7 +8787,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:32 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:34Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:09Z"
     },
     {
       "id": "culture-amp-cultureamp-com",
@@ -8798,7 +8835,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 18, 2024 11:34 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:13:12Z"
     },
     {
       "id": "sprout-social-sproutsocial-com",
@@ -8848,7 +8886,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:37 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:39Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:12Z"
     },
     {
       "id": "monday-com-monday-com",
@@ -8896,7 +8934,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:40 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:16Z"
     },
     {
       "id": "zendesk-zendesk-com",
@@ -8943,7 +8981,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 18, 2024 11:42 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:13:19Z"
     },
     {
       "id": "gong-gong-io",
@@ -8987,7 +9026,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 18, 2024 11:44 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:13:19Z"
     },
     {
       "id": "customer-io-customer-io",
@@ -9041,7 +9081,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 18, 2024 11:49 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:13:21Z"
     },
     {
       "id": "gitbook-gitbook-com",
@@ -9092,7 +9133,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 12:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:24Z"
     },
     {
       "id": "roblox-corp-roblox-com",
@@ -9136,7 +9177,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:26 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:23Z"
     },
     {
       "id": "akaru-akaru-fr",
@@ -9188,7 +9229,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:29 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:49Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:27Z"
     },
     {
       "id": "ecofuture-ecofuture-global",
@@ -9291,7 +9332,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:34 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:48Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:26Z"
     },
     {
       "id": "patreon-patreon-com",
@@ -9344,7 +9385,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:42 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:50Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:28Z"
     },
     {
       "id": "myne-myne-eco",
@@ -9400,7 +9441,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:45 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:51Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:28Z"
     },
     {
       "id": "quantum-stretch-quantumstretch-com",
@@ -9440,7 +9481,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:48 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:34Z"
     },
     {
       "id": "moxion-moxion-preprod-rejouice-io",
@@ -9494,7 +9535,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:50 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:55Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:34Z"
     },
     {
       "id": "vucko-vucko-co",
@@ -9545,7 +9586,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:53 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:54Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:34Z"
     },
     {
       "id": "docusign-brand-brand-docusign-com",
@@ -9586,7 +9627,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:56 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:58Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:35Z"
     },
     {
       "id": "teenage-engineering-teenage-engineering",
@@ -9633,7 +9674,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:59 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:53:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:38Z"
     },
     {
       "id": "better-stack-betterstack-com",
@@ -9678,7 +9719,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 29, 2024 4:14 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:01Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:40Z"
     },
     {
       "id": "frame-frame-so",
@@ -9724,7 +9765,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 29, 2024 4:17 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:13:39Z"
     },
     {
       "id": "superlist-superlist-com",
@@ -9774,7 +9816,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 29, 2024 5:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:01Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:39Z"
     },
     {
       "id": "kelvinzero-kzero-com",
@@ -9829,7 +9871,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:05Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:45Z"
     },
     {
       "id": "axelar-axelar-network",
@@ -9883,7 +9925,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:38 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:47Z"
     },
     {
       "id": "atlas-venture-atlasventure-com",
@@ -9930,7 +9972,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:46 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:09Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:46Z"
     },
     {
       "id": "evoke-hr-evokehr-ca",
@@ -9974,7 +10016,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:51 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:08Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:46Z"
     },
     {
       "id": "user-interviews-userinterviews-com",
@@ -10021,7 +10063,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:12Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:53Z"
     },
     {
       "id": "accern-accern-com",
@@ -10127,7 +10169,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:11Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:52Z"
     },
     {
       "id": "firststreet-firststreet-org",
@@ -10181,7 +10223,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:51Z"
     },
     {
       "id": "jasper-jasper-ai",
@@ -10281,7 +10323,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:17 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:13:56Z"
     },
     {
       "id": "astra-astrafi-com",
@@ -10336,7 +10378,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 1, 2024 5:47 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:13:57Z"
     },
     {
       "id": "plain-sight-ventures-plainsightventures-co",
@@ -10387,7 +10430,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:50 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:19Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:00Z"
     },
     {
       "id": "clyde-joinclyde-com",
@@ -10447,7 +10490,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:53 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:02Z"
     },
     {
       "id": "render-render-com",
@@ -10501,7 +10544,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 2, 2024 12:42 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:21Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:02Z"
     },
     {
       "id": "terzo-terzo-ai",
@@ -10549,7 +10592,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 2, 2024 12:50 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:04Z"
     },
     {
       "id": "evervault-evervault-com",
@@ -10601,7 +10644,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 2, 2024 12:53 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:09Z"
     },
     {
       "id": "increase-increase-com",
@@ -10646,7 +10690,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 2, 2024 1:03 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:06Z"
     },
     {
       "id": "supahub-supahub-com",
@@ -10697,7 +10742,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 8, 2024 4:30 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:23Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:08Z"
     },
     {
       "id": "deel-deel-com",
@@ -10748,7 +10793,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 8, 2024 4:34 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:11Z"
     },
     {
       "id": "formcarry-formcarry-com",
@@ -10798,7 +10844,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 8, 2024 5:25 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:10Z"
     },
     {
       "id": "payload-payloadcms-com",
@@ -10847,7 +10894,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 8, 2024 5:29 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:15Z"
     },
     {
       "id": "mode-mode-com",
@@ -10900,7 +10948,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 8, 2024 5:32 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:25Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:13Z"
     },
     {
       "id": "liveblock-liveblocks-io",
@@ -10949,7 +10997,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 8, 2024 5:39 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:28Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:17Z"
     },
     {
       "id": "reflect-reflect-app",
@@ -11003,7 +11051,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 8, 2024 5:45 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:27Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:17Z"
     },
     {
       "id": "hopscotch-gohopscotch-com",
@@ -11109,7 +11157,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 9, 2024 2:56 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:22Z"
     },
     {
       "id": "dimension-dimension-dev",
@@ -11161,7 +11210,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 14, 2024 3:56 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:30Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:24Z"
     },
     {
       "id": "oura-ouraring-com",
@@ -11211,7 +11260,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:18 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:32Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:23Z"
     },
     {
       "id": "packsmith-packsmith-io",
@@ -11259,7 +11308,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:24 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:34Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:28Z"
     },
     {
       "id": "53w53-53w53-com",
@@ -11311,7 +11360,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:26 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:34Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:28Z"
     },
     {
       "id": "supa-stellar-supastellar-co",
@@ -11367,7 +11416,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:30 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:38Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:30Z"
     },
     {
       "id": "style-port-styleport-co-jp",
@@ -11421,7 +11470,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:33 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:38Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:34Z"
     },
     {
       "id": "nord-quantique-nordquantique-ca",
@@ -11474,7 +11523,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:39 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:40Z"
     },
     {
       "id": "scepter-scepterwallet-com",
@@ -11522,7 +11571,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:41 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:39Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:35Z"
     },
     {
       "id": "tedy-tedy-app",
@@ -11570,7 +11619,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 17, 2024 5:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:38Z"
     },
     {
       "id": "canopy-canopyservicing-com",
@@ -11626,7 +11675,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 2, 2024 4:19 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:39Z"
     },
     {
       "id": "patch-patch-io",
@@ -11680,7 +11730,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 2, 2024 8:30 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:14:44Z"
     },
     {
       "id": "canvas-canvasapp-com",
@@ -11722,7 +11773,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:44Z"
     },
     {
       "id": "daylight-computers-daylightcomputer-com",
@@ -11769,7 +11820,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:37 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:47Z"
     },
     {
       "id": "fruitful-fruitful-com",
@@ -11822,7 +11873,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:39 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:46Z"
     },
     {
       "id": "superpower-superpower-com",
@@ -11873,7 +11924,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:41 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:10Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:58Z"
     },
     {
       "id": "token-token-com",
@@ -11928,7 +11979,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:44 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:49Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:48Z"
     },
     {
       "id": "propbinder-propbinder-com",
@@ -11982,7 +12033,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:52Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:52Z"
     },
     {
       "id": "neon-neon-tech",
@@ -12036,7 +12087,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:59 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:53Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:52Z"
     },
     {
       "id": "raycast-raycast-com",
@@ -12088,7 +12139,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 9:02 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:09Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:02Z"
     },
     {
       "id": "pachama-pachama-com",
@@ -12140,7 +12191,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 3, 2024 12:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:58Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:58Z"
     },
     {
       "id": "clearbit-clearbit-com",
@@ -12191,7 +12242,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 3, 2024 12:42 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:14:58Z"
     },
     {
       "id": "equals-equals-com",
@@ -12241,7 +12292,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 3, 2024 12:45 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:03Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:02Z"
     },
     {
       "id": "lemon-squeezy-lemonsqueezy-com",
@@ -12289,7 +12340,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 3, 2024 12:49 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:02Z"
     },
     {
       "id": "huly-huly-io",
@@ -12341,7 +12392,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:19 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:07Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:02Z"
     },
     {
       "id": "attio-attio-com",
@@ -12391,7 +12442,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 16, 2024 8:26 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:15:08Z"
     },
     {
       "id": "decipad-decipad-com",
@@ -12492,7 +12544,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 16, 2024 8:34 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:15:08Z"
     },
     {
       "id": "q-industrial-q-industrial-com",
@@ -12545,7 +12598,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:37 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:10Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:07Z"
     },
     {
       "id": "eci-eci-io",
@@ -12593,7 +12646,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:40 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:13Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:07Z"
     },
     {
       "id": "crayo-crayo-ai",
@@ -12651,7 +12704,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:43 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:12Z"
     },
     {
       "id": "modernloop-modernloop-com",
@@ -12707,7 +12760,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:46 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:12Z"
     },
     {
       "id": "hinge-hinge-co",
@@ -12754,7 +12807,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:12Z"
     },
     {
       "id": "mercu-mercu-com",
@@ -12864,7 +12917,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:59 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:20Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:16Z"
     },
     {
       "id": "flow-justgowiththeflow-com",
@@ -12913,7 +12966,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 9:02 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:18Z"
     },
     {
       "id": "cloaked-cloaked-com",
@@ -12966,7 +13019,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 11:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:19Z"
     },
     {
       "id": "depoly-depoly-co",
@@ -13026,7 +13079,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 26, 2024 4:41 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:19Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:16Z"
     },
     {
       "id": "cedro-cedroweb3-ai",
@@ -13076,7 +13129,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 26, 2024 4:46 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:24Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:20Z"
     },
     {
       "id": "patch-thepatchsystem-com",
@@ -13131,7 +13184,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 26, 2024 4:49 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:26Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:22Z"
     },
     {
       "id": "radioradio-radioradio-radio",
@@ -13236,7 +13289,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 12:21 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:28Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:26Z"
     },
     {
       "id": "mellow-mellow-io",
@@ -13282,7 +13335,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "July 1, 2024 12:24 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:15:27Z"
     },
     {
       "id": "prism-prism-on-tokyo",
@@ -13332,7 +13386,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "July 1, 2024 12:27 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:15:26Z"
     },
     {
       "id": "design-education-series-by-obys-des-obys-agency",
@@ -13385,7 +13440,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 12:30 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:33Z"
     },
     {
       "id": "heid-heid-webflow-io",
@@ -13436,7 +13491,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 12:32 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:30Z"
     },
     {
       "id": "techspeed-techspeed-com",
@@ -13492,7 +13547,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "July 1, 2024 12:38 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:15:32Z"
     },
     {
       "id": "dteckt-dteckt-com",
@@ -13603,7 +13659,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 5:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:36Z"
     },
     {
       "id": "ramp-ramp-com",
@@ -13656,7 +13712,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 8, 2024 5:45 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:40Z"
     },
     {
       "id": "ramp-travel-ramp-com",
@@ -13709,7 +13765,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 8, 2024 5:48 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:36Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:40Z"
     },
     {
       "id": "hiro-hiro-so",
@@ -13759,7 +13815,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 8, 2024 5:48 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:42Z"
     },
     {
       "id": "succinct-succinct-xyz",
@@ -13859,7 +13915,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "July 8, 2024 5:53 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:15:47Z"
     },
     {
       "id": "nif-nif-fund",
@@ -13914,7 +13971,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 4:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:46Z"
     },
     {
       "id": "codex-codex-io",
@@ -13969,7 +14026,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 5:01 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:59Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:01Z"
     },
     {
       "id": "digital-mosaik-digitalmosaik-com",
@@ -14021,7 +14078,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 5:04 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:51Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:57Z"
     },
     {
       "id": "rendezvous-myrendezvous-ca",
@@ -14070,7 +14127,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 5:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:50Z"
+      "screenshotCapturedAt": "2026-04-28T00:15:54Z"
     },
     {
       "id": "ctrl-ctrl-xyz",
@@ -14120,7 +14177,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "August 2, 2024 5:11 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:16:01Z"
     },
     {
       "id": "intrepid-intrepidautomation-com",
@@ -14173,7 +14231,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 5:14 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:56Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:02Z"
     },
     {
       "id": "buzzabout-buzzabout-ai",
@@ -14223,7 +14281,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 10:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:55:58Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:03Z"
     },
     {
       "id": "cycle-cycle-app",
@@ -14274,7 +14332,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 10:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:05Z"
     },
     {
       "id": "bindplane-fka-observ-iq-observiq-com",
@@ -14329,7 +14387,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 11:01 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:06Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:09Z"
     },
     {
       "id": "channeled-withchanneled-com",
@@ -14373,11 +14431,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 11:05 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:14Z"
     },
     {
       "id": "lowe-s-innovation-lab-lowesinnovationlabs-com",
-      "name": "Lowe’s Innovation Lab",
+      "name": "Lowe\u2019s Innovation Lab",
       "url": "https://www.lowesinnovationlabs.com/",
       "domain": "lowesinnovationlabs.com",
       "screenshot": "assets/screenshots/lowe-s-innovation-lab-lowesinnovationlabs-com.jpg",
@@ -14424,7 +14482,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 11:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:07Z"
     },
     {
       "id": "lyssna-lyssna-com",
@@ -14479,7 +14537,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 11:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:09Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:11Z"
     },
     {
       "id": "tripadvisor-brandswetravelwith-tripadvisor-com",
@@ -14527,7 +14585,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 12:19 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:10Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:12Z"
     },
     {
       "id": "breaking-breaking-com",
@@ -14582,7 +14640,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:05 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:14Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:14Z"
     },
     {
       "id": "outloud-breaking-com",
@@ -14639,7 +14697,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:13Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:17Z"
     },
     {
       "id": "the-food-truck-club-defoodtruckclub-nl",
@@ -14697,7 +14755,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:19Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:21Z"
     },
     {
       "id": "eppo-geteppo-com",
@@ -14750,7 +14808,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:20Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:22Z"
     },
     {
       "id": "oval-real-estate-ovalrealestate-com",
@@ -14797,7 +14855,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:20 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:22Z"
     },
     {
       "id": "openphone-openphone-com",
@@ -14844,7 +14902,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 29, 2024 8:54 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:23Z"
     },
     {
       "id": "arc-search-arc-net",
@@ -14888,7 +14946,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 29, 2024 9:01 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:24Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:28Z"
     },
     {
       "id": "fitonist-fitonist-app-webflow-io",
@@ -14944,7 +15002,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 29, 2024 9:04 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:27Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:29Z"
     },
     {
       "id": "butter-insurance-butterinsurance-com-au",
@@ -14994,7 +15052,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 29, 2024 9:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:27Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:29Z"
     },
     {
       "id": "zodio-custody-zodia-custody-com",
@@ -15048,7 +15106,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 2, 2024 3:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:30Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:30Z"
     },
     {
       "id": "leya-law-leya-law",
@@ -15097,7 +15155,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 2, 2024 3:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:31Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:34Z"
     },
     {
       "id": "webisoft-webisoft-com",
@@ -15150,7 +15208,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 9, 2024 10:58 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:32Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:33Z"
     },
     {
       "id": "loop-returns-loopreturns-com",
@@ -15207,7 +15265,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 9, 2024 11:02 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:34Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:36Z"
     },
     {
       "id": "aave-aave-com",
@@ -15258,7 +15316,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 9, 2024 11:06 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:35Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:36Z"
     },
     {
       "id": "retool-rebranded-oct-2024-retool-com",
@@ -15308,7 +15366,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 23, 2024 11:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:38Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:40Z"
     },
     {
       "id": "cloudbees-cloudbees-com",
@@ -15354,7 +15412,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 10, 2024 4:15 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:39Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:41Z"
     },
     {
       "id": "surfe-surfe-com",
@@ -15411,7 +15469,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "October 10, 2024 4:19 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:16:44Z"
     },
     {
       "id": "hex-hex-tech",
@@ -15465,7 +15524,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 10, 2024 4:24 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:43Z"
     },
     {
       "id": "routable-routable-com",
@@ -15519,7 +15578,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "October 10, 2024 4:27 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:16:47Z"
     },
     {
       "id": "oddit-oddit-co",
@@ -15573,7 +15633,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 10, 2024 5:17 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:43Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:49Z"
     },
     {
       "id": "cape-cape-co",
@@ -15626,7 +15686,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "October 10, 2024 5:21 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:16:48Z"
     },
     {
       "id": "dora-dora-run",
@@ -15685,7 +15746,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 15, 2024 5:30 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:52Z"
     },
     {
       "id": "palette-palette-supply",
@@ -15735,7 +15796,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 15, 2024 5:53 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:54Z"
     },
     {
       "id": "steep-steep-app",
@@ -15787,7 +15848,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 15, 2024 5:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:49Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:54Z"
     },
     {
       "id": "stripe-dev-stripe-dev",
@@ -15839,7 +15900,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "October 15, 2024 6:02 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:16:53Z"
     },
     {
       "id": "sound-ethics-soundethics-org",
@@ -15896,7 +15958,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 15, 2024 6:07 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:16:56Z"
     },
     {
       "id": "opencall-ai-opencall-ai",
@@ -15951,7 +16013,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "October 15, 2024 6:15 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:01Z"
     },
     {
       "id": "treebula-treebula-com",
@@ -15977,7 +16040,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "January 30, 2025 11:20 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:02Z"
     },
     {
       "id": "circle-circle-so",
@@ -16004,7 +16068,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 11:22 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:51Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:01Z"
     },
     {
       "id": "warp-warp-dev",
@@ -16038,7 +16102,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "January 30, 2025 12:18 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:01Z"
     },
     {
       "id": "popcorn-popcorn-space",
@@ -16064,7 +16129,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 12:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:50Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:04Z"
     },
     {
       "id": "peek-insights-peekinsights-co",
@@ -16089,7 +16154,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "January 30, 2025 12:38 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:07Z"
     },
     {
       "id": "better-off-betteroff-studio",
@@ -16117,7 +16183,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 12:41 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:52Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:05Z"
     },
     {
       "id": "peers-peers-solutions",
@@ -16144,7 +16210,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "January 30, 2025 12:58 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:05Z"
     },
     {
       "id": "nzero-nzero-com",
@@ -16173,7 +16240,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 1:20 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:55Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:09Z"
     },
     {
       "id": "succinct-succinct-xyz",
@@ -16201,7 +16268,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 1:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:53Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:08Z"
     },
     {
       "id": "cartesia-sonic-cartesia-ai",
@@ -16228,7 +16295,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "January 30, 2025 1:24 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:12Z"
     },
     {
       "id": "https-social-impact-capital-com-ocial-impact-capital-social-impact-capital-com",
@@ -16256,7 +16324,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 4:51 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:56Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:15Z"
     },
     {
       "id": "frosty-pop-frostypop-com",
@@ -16284,7 +16352,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 4:54 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:12Z"
     },
     {
       "id": "aker-akercompanies-com",
@@ -16313,7 +16381,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 4:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:16Z"
     },
     {
       "id": "tola-usetola-com",
@@ -16341,7 +16409,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 4:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:56:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:15Z"
     },
     {
       "id": "fabric-fabric-so",
@@ -16377,7 +16445,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 4:58 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:01Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:16Z"
     },
     {
       "id": "burner-burner-pro",
@@ -16415,7 +16483,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:00 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:01Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:19Z"
     },
     {
       "id": "databricks-databricks-com",
@@ -16450,7 +16518,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "February 1, 2025 5:03 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:22Z"
     },
     {
       "id": "zembula-zembula-com",
@@ -16484,7 +16553,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:05 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:05Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:24Z"
     },
     {
       "id": "avancio-avancio-com",
@@ -16518,7 +16587,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:13Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:30Z"
     },
     {
       "id": "uplink-uplink-itsoffbrand-com",
@@ -16554,7 +16623,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:07Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:25Z"
     },
     {
       "id": "jamie-meetjamie-ai",
@@ -16588,7 +16657,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:08Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:31Z"
     },
     {
       "id": "string-media-stringomedia-com",
@@ -16658,7 +16727,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "February 1, 2025 5:16 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:39Z"
     },
     {
       "id": "dtre-dtre-com",
@@ -16691,7 +16761,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:12Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:33Z"
     },
     {
       "id": "jasper-jasper-ai",
@@ -16724,7 +16794,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:19 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:54:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:38Z"
     },
     {
       "id": "portal-gaming-portalgaming-com",
@@ -16756,7 +16826,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:20 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:12Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:36Z"
     },
     {
       "id": "rayon-rayon-design",
@@ -16789,7 +16859,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "February 1, 2025 5:21 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:38Z"
     },
     {
       "id": "aria-helloaria-eu",
@@ -16824,7 +16895,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:15Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:43Z"
     },
     {
       "id": "surge-ai-surgehq-ai",
@@ -16858,7 +16929,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:23 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:16Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:42Z"
     },
     {
       "id": "dragongc-dragongc-com",
@@ -16892,7 +16963,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "February 1, 2025 5:25 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:46Z"
     },
     {
       "id": "folk-folk-app",
@@ -16932,7 +17004,7 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 26, 2025 8:11 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:17Z"
+      "screenshotCapturedAt": "2026-04-28T00:17:44Z"
     },
     {
       "id": "endex-endex-ai",
@@ -16972,7 +17044,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 3:56 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:46Z"
     },
     {
       "id": "adora-adora-so",
@@ -17009,7 +17082,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 3:58 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:51Z"
     },
     {
       "id": "wise-wise-com",
@@ -17047,7 +17121,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:00 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:51Z"
     },
     {
       "id": "amplemarket-amplemarket-com",
@@ -17085,7 +17160,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:01 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:54Z"
     },
     {
       "id": "buddy-works-buddy-works",
@@ -17123,7 +17199,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:05 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:52Z"
     },
     {
       "id": "dovetail-dovetail-com",
@@ -17161,7 +17238,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:06 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:58Z"
     },
     {
       "id": "stacker-stackerhq-com",
@@ -17198,7 +17276,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:07 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:17:57Z"
     },
     {
       "id": "spark-advisors-sparkadvisors-com",
@@ -17237,7 +17316,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:08 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:00Z"
     },
     {
       "id": "incident-io-incident-io",
@@ -17274,7 +17354,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:20Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:03Z"
     },
     {
       "id": "nvg8-nvg8-io",
@@ -17314,7 +17394,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:04Z"
     },
     {
       "id": "localyzer-localyzer-io",
@@ -17353,7 +17433,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:14 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:03Z"
     },
     {
       "id": "v7-labs-v7labs-com",
@@ -17392,7 +17473,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:16 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:08Z"
     },
     {
       "id": "runway-runwayml-com",
@@ -17431,7 +17513,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "April 4, 2025 4:21 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:08Z"
     },
     {
       "id": "backup-space-backup-space",
@@ -17502,7 +17585,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:24 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:22Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:11Z"
     },
     {
       "id": "twelvelabs-twelvelabs-io",
@@ -17541,7 +17624,8 @@ window.INSPIRATION_DATA = {
       "unconventional": true,
       "typefaces": [],
       "createdAt": "April 17, 2025 12:40 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:14Z"
     },
     {
       "id": "micro-micro-so",
@@ -17583,7 +17667,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 24, 2025 8:21 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:21Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:12Z"
     },
     {
       "id": "letters-letters-app",
@@ -17630,7 +17714,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 24, 2025 8:23 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:26Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:16Z"
     },
     {
       "id": "human-voice-over-humanvoiceover-com",
@@ -17680,7 +17764,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 11:54 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:29Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:19Z"
     },
     {
       "id": "drewl-drewl-com",
@@ -17730,11 +17814,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 11:58 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:28Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:20Z"
     },
     {
       "id": "shopify-editions-summer-25-shopify-com",
-      "name": "Shopify Editions [Summer ‘25]",
+      "name": "Shopify Editions [Summer \u201825]",
       "url": "https://www.shopify.com/editions/summer2025",
       "domain": "shopify.com",
       "screenshot": "assets/screenshots/shopify-editions-summer-25-shopify-com.jpg",
@@ -17780,7 +17864,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 12:00 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:32Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:24Z"
     },
     {
       "id": "origin-useorigin-com",
@@ -17831,7 +17915,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "May 27, 2025 12:07 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:23Z"
     },
     {
       "id": "revolut-revolut-com",
@@ -17883,7 +17968,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 12:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:31Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:24Z"
     },
     {
       "id": "inkwell-inkwell-tech",
@@ -17932,7 +18017,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 5:27 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:35Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:27Z"
     },
     {
       "id": "eislab-eis-lab-de",
@@ -17986,7 +18071,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 5:29 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:34Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:30Z"
     },
     {
       "id": "primeasia-primeasialeather-com",
@@ -18038,7 +18123,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 5:31 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:32Z"
     },
     {
       "id": "hyperbolic-hyperbolic-studiofreight-com",
@@ -18091,7 +18176,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 5:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:35Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:28Z"
     },
     {
       "id": "deepjudge-deepjudge-ai",
@@ -18146,7 +18231,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 12, 2025 9:30 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:32Z"
     },
     {
       "id": "gynger-gynger-io",
@@ -18192,7 +18278,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 12, 2025 9:31 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:47Z"
     },
     {
       "id": "realm-withrealm-com",
@@ -18240,7 +18327,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "June 12, 2025 9:33 AM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:38Z"
     },
     {
       "id": "giga-energy-gigaenergy-com",
@@ -18291,7 +18379,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 12, 2025 9:35 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:40Z"
     },
     {
       "id": "windsurf-windsurf-com",
@@ -18341,7 +18429,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 14, 2025 12:56 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:41Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:38Z"
     },
     {
       "id": "adaline-adaline-ai",
@@ -18395,7 +18483,8 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "createdAt": "July 14, 2025 12:57 PM",
-      "source": "notion-seed"
+      "source": "notion-seed",
+      "screenshotCapturedAt": "2026-04-28T00:18:45Z"
     },
     {
       "id": "perplexity-perplexity-ai",
@@ -18450,7 +18539,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 9:15 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:42Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:45Z"
     },
     {
       "id": "rainmaker-rainmaker-com",
@@ -18505,7 +18594,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 9:16 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:48Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:48Z"
     },
     {
       "id": "fey-fey-com",
@@ -18560,7 +18649,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 9:17 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:46Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:50Z"
     },
     {
       "id": "pampam-pampam-city",
@@ -18615,7 +18704,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 9:17 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:50Z"
     },
     {
       "id": "say-briefly-saybriefly-com",
@@ -18667,7 +18756,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 9:18 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:52Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:55Z"
     },
     {
       "id": "wa-solutions-wasolutions-com",
@@ -18721,7 +18810,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:05 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:53Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:55Z"
     },
     {
       "id": "portal-systems-portalsystems-space",
@@ -18773,7 +18862,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:05 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:58:01Z"
+      "screenshotCapturedAt": "2026-04-28T00:19:04Z"
     },
     {
       "id": "smart-airport-systems-smart-airport-systems-com",
@@ -18825,7 +18914,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:07 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:57:57Z"
+      "screenshotCapturedAt": "2026-04-28T00:18:59Z"
     },
     {
       "id": "terminal-industries-terminal-industries-com",
@@ -18879,7 +18968,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:27 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:58:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:19:02Z"
     },
     {
       "id": "virya-energy-virya-energy-com",
@@ -18933,7 +19022,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:28 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:58:02Z"
+      "screenshotCapturedAt": "2026-04-28T00:19:02Z"
     },
     {
       "id": "patio-patio-so",
@@ -18985,7 +19074,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:28 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-27T17:58:04Z"
+      "screenshotCapturedAt": "2026-04-28T00:19:06Z"
     },
     {
       "id": "normative-figma",
@@ -19020,7 +19109,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:14.755006Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:11Z"
     },
     {
       "id": "duna-figma",
@@ -19054,7 +19144,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:14.824382Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:07Z"
     },
     {
       "id": "zoox-figma",
@@ -19092,7 +19183,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:14.879785Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:08Z"
     },
     {
       "id": "superhuman-figma",
@@ -19128,7 +19220,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:14.924185Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:13Z"
     },
     {
       "id": "bird-figma",
@@ -19162,7 +19255,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:14.989766Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:11Z"
     },
     {
       "id": "cake-figma",
@@ -19197,7 +19291,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.051895Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:12Z"
     },
     {
       "id": "gradient-labs-figma",
@@ -19231,7 +19326,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.098946Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:16Z"
     },
     {
       "id": "opencall-figma",
@@ -19265,7 +19361,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.133340Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:19Z"
     },
     {
       "id": "okta-figma",
@@ -19301,7 +19398,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.212384Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:20Z"
     },
     {
       "id": "lattice-figma",
@@ -19336,7 +19434,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.266334Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:23Z"
     },
     {
       "id": "airtable-figma",
@@ -19371,7 +19470,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.340617Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:25Z"
     },
     {
       "id": "frameship-figma",
@@ -19404,7 +19504,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.417363Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:27Z"
     },
     {
       "id": "going-figma",
@@ -19439,7 +19540,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.460877Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:27Z"
     },
     {
       "id": "handshake-figma",
@@ -19474,7 +19576,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.523821Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:30Z"
     },
     {
       "id": "deepnote-figma",
@@ -19510,7 +19613,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.587273Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:32Z"
     },
     {
       "id": "rollups-figma",
@@ -19545,7 +19649,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.648645Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:33Z"
     },
     {
       "id": "zapier-figma",
@@ -19581,7 +19686,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.780464Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:32Z"
     },
     {
       "id": "vanta-figma",
@@ -19616,7 +19722,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.832889Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:40Z"
     },
     {
       "id": "factory-ai-figma",
@@ -19653,7 +19760,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.866239Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:39Z"
     },
     {
       "id": "palantir-figma",
@@ -19690,7 +19798,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.904773Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:39Z"
     },
     {
       "id": "miter-figma",
@@ -19724,7 +19833,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:15.965172Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:46Z"
     },
     {
       "id": "linktree-figma",
@@ -19759,7 +19869,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.024097Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:47Z"
     },
     {
       "id": "braze-figma",
@@ -19793,7 +19904,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.108699Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:47Z"
     },
     {
       "id": "airtasker-figma",
@@ -19827,7 +19939,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.171293Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:49Z"
     },
     {
       "id": "distributional-figma",
@@ -19862,7 +19975,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.223190Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:58Z"
     },
     {
       "id": "v7-figma",
@@ -19898,7 +20012,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.279677Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:55Z"
     },
     {
       "id": "deezer-figma",
@@ -19934,7 +20049,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.320828Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:56Z"
     },
     {
       "id": "cursor-figma",
@@ -19970,7 +20086,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.375334Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:19:55Z"
     },
     {
       "id": "paypal-business-figma",
@@ -20005,7 +20122,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.476007Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:02Z"
     },
     {
       "id": "front-figma",
@@ -20040,7 +20158,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.525721Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:02Z"
     },
     {
       "id": "rogo-figma",
@@ -20075,7 +20194,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.565131Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:04Z"
     },
     {
       "id": "mongodb-figma",
@@ -20110,7 +20230,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.610958Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:11Z"
     },
     {
       "id": "sana-labs-figma",
@@ -20147,7 +20268,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.672440Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:09Z"
     },
     {
       "id": "wise-business-figma",
@@ -20183,7 +20305,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.745977Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:11Z"
     },
     {
       "id": "justworks-figma",
@@ -20218,7 +20341,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.792654Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:13Z"
     },
     {
       "id": "headroom-figma",
@@ -20253,7 +20377,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.840210Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:13Z"
     },
     {
       "id": "delto-figma",
@@ -20322,7 +20447,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.901628Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:16Z"
     },
     {
       "id": "outseta-figma",
@@ -20356,7 +20482,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.956052Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:17Z"
     },
     {
       "id": "chargetrip-figma",
@@ -20391,7 +20518,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:16.994916Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:19Z"
     },
     {
       "id": "mues-ai-figma",
@@ -20424,7 +20552,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.055953Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:19Z"
     },
     {
       "id": "zeroheight-figma",
@@ -20458,7 +20587,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.101230Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:32Z"
     },
     {
       "id": "paypal-figma",
@@ -20493,7 +20623,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.169131Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:22Z"
     },
     {
       "id": "basedash-figma",
@@ -20528,7 +20659,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.247119Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:23Z"
     },
     {
       "id": "northlane-figma",
@@ -20562,7 +20694,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.281790Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:23Z"
     },
     {
       "id": "cohere-figma",
@@ -20598,7 +20731,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.349650Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:29Z"
     },
     {
       "id": "mural-figma",
@@ -20633,7 +20767,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.428093Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:32Z"
     },
     {
       "id": "clay-figma",
@@ -20669,7 +20804,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.495107Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:31Z"
     },
     {
       "id": "toggl-figma",
@@ -20704,7 +20840,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.597059Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:36Z"
     },
     {
       "id": "cloudflare-workers-figma",
@@ -20740,7 +20877,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.663324Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:36Z"
     },
     {
       "id": "public-figma",
@@ -20775,7 +20913,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.752330Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:39Z"
     },
     {
       "id": "ada-figma",
@@ -20810,7 +20949,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.830469Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:40Z"
     },
     {
       "id": "cartesia-figma",
@@ -20846,7 +20986,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.885425Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:42Z"
     },
     {
       "id": "miro-figma",
@@ -20882,7 +21023,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:17.957027Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:40Z"
     },
     {
       "id": "garden-intel-figma",
@@ -20950,7 +21092,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.037777Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:47Z"
     },
     {
       "id": "outchat-ai-figma",
@@ -20985,7 +21128,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.077933Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:48Z"
     },
     {
       "id": "stripe-figma",
@@ -21022,7 +21166,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.142876Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:47Z"
     },
     {
       "id": "calendly-figma",
@@ -21058,7 +21203,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.200228Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:48Z"
     },
     {
       "id": "sanity-figma",
@@ -21092,7 +21238,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.279112Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:53Z"
     },
     {
       "id": "wiz-figma",
@@ -21127,7 +21274,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.348449Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:54Z"
     },
     {
       "id": "labaton-figma",
@@ -21164,7 +21312,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.390849Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:55Z"
     },
     {
       "id": "gong-webstacks-figma",
@@ -21200,7 +21349,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.448389Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:20:56Z"
     },
     {
       "id": "dysrupt-figma",
@@ -21236,7 +21386,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.518637Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:01Z"
     },
     {
       "id": "chilipiper-figma",
@@ -21271,7 +21422,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.617449Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:02Z"
     },
     {
       "id": "tars-figma",
@@ -21306,7 +21458,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.659526Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:02Z"
     },
     {
       "id": "prismatic-figma",
@@ -21341,7 +21494,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.700796Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:05Z"
     },
     {
       "id": "quicknote-figma",
@@ -21375,7 +21529,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.789579Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:06Z"
     },
     {
       "id": "wonder-figma",
@@ -21410,7 +21565,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.857437Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:09Z"
     },
     {
       "id": "rox-figma",
@@ -21446,7 +21602,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.883606Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:09Z"
     },
     {
       "id": "speakeasy-figma",
@@ -21481,7 +21638,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.927815Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:12Z"
     },
     {
       "id": "telescope-figma",
@@ -21516,7 +21674,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:18.960990Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:12Z"
     },
     {
       "id": "legora-figma",
@@ -21553,7 +21712,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:19.001604Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:15Z"
     },
     {
       "id": "reducto-figma",
@@ -21588,7 +21748,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:19.063652Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:15Z"
     },
     {
       "id": "pipe-figma",
@@ -21622,7 +21783,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:19.112928Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:18Z"
     },
     {
       "id": "fin-figma",
@@ -21657,7 +21819,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:19.179927Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:20Z"
     },
     {
       "id": "perk-figma",
@@ -21691,7 +21854,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:19.238112Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:21Z"
     },
     {
       "id": "base-figma",
@@ -21726,7 +21890,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "2026-04-27T16:45:19.273786Z",
       "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
+      "scoredAt": "2026-04-27T17:27:16Z",
+      "screenshotCapturedAt": "2026-04-28T00:21:23Z"
     },
     {
       "name": "Gradial",
@@ -21772,7 +21937,7 @@ window.INSPIRATION_DATA = {
       "createdAt": "April 27, 2026 07:03 PM",
       "source": "claude-add",
       "screenshot": "assets/screenshots/gradial-gradial-com.jpg",
-      "screenshotCapturedAt": "2026-04-27T19:04:00Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:25Z"
     },
     {
       "id": "cresta-cresta-com",
@@ -21822,7 +21987,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "April 27, 2026 09:39 PM",
-      "screenshotCapturedAt": "2026-04-27T21:40:02Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:25Z"
     },
     {
       "id": "harvest-getharvest-com",
@@ -21873,7 +22038,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "April 27, 2026 10:05 PM",
-      "screenshotCapturedAt": "2026-04-27T22:05:13Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:25Z"
     },
     {
       "id": "mistral-mistral-ai",
@@ -21918,7 +22083,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:31Z"
     },
     {
       "id": "integratedbio-integratedbio-com",
@@ -21960,7 +22125,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:47Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:32Z"
     },
     {
       "id": "bricx-bricxlabs-com",
@@ -22007,7 +22172,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:44Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:29Z"
     },
     {
       "id": "osome-osome-com",
@@ -22051,7 +22216,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:45Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:32Z"
     },
     {
       "id": "scotchpos-scotchpos-com",
@@ -22095,7 +22260,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:49Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:33Z"
     },
     {
       "id": "poly-poly-app",
@@ -22140,7 +22305,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:50Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:37Z"
     },
     {
       "id": "drata-drata-com",
@@ -22188,7 +22353,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-27T22:15:52Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:39Z"
     },
     {
       "id": "datum-datum-xyz",
@@ -22230,7 +22395,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "April 27, 2026 10:27 PM",
-      "screenshotCapturedAt": "2026-04-27T22:27:37Z"
+      "screenshotCapturedAt": "2026-04-28T00:21:38Z"
     }
   ]
 };
