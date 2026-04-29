@@ -61,6 +61,100 @@ VIEWPORT = {"width": 1440, "height": 900}
 TARGET_WIDTH = 800
 JPEG_QUALITY = 72
 
+# Consent Management Platform domains to block so banners never render
+CMP_BLOCK_PATTERNS = [
+    "**://*.cookielaw.org/**",        # OneTrust
+    "**://optanon.blob.core.windows.net/**",
+    "**://*.cookiebot.com/**",         # Cookiebot / Cybot
+    "**://*.truste.com/**",            # TrustArc
+    "**://cmp.osano.com/**",           # Osano
+    "**://*.osano.com/**",
+    "**://cmp.quantcast.com/**",       # Quantcast Choice
+    "**://quantcast.mgr.consensu.org/**",
+    "**://*.iubenda.com/**",           # Iubenda
+    "**://app.termly.io/**",           # Termly
+    "**://*.termly.io/**",
+    "**://*.cookieyes.com/**",         # CookieYes
+    "**://sdk.privacy-center.org/**",  # Didomi
+    "**://*.usercentrics.eu/**",       # Usercentrics
+    "**://*.usercentrics.com/**",
+    "**://*.privacy-mgmt.com/**",      # SourcePoint
+    "**://*.consensu.org/**",          # IAB CMP framework
+    "**://*.cookieinformation.com/**", # Cookie Information
+    "**://cdn.cookie-script.com/**",   # Cookie-Script
+]
+
+# JS injected after load to dismiss any banners that slipped through
+COOKIE_DISMISS_JS = """
+(function () {
+  // 1. Click known accept-button selectors
+  const selectors = [
+    '#onetrust-accept-btn-handler',
+    '#onetrust-pc-btn-handler',
+    '.cc-btn.cc-allow',
+    '.cc-accept',
+    '#cookiebanner-accept-btn',
+    '#cookiebot-accept-all',
+    '[data-testid*="cookie"][data-testid*="accept"]',
+    '[data-cy*="cookie"][data-cy*="accept"]',
+    'button[id*="accept-all"]',
+    'button[id*="acceptAll"]',
+    'button[class*="accept-all"]',
+    'button[class*="acceptAll"]',
+    'button[id*="cookie-accept"]',
+    'button[id*="cookieAccept"]',
+    '#accept-cookies',
+    '.cookie-accept',
+    '.js-cookie-accept',
+    '[aria-label="Accept all cookies"]',
+    '[aria-label="Accept All Cookies"]',
+    '#qc-cmp2-ui .qc-cmp2-summary-buttons button:last-child',
+  ];
+  for (const sel of selectors) {
+    try {
+      const el = document.querySelector(sel);
+      if (el && el.offsetParent !== null) { el.click(); return; }
+    } catch(e) {}
+  }
+
+  // 2. Text-match buttons as fallback
+  const labels = new Set([
+    'accept all', 'accept all cookies', 'accept cookies', 'accept & close',
+    'i accept', 'i agree', 'agree', 'agree to all', 'allow all', 'allow all cookies',
+    'got it', "ok, got it", 'ok', 'continue', 'dismiss',
+  ]);
+  for (const el of document.querySelectorAll('button, [role="button"], a.btn')) {
+    try {
+      if (el.offsetParent !== null && labels.has(el.textContent.trim().toLowerCase())) {
+        el.click(); return;
+      }
+    } catch(e) {}
+  }
+
+  // 3. Hide common banner wrapper elements that may not have a clickable button
+  const hideSelectors = [
+    '#onetrust-consent-sdk', '#onetrust-banner-sdk',
+    '#cookiebot', '#CybotCookiebotDialog',
+    '.cc-window', '.cc-banner',
+    '#cookie-law-info-bar', '.cookie-law-info-bar',
+    '#qc-cmp2-container',
+    '#sp-cc', '.sp-message-container',
+    '[id*="cookie-banner"]', '[class*="cookie-banner"]',
+    '[id*="cookieBanner"]',  '[class*="cookieBanner"]',
+    '[id*="cookie_banner"]', '[class*="cookie_banner"]',
+    '[id*="gdpr-banner"]',   '[class*="gdpr-banner"]',
+    '.cookieConsent', '#cookieConsent',
+    '.cookie-notice', '#cookie-notice',
+    '.cookie-popup', '#cookie-popup',
+  ];
+  for (const sel of hideSelectors) {
+    try {
+      document.querySelectorAll(sel).forEach(el => { el.style.setProperty('display', 'none', 'important'); });
+    } catch(e) {}
+  }
+})();
+"""
+
 
 def parse_args():
     ap = argparse.ArgumentParser()
@@ -129,13 +223,21 @@ def capture_one(playwright, entry, timeout_ms, full_page=False):
     try:
         ctx = browser.new_context(viewport=VIEWPORT, user_agent=USER_AGENT, ignore_https_errors=True)
         page = ctx.new_page()
+        # Block known consent management platforms before the page loads
+        for pattern in CMP_BLOCK_PATTERNS:
+            page.route(pattern, lambda route: route.abort())
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
             try:
                 page.wait_for_load_state("networkidle", timeout=4000)
             except PWTimeout:
                 pass
-            time.sleep(1.0)
+            # Dismiss any banners that made it through (home-rolled or slow-loading)
+            try:
+                page.evaluate(COOKIE_DISMISS_JS)
+            except Exception:
+                pass
+            time.sleep(0.8)
             png_bytes = page.screenshot(full_page=full_page, type="png")
         except PWTimeout as e:
             return False, {**info, "error": f"timeout: {e}"}
