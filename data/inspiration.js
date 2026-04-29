@@ -4000,56 +4000,6 @@ window.INSPIRATION_DATA = {
       "screenshotCapturedAt": "2026-04-28T21:30:59Z"
     },
     {
-      "id": "outerbase-outerbase-com",
-      "name": "Outerbase",
-      "url": "https://www.outerbase.com",
-      "domain": "outerbase.com",
-      "screenshot": null,
-      "companyType": [
-        "B2B",
-        "B2C"
-      ],
-      "companyIndustry": [
-        "AI"
-      ],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Dark Mode",
-        "Grids",
-        "Minimalist"
-      ],
-      "standoutElements": {
-        "Overall Styles": [
-          "Gradient Usage",
-          "Illustrations/Animations",
-          "Microinteractions/Interactive UI",
-          "Scroll Experience"
-        ],
-        "Atoms/Molecules/Organisms": [],
-        "Components": [
-          "Hero",
-          "Tabbed Switcher"
-        ],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Approachable",
-        "Modern",
-        "Natural",
-        "Playful",
-        "Subtle",
-        "Technical",
-        "Unconventional"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [
-        "Inter"
-      ],
-      "createdAt": "March 29, 2024 4:22 PM",
-      "source": "notion-seed"
-    },
-    {
       "id": "lucidao-lucidao-com",
       "name": "LUCIDAO",
       "url": "https://lucidao.com",
@@ -6069,49 +6019,6 @@ window.INSPIRATION_DATA = {
       "createdAt": "April 9, 2024 2:57 PM",
       "source": "notion-seed",
       "screenshotCapturedAt": "2026-04-28T21:32:02Z"
-    },
-    {
-      "id": "kohort-pay-en-kohortpay-com",
-      "name": "Kohort Pay",
-      "url": "https://en.kohortpay.com",
-      "domain": "en.kohortpay.com",
-      "screenshot": null,
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [
-        "FinTech"
-      ],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Grids"
-      ],
-      "standoutElements": {
-        "Overall Styles": [
-          "Color Usage"
-        ],
-        "Atoms/Molecules/Organisms": [
-          "Stats"
-        ],
-        "Components": [
-          "Accordions/FAQs",
-          "Tabbed Switcher"
-        ],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Bright",
-        "Playful",
-        "Youthful"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [
-        "Poppins",
-        "Yellowtail"
-      ],
-      "createdAt": "April 9, 2024 3:02 PM",
-      "source": "notion-seed"
     },
     {
       "id": "harness-vercel-harness-next-vercel-app",
@@ -11055,59 +10962,6 @@ window.INSPIRATION_DATA = {
       "screenshotCapturedAt": "2026-04-28T21:34:46Z"
     },
     {
-      "id": "hopscotch-gohopscotch-com",
-      "name": "Hopscotch",
-      "url": "https://gohopscotch.com",
-      "domain": "gohopscotch.com",
-      "screenshot": "assets/screenshots/hopscotch-gohopscotch-com.jpg",
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Grids"
-      ],
-      "standoutElements": {
-        "Overall Styles": [
-          "Color Usage",
-          "Illustrations/Animations",
-          "Microinteractions/Interactive UI"
-        ],
-        "Atoms/Molecules/Organisms": [
-          "Contact Form"
-        ],
-        "Components": [
-          "Conversion Panel",
-          "Accordions/FAQs",
-          "Hero",
-          "Primary Navigation",
-          "Testimonials Section"
-        ],
-        "Pages": [
-          "About Page",
-          "Careers Page",
-          "Pricing Page",
-          "Product/Solution Page"
-        ]
-      },
-      "wordAssociations": [
-        "Approachable",
-        "Bright",
-        "Dynamic",
-        "Friendly",
-        "Mainstream",
-        "Modern",
-        "Trendy",
-        "Youthful"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "May 8, 2024 5:52 PM",
-      "source": "notion-seed"
-    },
-    {
       "id": "angellist-angellist-com",
       "name": "AngelList",
       "url": "https://www.angellist.com",
@@ -12447,53 +12301,6 @@ window.INSPIRATION_DATA = {
       "screenshotCapturedAt": "2026-04-28T21:35:35Z"
     },
     {
-      "id": "decipad-decipad-com",
-      "name": "Decipad",
-      "url": "https://www.decipad.com",
-      "domain": "decipad.com",
-      "screenshot": "assets/screenshots/decipad-decipad-com.jpg",
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Grids"
-      ],
-      "standoutElements": {
-        "Overall Styles": [
-          "Illustrations/Animations"
-        ],
-        "Atoms/Molecules/Organisms": [
-          "Buttons",
-          "Eyebrows"
-        ],
-        "Components": [
-          "Hero",
-          "Tabbed Switcher"
-        ],
-        "Pages": [
-          "Pricing Page"
-        ]
-      },
-      "wordAssociations": [
-        "Approachable",
-        "Friendly",
-        "Industrial",
-        "Mainstream",
-        "Modern",
-        "Playful",
-        "Static",
-        "Subtle",
-        "Technical"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "June 16, 2024 8:32 PM",
-      "source": "notion-seed"
-    },
-    {
       "id": "cake-equity-cakeequity-com",
       "name": "Cake Equity",
       "url": "https://www.cakeequity.com",
@@ -13551,63 +13358,6 @@ window.INSPIRATION_DATA = {
       "createdAt": "July 1, 2024 12:38 PM",
       "source": "notion-seed",
       "screenshotCapturedAt": "2026-04-28T21:36:03Z"
-    },
-    {
-      "id": "dteckt-dteckt-com",
-      "name": "dteckt",
-      "url": "https://www.dteckt.com",
-      "domain": "dteckt.com",
-      "screenshot": null,
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Editorial",
-        "Grids"
-      ],
-      "standoutElements": {
-        "Overall Styles": [
-          "Color Usage",
-          "Illustrations/Animations",
-          "Microinteractions/Interactive UI",
-          "Scroll Experience"
-        ],
-        "Atoms/Molecules/Organisms": [
-          "Buttons",
-          "Eyebrows",
-          "Stats"
-        ],
-        "Components": [
-          "Conversion Panel",
-          "Accordions/FAQs",
-          "Footer",
-          "Hero",
-          "Primary Navigation",
-          "Switchback",
-          "Tabbed Switcher",
-          "Testimonials Section",
-          "Timed Switchers"
-        ],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Approachable",
-        "Authoritative",
-        "Bright",
-        "Dynamic",
-        "Industrial",
-        "Modern",
-        "Serious",
-        "Technical",
-        "Youthful"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "July 1, 2024 5:52 PM",
-      "source": "notion-seed"
     },
     {
       "id": "heva-health-hevahealth-com",
@@ -16662,40 +16412,6 @@ window.INSPIRATION_DATA = {
       "screenshotCapturedAt": "2026-04-28T21:38:05Z"
     },
     {
-      "id": "string-media-stringomedia-com",
-      "name": "STRING Media",
-      "url": "https://www.stringomedia.com/",
-      "domain": "stringomedia.com",
-      "screenshot": null,
-      "companyType": [],
-      "companyIndustry": [
-        "Agency",
-        "MarTech"
-      ],
-      "siteStructure": [],
-      "designAesthetic": [],
-      "standoutElements": {
-        "Overall Styles": [],
-        "Atoms/Molecules/Organisms": [],
-        "Components": [],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Elite",
-        "Established",
-        "Expensive",
-        "Industrial",
-        "Mainstream",
-        "Modern",
-        "Technical"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "February 1, 2025 5:13 PM",
-      "source": "notion-seed"
-    },
-    {
       "id": "modal-modal-com",
       "name": "Modal",
       "url": "modal.com",
@@ -17517,40 +17233,6 @@ window.INSPIRATION_DATA = {
       "createdAt": "April 4, 2025 4:21 PM",
       "source": "notion-seed",
       "screenshotCapturedAt": "2026-04-28T21:38:36Z"
-    },
-    {
-      "id": "backup-space-backup-space",
-      "name": "Backup.space",
-      "url": "https://backup.space",
-      "domain": "backup.space",
-      "screenshot": null,
-      "companyType": [],
-      "companyIndustry": [],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Editorial",
-        "Grids"
-      ],
-      "standoutElements": {
-        "Overall Styles": [],
-        "Atoms/Molecules/Organisms": [],
-        "Components": [],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Approachable",
-        "Bright",
-        "Economical",
-        "Friendly",
-        "Mainstream",
-        "Natural",
-        "Trendy"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "April 4, 2025 4:22 PM",
-      "source": "notion-seed"
     },
     {
       "id": "invertase-invertase-io",
@@ -20383,39 +20065,6 @@ window.INSPIRATION_DATA = {
       "screenshotCapturedAt": "2026-04-28T21:40:25Z"
     },
     {
-      "id": "delto-figma",
-      "name": "delto",
-      "url": "https://delto.io",
-      "domain": "delto.io",
-      "screenshot": "assets/screenshots/delto-figma.jpg",
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [
-        "FinTech"
-      ],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Minimalist"
-      ],
-      "standoutElements": {
-        "Overall Styles": [],
-        "Atoms/Molecules/Organisms": [],
-        "Components": [],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Modern",
-        "Technical"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "2026-04-27T16:45:16.868510Z",
-      "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
-    },
-    {
       "id": "profounders-figma",
       "name": "PROFounders",
       "url": "https://profounders.com",
@@ -21027,39 +20676,6 @@ window.INSPIRATION_DATA = {
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:40:50Z"
-    },
-    {
-      "id": "garden-intel-figma",
-      "name": "Garden Intel",
-      "url": "https://gardenintel.com",
-      "domain": "gardenintel.com",
-      "screenshot": "assets/screenshots/garden-intel-figma.jpg",
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [
-        "AI"
-      ],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Minimalist"
-      ],
-      "standoutElements": {
-        "Overall Styles": [],
-        "Atoms/Molecules/Organisms": [],
-        "Components": [],
-        "Pages": []
-      },
-      "wordAssociations": [
-        "Modern",
-        "Technical"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "2026-04-27T16:45:17.998489Z",
-      "source": "figma-export",
-      "scoredAt": "2026-04-27T17:27:16Z"
     },
     {
       "id": "smartersociety-figma",
