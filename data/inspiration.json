@@ -1,5 +1,11 @@
 {
   "schema": {
+    "companySize": [
+      "Startup",
+      "MidMarket",
+      "Enterprise",
+      "Agency"
+    ],
     "companyType": [
       "B2B",
       "B2C"

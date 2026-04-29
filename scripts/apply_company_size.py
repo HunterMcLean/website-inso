@@ -224,7 +224,11 @@ CLASSIFICATIONS = {
 
 
 def main():
-    data = json.loads(JSON_PATH.read_text())
+    data   = json.loads(JSON_PATH.read_text())
+    schema = json.loads((ROOT / "data" / "schema.json").read_text())
+
+    # Always sync the embedded schema from schema.json so new fields are live
+    data["schema"] = schema
 
     applied = 0
     for entry in data["entries"]:

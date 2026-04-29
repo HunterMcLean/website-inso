@@ -1,6 +1,12 @@
 // Auto-generated. Same data as inspiration.json, exposed as window.INSPIRATION_DATA.
 window.INSPIRATION_DATA = {
   "schema": {
+    "companySize": [
+      "Startup",
+      "MidMarket",
+      "Enterprise",
+      "Agency"
+    ],
     "companyType": [
       "B2B",
       "B2C"
