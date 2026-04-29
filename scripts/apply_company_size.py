@@ -13,8 +13,58 @@ ROOT = Path(__file__).resolve().parent.parent
 JSON_PATH = ROOT / "data" / "inspiration.json"
 JS_PATH   = ROOT / "data" / "inspiration.js"
 
-# Keys are entry IDs from inspiration.json; values are "Startup" | "MidMarket" | "Enterprise"
+# Keys are entry IDs from inspiration.json; values are "Startup" | "MidMarket" | "Enterprise" | "Agency"
 CLASSIFICATIONS = {
+    # ───── AGENCY ─────
+    "workmade-workmade-com":                                "Agency",
+    "webimpact-webimpact-llc":                              "Agency",
+    "smalltribe-studio-smalltribe-studio":                  "Agency",
+    "phunk-phunk-co-uk":                                    "Agency",
+    "creativecue-creativecue-co":                           "Agency",
+    "sketch-studios-sketchstudios-co-uk":                   "Agency",
+    "outpost-outpost-design":                               "Agency",
+    "hyperactive-design-studio-hyperactive-studio":         "Agency",
+    "shape-madebyshape-co-uk":                              "Agency",
+    "formastudio-for-ma-studio":                            "Agency",
+    "pixelmatters-10years-pixelmatters-com":                "Agency",
+    "dhn-dhnn-com":                                         "Agency",
+    "remote-remote-madebyburo-com":                         "Agency",
+    "milk-network-milknetwork-com":                         "Agency",
+    "synchrodogs-synchrodogs-com":                          "Agency",
+    "akaru-akaru-fr":                                       "Agency",
+    "vucko-vucko-co":                                       "Agency",
+    "hugo-hugoinc-com":                                     "Agency",
+    "lusion-lusion-co":                                     "Agency",
+    "jams-basic-dept-jams-basicagency-com":                 "Agency",
+    "design-education-series-by-obys-des-obys-agency":      "Agency",
+    "digital-mosaik-digitalmosaik-com":                     "Agency",
+    "drewl-drewl-com":                                      "Agency",
+    "frosty-pop-frostypop-com":                             "Agency",
+    "rayon-rayon-design":                                   "Agency",
+    "uplink-uplink-itsoffbrand-com":                        "Agency",
+    "dragongc-dragongc-com":                                "Agency",
+    "techspeed-techspeed-com":                              "Agency",
+    "webisoft-webisoft-com":                                "Agency",
+    "panascais-panascais-net":                              "Agency",
+    "otofilm-otofilm-pl":                                   "Agency",
+    "trionn-trionn-com":                                    "Agency",
+    "twice-media-house-twicemediahouse-com":                "Agency",
+    "wegrow-wegrow-design":                                 "Agency",
+    "koikreative-sanlitun-koikreative-com":                 "Agency",
+    "prism-prism-on-tokyo":                                 "Agency",
+    "heid-heid-webflow-io":                                 "Agency",
+    "invertase-invertase-io":                               "Agency",
+    "better-off-betteroff-studio":                          "Agency",
+    "ride-out-rideout-amsterdam":                           "Agency",
+    "bvectors-group-vectors-group-com":                     "Agency",
+    "rew-technology-rewtechnology-com":                     "Agency",
+    "edtch-edtch-com":                                      "Agency",
+    "happyops-happyops-com":                                "Agency",
+    "wa-solutions-wasolutions-com":                         "Agency",
+    "kota-kota-io":                                         "Agency",
+    "significo-significo-com":                              "Agency",
+    "human-voice-over-humanvoiceover-com":                  "Agency",
+    "rockmuse-rockmuse-co":                                 "Agency",
     # ───── ENTERPRISE ─────
     "stripe-figma":                                         "Enterprise",
     "shopify-shopify-com":                                  "Enterprise",
@@ -177,7 +227,6 @@ def main():
     data = json.loads(JSON_PATH.read_text())
 
     applied = 0
-    skipped_id = []
     for entry in data["entries"]:
         eid = entry["id"]
         if eid in CLASSIFICATIONS:
@@ -186,9 +235,7 @@ def main():
 
     # Validate: every id in CLASSIFICATIONS should exist in entries
     entry_ids = {e["id"] for e in data["entries"]}
-    for eid in CLASSIFICATIONS:
-        if eid not in entry_ids:
-            skipped_id.append(eid)
+    skipped_id = [eid for eid in CLASSIFICATIONS if eid not in entry_ids]
 
     # Write JSON
     JSON_PATH.write_text(json.dumps(data, indent=2))
@@ -198,9 +245,15 @@ def main():
     js += "window.INSPIRATION_DATA = " + json.dumps(data, indent=2) + ";\n"
     JS_PATH.write_text(js)
 
+    counts = {}
+    for v in CLASSIFICATIONS.values():
+        counts[v] = counts.get(v, 0) + 1
+
     print(f"Applied companySize to {applied} entries.")
+    for label, n in sorted(counts.items()):
+        print(f"  {label}: {n}")
     if skipped_id:
-        print(f"WARNING — {len(skipped_id)} IDs in map not found in JSON (may need update):")
+        print(f"\nWARNING — {len(skipped_id)} IDs in map not found in JSON:")
         for sid in skipped_id:
             print(f"  {sid}")
     else:

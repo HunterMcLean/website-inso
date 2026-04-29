@@ -2,7 +2,8 @@
   "companySize": [
     "Startup",
     "MidMarket",
-    "Enterprise"
+    "Enterprise",
+    "Agency"
   ],
   "companyType": [
     "B2B",

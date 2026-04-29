@@ -62,6 +62,7 @@
     "Startup":    '<path d="M7 10V6M5 8l2-2 2 2M3 12l2-5M11 12l-2-5M3 12h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>',
     "MidMarket":  '<path d="M2 12V6l2-2h6l2 2v6M5 12V8h4v4" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
     "Enterprise": '<path d="M1 12V5l3-3h6l3 3v7M4 12V8h6v4M6 5h2" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
+    "Agency":     '<path d="M3 12V5l4-3 4 3v7M6 12V9h2v3M5 5h4" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><circle cx="7" cy="3.5" r="1" fill="currentColor"/>',
   };
 
   // ------- Boot -------
