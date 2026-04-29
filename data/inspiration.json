@@ -14186,7 +14186,7 @@
     },
     {
       "id": "lowe-s-innovation-lab-lowesinnovationlabs-com",
-      "name": "Lowe\u2019s Innovation Lab",
+      "name": "Lowe’s Innovation Lab",
       "url": "https://www.lowesinnovationlabs.com/",
       "domain": "lowesinnovationlabs.com",
       "screenshot": "assets/screenshots/lowe-s-innovation-lab-lowesinnovationlabs-com.jpg",
@@ -17501,7 +17501,7 @@
     },
     {
       "id": "shopify-editions-summer-25-shopify-com",
-      "name": "Shopify Editions [Summer \u201825]",
+      "name": "Shopify Editions [Summer ‘25]",
       "url": "https://www.shopify.com/editions/summer2025",
       "domain": "shopify.com",
       "screenshot": "assets/screenshots/shopify-editions-summer-25-shopify-com.jpg",
@@ -22013,6 +22013,554 @@
       "source": "claude-add",
       "createdAt": "April 27, 2026 10:27 PM",
       "screenshotCapturedAt": "2026-04-28T21:41:38Z"
+    },
+    {
+      "name": "Era",
+      "url": "https://era.app",
+      "domain": "era.app",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "FinTech",
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Technical",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": true,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "era-era-app",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/era-era-app.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:17Z"
+    },
+    {
+      "name": "David AI",
+      "url": "https://www.withdavid.ai",
+      "domain": "withdavid.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Premium",
+        "Subtle"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "david-ai-withdavid-ai",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/david-ai-withdavid-ai.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:20Z"
+    },
+    {
+      "name": "Hume AI",
+      "url": "https://www.hume.ai",
+      "domain": "hume.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Technical",
+        "Authoritative",
+        "Modern",
+        "Serious",
+        "Premium"
+      ],
+      "industryLeader": true,
+      "unconventional": true,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "hume-ai-hume-ai",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/hume-ai-hume-ai.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:24Z"
+    },
+    {
+      "name": "Peec AI",
+      "url": "https://peec.ai",
+      "domain": "peec.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "MarTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Dynamic",
+        "Youthful"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "peec-ai-peec-ai",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/peec-ai-peec-ai.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:28Z"
+    },
+    {
+      "name": "Solidroad",
+      "url": "https://www.solidroad.com",
+      "domain": "solidroad.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Sales Tech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Modern",
+        "Technical",
+        "Serious",
+        "Approachable",
+        "Premium"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "solidroad-solidroad-com",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/solidroad-solidroad-com.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:32Z"
+    },
+    {
+      "name": "Radial",
+      "url": "https://www.meetradial.com",
+      "domain": "meetradial.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Healthcare"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Approachable",
+        "Modern",
+        "Serious",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "radial-meetradial-com",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/radial-meetradial-com.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:35Z"
+    },
+    {
+      "name": "Quin",
+      "url": "https://www.heyquin.io",
+      "domain": "heyquin.io",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Friendly",
+        "Approachable",
+        "Modern",
+        "Dynamic",
+        "Youthful"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "quin-heyquin-io",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/quin-heyquin-io.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:41Z"
+    },
+    {
+      "name": "Multi",
+      "url": "https://multi.app",
+      "domain": "multi.app",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Youthful",
+        "Friendly",
+        "Modern",
+        "Approachable",
+        "Unconventional"
+      ],
+      "industryLeader": false,
+      "unconventional": true,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "multi-multi-app",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/multi-multi-app.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:46Z"
+    },
+    {
+      "name": "Wist",
+      "url": "https://www.wist.chat",
+      "domain": "wist.chat",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Youthful",
+        "Friendly",
+        "Punchy/Bold",
+        "Modern",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "wist-wist-chat",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/wist-wist-chat.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:51Z"
+    },
+    {
+      "name": "Telkom-OT",
+      "url": "https://telkom-ot.si/en/home",
+      "domain": "telkom-ot.si",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Manufacturing"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Established",
+        "Authoritative",
+        "Serious",
+        "Technical",
+        "Traditional",
+        "Industrial"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "telkom-ot-telkom-ot-si",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/telkom-ot-telkom-ot-si.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:24:56Z"
+    },
+    {
+      "name": "Giga AI",
+      "url": "https://giga.ai",
+      "domain": "giga.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Modern",
+        "Premium",
+        "Dynamic",
+        "Serious"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "giga-ai-giga-ai",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/giga-ai-giga-ai.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:25:00Z"
+    },
+    {
+      "name": "Heynds",
+      "url": "https://www.heynds.com/en",
+      "domain": "heynds.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Youthful",
+        "Friendly",
+        "Modern",
+        "Dynamic",
+        "Approachable",
+        "Punchy/Bold"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "heynds-heynds-com",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/heynds-heynds-com.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:25:04Z"
+    },
+    {
+      "name": "Apollo",
+      "url": "https://www.apollo.io",
+      "domain": "apollo.io",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Sales Tech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Modern",
+        "Dynamic",
+        "Technical",
+        "Punchy/Bold",
+        "Established"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "apollo-apollo-io",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/apollo-apollo-io.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:25:10Z"
+    },
+    {
+      "name": "Wrangle",
+      "url": "https://wrangle.ai",
+      "domain": "wrangle.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Dynamic",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "wrangle-wrangle-ai",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/wrangle-wrangle-ai.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:25:13Z"
+    },
+    {
+      "name": "Otter.ai",
+      "url": "https://otter.ai",
+      "domain": "otter.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Friendly",
+        "Approachable",
+        "Modern",
+        "Mainstream",
+        "Dynamic",
+        "Authoritative"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "siteStructure": [],
+      "id": "otter-ai-otter-ai",
+      "createdAt": "April 29, 2026 01:24 AM",
+      "screenshot": "assets/screenshots/otter-ai-otter-ai.jpg",
+      "screenshotCapturedAt": "2026-04-29T01:25:19Z"
     }
   ]
 }
