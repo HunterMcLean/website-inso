@@ -5,6 +5,7 @@
   const state = {
     entries: [], schema: null,
     filters: {
+      companySize: new Set(),
       companyType: new Set(),
       companyIndustry: new Set(),
       designAesthetic: new Set(),
@@ -56,6 +57,11 @@
   const FLAG_ICONS = {
     "industryLeader": '<path d="M7 1l1.7 3.5 3.8.6-2.8 2.7.7 3.8L7 9.8l-3.4 1.8.7-3.8L1.5 5.1l3.8-.6L7 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
     "unconventional": '<path d="M7 1l-3 7h3v5l3-7H7V1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
+  };
+  const SIZE_ICONS = {
+    "Startup":    '<path d="M7 10V6M5 8l2-2 2 2M3 12l2-5M11 12l-2-5M3 12h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>',
+    "MidMarket":  '<path d="M2 12V6l2-2h6l2 2v6M5 12V8h4v4" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
+    "Enterprise": '<path d="M1 12V5l3-3h6l3 3v7M4 12V8h6v4M6 5h2" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
   };
 
   // ------- Boot -------
@@ -302,6 +308,11 @@
       industryEl.appendChild(makeSideOption("companyIndustry", v, v, countTag("companyIndustry", v), INDUSTRY_ICONS[v] || defaultIcon()));
     });
 
+    const sizeEl = document.getElementById("filter-company-size");
+    state.schema.companySize.forEach(v => {
+      sizeEl.appendChild(makeSideOption("companySize", v, v, countTag("companySize", v), SIZE_ICONS[v] || defaultIcon()));
+    });
+
     const flagsEl = document.getElementById("filter-flags");
     flagsEl.appendChild(makeSideOption("flags", "industryLeader", "Industry Leader", state.entries.filter(e => e.industryLeader).length, FLAG_ICONS.industryLeader));
     flagsEl.appendChild(makeSideOption("flags", "unconventional", "Unconventional", state.entries.filter(e => e.unconventional).length, FLAG_ICONS.unconventional));
@@ -403,6 +414,7 @@
       return false;
     }
     if (state.showFavorites && !state.favorites.has(e.id)) return false;
+    if (!hasAny("companySize", x => x.companySize || [])) return false;
     if (!hasAny("companyType", x => x.companyType || [])) return false;
     if (!hasAny("companyIndustry", x => x.companyIndustry || [])) return false;
     if (!hasAny("designAesthetic", x => x.designAesthetic || [])) return false;
@@ -1051,7 +1063,8 @@
         ? `<div class="detail-section"><h4>Flags</h4><div class="detail-tags">${e.industryLeader?'<span class="detail-tag flag">★ Industry Leader</span>':''}${e.unconventional?'<span class="detail-tag flag">⚡ Unconventional</span>':''}</div></div>`
         : "";
       sections =
-        sec("Company Type", e.companyType)
+        sec("Company Size", e.companySize)
+        + sec("Company Type", e.companyType)
         + sec("Industry", e.companyIndustry)
         + sec("Site Structure", e.siteStructure)
         + sec("Design Aesthetic", e.designAesthetic)
@@ -1082,7 +1095,14 @@
       }).join("");
       // Free-text typefaces editor (comma list)
       const typefacesVal = (e.typefaces || []).join(", ");
+      const sizes = state.schema.companySize.map(v => {
+        const on = (e.companySize || []).includes(v);
+        return `<button type="button" class="single-pick-btn size-pick-btn" data-val="${escapeHtml(v)}" aria-pressed="${on}">${escapeHtml(v)}</button>`;
+      }).join("");
       sections = `
+        <div class="detail-section editing"><h4>Company Size</h4>
+          <div class="single-pick">${sizes}</div>
+        </div>
         <div class="detail-section editing"><h4>Company Type</h4>
           <div class="single-pick">${types}</div>
         </div>
@@ -1149,14 +1169,26 @@
     if (faved) wireCustomTagSection(body, e.id);
 
     if (editing) {
+      // Size single-pick
+      body.querySelectorAll(".size-pick-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const v = btn.dataset.val;
+          const cur = e.companySize || [];
+          e.companySize = cur.includes(v) ? cur.filter(x => x !== v) : [v];
+          markDirty(e.id);
+          body.querySelectorAll(".size-pick-btn").forEach(b => {
+            b.setAttribute("aria-pressed", (e.companySize || []).includes(b.dataset.val) ? "true" : "false");
+          });
+        });
+      });
       // Type single-pick — partial update, no full re-render
-      body.querySelectorAll(".single-pick-btn").forEach(btn => {
+      body.querySelectorAll(".single-pick-btn:not(.size-pick-btn)").forEach(btn => {
         btn.addEventListener("click", () => {
           const v = btn.dataset.val;
           const cur = e.companyType || [];
           e.companyType = cur.includes(v) ? cur.filter(x => x !== v) : [v];
           markDirty(e.id);
-          body.querySelectorAll(".single-pick-btn").forEach(b => {
+          body.querySelectorAll(".single-pick-btn:not(.size-pick-btn)").forEach(b => {
             b.setAttribute("aria-pressed", (e.companyType || []).includes(b.dataset.val) ? "true" : "false");
           });
         });

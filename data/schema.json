@@ -1,4 +1,9 @@
 {
+  "companySize": [
+    "Startup",
+    "MidMarket",
+    "Enterprise"
+  ],
   "companyType": [
     "B2B",
     "B2C"
