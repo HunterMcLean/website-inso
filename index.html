@@ -42,6 +42,18 @@
         </a>
       </nav>
 
+      <div class="side-section side-section-albums">
+        <div class="side-section-title">Albums</div>
+        <nav id="album-list"></nav>
+        <div id="new-album-form" class="new-album-form" hidden>
+          <input id="new-album-input" type="text" class="new-album-input" placeholder="Album name…" maxlength="60" autocomplete="off"/>
+        </div>
+        <button id="add-album-btn" type="button" class="side-add-btn">
+          <span class="ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v10M2 7h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          Add new album
+        </button>
+      </div>
+
       <div class="side-section">
         <div class="side-section-title">Type</div>
         <div id="filter-type" class="side-options"></div>
@@ -80,13 +92,21 @@
     <main class="main">
       <section class="hero">
         <div class="hero-text">
-          <div class="eyebrow">WEBSITE INSPO LIBRARY</div>
+          <div class="eyebrow" id="hero-eyebrow">WEBSITE INSPO LIBRARY</div>
           <h1 id="hero-headline">Webstacks' very own website inspiration library.</h1>
           <p id="hero-sub">Find web inspo for whatever you're working on. Filter by overall style, individual design system elements, or even word association terms.</p>
           <p id="hero-caution" class="hero-caution" hidden>All favorites and custom tags are saved on your local machine. They will remain after closing the window or refreshing the page. <strong>FAVORITES WILL BE CLEARED IF YOU CLEAR YOUR CACHE.</strong></p>
+          <div id="shared-album-banner" class="shared-album-banner" hidden>
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M9 1H5L1 5v4l4 4h4l4-4V5L9 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M7 4v4M7 9.5v.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            Shared album — view only
+          </div>
           <div class="hero-meta">
             <span id="count">—</span>
             <input id="search" type="search" placeholder="Search by name, domain, or typeface…" autocomplete="off" />
+            <button id="share-album-btn" type="button" class="share-album-btn" hidden>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><circle cx="11" cy="2.5" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="11" cy="11.5" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="3" cy="7" r="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4.4 6.2l5.2-3M4.4 7.8l5.2 3" stroke="currentColor" stroke-width="1.2"/></svg>
+              Share Album
+            </button>
           </div>
         </div>
         <div class="hero-collage" aria-hidden="true">

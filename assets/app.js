@@ -24,6 +24,9 @@
     showFavorites: false,     // when true, grid shows only favorites
     customTags: {},           // { tagName: siteId[] } — persisted to localStorage
     activeCustomTags: new Set(), // tag names currently active as filters
+    albums: [],               // [{id, name, siteIds:[], createdAt}] — persisted to localStorage
+    activeAlbum: null,        // album id currently being viewed
+    sharedAlbum: null,        // {name, ids} decoded from ?album= URL param (read-only)
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -69,9 +72,11 @@
   function boot(data) {
     state.entries = data.entries;
     state.schema = data.schema;
+    checkSharedAlbumUrl();
     initEditToken();
     loadFavorites();
     loadCustomTags();
+    loadAlbums();
     buildSidebar();
     buildFilterBar();
     attachEvents();
@@ -119,20 +124,57 @@
   }
   function setShowFavorites(val) {
     state.showFavorites = val;
+    state.activeAlbum = null;
     state.page = 1;
     if (!val) state.activeCustomTags.clear();
     document.getElementById("nav-home").classList.toggle("active", !val);
     document.getElementById("nav-favorites").classList.toggle("active", val);
-    // Swap hero copy
-    document.getElementById("hero-headline").textContent = val
-      ? "Your favorited websites."
-      : "Webstacks' very own website inspiration library.";
-    document.getElementById("hero-sub").textContent = val
-      ? "All of your saved sites, in one place. Add custom tags and sort by your own filters."
-      : "Find web inspo for whatever you're working on. Filter by overall style, individual design system elements, or even word association terms.";
-    document.getElementById("hero-caution").hidden = !val;
+    renderAlbumsNav();
+    updateHeroCopy();
     updateCustomTagsDropdown();
     render();
+  }
+
+  function setActiveAlbum(albumId) {
+    state.activeAlbum = albumId;
+    state.showFavorites = false;
+    state.activeCustomTags.clear();
+    state.page = 1;
+    document.getElementById("nav-home").classList.toggle("active", !albumId);
+    document.getElementById("nav-favorites").classList.remove("active");
+    renderAlbumsNav();
+    updateHeroCopy();
+    updateCustomTagsDropdown();
+    render();
+  }
+
+  function updateHeroCopy() {
+    const h1      = document.getElementById("hero-headline");
+    const sub     = document.getElementById("hero-sub");
+    const caution = document.getElementById("hero-caution");
+    const shareBtn = document.getElementById("share-album-btn");
+    const banner  = document.getElementById("shared-album-banner");
+    if (state.sharedAlbum) {
+      h1.textContent  = state.sharedAlbum.name;
+      sub.textContent = `Shared album · ${state.sharedAlbum.ids.length} site${state.sharedAlbum.ids.length !== 1 ? "s" : ""}`;
+      caution.hidden = true; shareBtn.hidden = true; banner.hidden = false;
+    } else if (state.activeAlbum) {
+      const album = state.albums.find(a => a.id === state.activeAlbum);
+      const n = album ? album.siteIds.length : 0;
+      h1.textContent  = album ? album.name : "Album";
+      sub.textContent = `${n} site${n !== 1 ? "s" : ""} in this collection.`;
+      caution.hidden = true; banner.hidden = true;
+      shareBtn.hidden = false;
+      shareBtn.dataset.albumId = state.activeAlbum;
+    } else if (state.showFavorites) {
+      h1.textContent  = "Your favorited websites.";
+      sub.textContent = "All of your saved sites, in one place. Add custom tags and sort by your own filters.";
+      caution.hidden = false; shareBtn.hidden = true; banner.hidden = true;
+    } else {
+      h1.textContent  = "Webstacks’ very own website inspiration library.";
+      sub.textContent = "Find web inspo for whatever you’re working on. Filter by overall style, individual design system elements, or even word association terms.";
+      caution.hidden = true; shareBtn.hidden = true; banner.hidden = true;
+    }
   }
 
   // ------- Custom Tags -------
@@ -305,6 +347,134 @@
       });
   }
 
+  // ------- Albums -------
+  function loadAlbums() {
+    try {
+      const raw = localStorage.getItem("inspoAlbums");
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) state.albums = parsed;
+      }
+    } catch(e) {}
+    renderAlbumsNav();
+  }
+  function saveAlbums() {
+    try { localStorage.setItem("inspoAlbums", JSON.stringify(state.albums)); } catch(e) {}
+  }
+  function genAlbumId() { return "alb_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5); }
+
+  function createAlbum(name) {
+    name = name.trim();
+    if (!name) return null;
+    const album = { id: genAlbumId(), name, siteIds: [], createdAt: new Date().toISOString() };
+    state.albums.push(album);
+    saveAlbums();
+    renderAlbumsNav();
+    return album;
+  }
+  function deleteAlbum(id) {
+    state.albums = state.albums.filter(a => a.id !== id);
+    if (state.activeAlbum === id) { state.activeAlbum = null; updateHeroCopy(); }
+    saveAlbums();
+    renderAlbumsNav();
+    render();
+  }
+  function addSiteToAlbum(albumId, siteId) {
+    const album = state.albums.find(a => a.id === albumId);
+    if (!album || album.siteIds.includes(siteId)) return;
+    album.siteIds.push(siteId);
+    saveAlbums();
+    renderAlbumsNav();
+  }
+  function removeSiteFromAlbum(albumId, siteId) {
+    const album = state.albums.find(a => a.id === albumId);
+    if (!album) return;
+    album.siteIds = album.siteIds.filter(id => id !== siteId);
+    saveAlbums();
+    renderAlbumsNav();
+  }
+
+  function renderAlbumsNav() {
+    const list = document.getElementById("album-list");
+    if (!list) return;
+    list.innerHTML = "";
+    state.albums.forEach(album => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "side-link album-nav-item" + (state.activeAlbum === album.id ? " active" : "");
+      btn.innerHTML = `
+        <span class="ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 4.5C1 3.67 1.67 3 2.5 3h3l1.5 1.5H11.5c.83 0 1.5.67 1.5 1.5V10.5c0 .83-.67 1.5-1.5 1.5h-9C1.67 12 1 11.33 1 10.5V4.5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
+        <span class="lbl">${escapeHtml(album.name)}</span>
+        <span class="count">${album.siteIds.length}</span>
+        <button type="button" class="album-delete-btn" data-album-id="${escapeHtml(album.id)}" aria-label="Delete album" title="Delete album">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 2l6 6M8 2L2 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+      `;
+      btn.addEventListener("click", e => {
+        if (e.target.closest(".album-delete-btn")) {
+          e.stopPropagation();
+          if (confirm(`Delete album "${album.name}"?`)) deleteAlbum(album.id);
+          return;
+        }
+        setActiveAlbum(album.id);
+      });
+      list.appendChild(btn);
+    });
+  }
+
+  function generateShareUrl(album) {
+    const payload = JSON.stringify({ n: album.name, i: album.siteIds });
+    const b64 = btoa(unescape(encodeURIComponent(payload)));
+    return location.origin + location.pathname + "?album=" + encodeURIComponent(b64);
+  }
+
+  function checkSharedAlbumUrl() {
+    try {
+      const raw = new URLSearchParams(location.search).get("album");
+      if (!raw) return;
+      const payload = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(raw)))));
+      if (payload.n && Array.isArray(payload.i)) {
+        state.sharedAlbum = { name: payload.n, ids: payload.i };
+      }
+    } catch(e) {}
+  }
+
+  function renderAlbumAddSectionHtml(siteId) {
+    if (!state.albums.length) return "";
+    const rows = state.albums.map(album => {
+      const checked = album.siteIds.includes(siteId) ? " checked" : "";
+      return `<label class="album-check-item">
+        <input type="checkbox" class="album-check-input" data-album-id="${escapeHtml(album.id)}"${checked}/>
+        <span class="album-check-name">${escapeHtml(album.name)}</span>
+        <span class="album-check-count" data-album-id="${escapeHtml(album.id)}">${album.siteIds.length}</span>
+      </label>`;
+    }).join("");
+    return `<div class="album-add-section">
+      <div class="album-add-title">
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 4.5C1 3.67 1.67 3 2.5 3h3l1.5 1.5H11.5c.83 0 1.5.67 1.5 1.5V10.5c0 .83-.67 1.5-1.5 1.5h-9C1.67 12 1 11.33 1 10.5V4.5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        Add to Album
+      </div>
+      <div class="album-check-list">${rows}</div>
+    </div>`;
+  }
+
+  function wireAlbumAddSection(scope, siteId) {
+    scope.querySelectorAll(".album-check-input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        const albumId = cb.dataset.albumId;
+        if (cb.checked) addSiteToAlbum(albumId, siteId);
+        else removeSiteFromAlbum(albumId, siteId);
+        // Update count badge next to album name
+        const album = state.albums.find(a => a.id === albumId);
+        scope.querySelectorAll(`.album-check-count[data-album-id="${cssEscape(albumId)}"]`).forEach(el => {
+          if (album) el.textContent = album.siteIds.length;
+        });
+        // Also update hero sub if we're viewing this album
+        if (state.activeAlbum === albumId) updateHeroCopy();
+      });
+    });
+  }
+
   // ------- Sidebar (Type / Industry / Flags) -------
   function buildSidebar() {
     const typeEl = document.getElementById("filter-type");
@@ -415,6 +585,9 @@
   }
 
   function entryMatches(e) {
+    // Shared album view: only show those entries, skip all other filters
+    if (state.sharedAlbum) return state.sharedAlbum.ids.includes(e.id);
+
     const f = state.filters;
     function hasAny(cat, getter) {
       if (f[cat].size === 0) return true;
@@ -423,6 +596,10 @@
       return false;
     }
     if (state.showFavorites && !state.favorites.has(e.id)) return false;
+    if (state.activeAlbum) {
+      const album = state.albums.find(a => a.id === state.activeAlbum);
+      if (!album || !album.siteIds.includes(e.id)) return false;
+    }
     if (!hasAny("companySize", x => x.companySize || [])) return false;
     if (!hasAny("companyType", x => x.companyType || [])) return false;
     if (!hasAny("companyIndustry", x => x.companyIndustry || [])) return false;
@@ -1152,6 +1329,7 @@
         </div>
       </div>
       ${faved ? renderCustomTagSectionHtml(e.id) : ""}
+      ${state.sharedAlbum ? "" : renderAlbumAddSectionHtml(e.id)}
       ${sections}
     `;
 
@@ -1176,6 +1354,8 @@
 
     // Wire custom tag section (only present when favorited)
     if (faved) wireCustomTagSection(body, e.id);
+    // Wire album checkboxes (always present unless shared album view)
+    if (!state.sharedAlbum) wireAlbumAddSection(body, e.id);
 
     if (editing) {
       // Size single-pick
@@ -1263,6 +1443,44 @@
     document.getElementById("reset-filters").addEventListener("click", resetFilters);
     document.getElementById("nav-home").addEventListener("click", e => { e.preventDefault(); setShowFavorites(false); });
     document.getElementById("nav-favorites").addEventListener("click", e => { e.preventDefault(); setShowFavorites(true); });
+
+    // Add-album button
+    const addAlbumBtn = document.getElementById("add-album-btn");
+    const newAlbumForm = document.getElementById("new-album-form");
+    const newAlbumInput = document.getElementById("new-album-input");
+    addAlbumBtn.addEventListener("click", () => {
+      newAlbumForm.hidden = false;
+      newAlbumInput.value = "";
+      newAlbumInput.focus();
+    });
+    newAlbumInput.addEventListener("keydown", ev => {
+      if (ev.key === "Enter") {
+        const album = createAlbum(newAlbumInput.value);
+        newAlbumForm.hidden = true;
+        if (album) setActiveAlbum(album.id);
+      } else if (ev.key === "Escape") {
+        newAlbumForm.hidden = true;
+      }
+    });
+    newAlbumInput.addEventListener("blur", () => {
+      // small delay so Enter can fire first
+      setTimeout(() => { newAlbumForm.hidden = true; }, 150);
+    });
+
+    // Share-album button
+    const shareAlbumBtn = document.getElementById("share-album-btn");
+    shareAlbumBtn.addEventListener("click", () => {
+      const album = state.albums.find(a => a.id === state.activeAlbum);
+      if (!album) return;
+      const url = generateShareUrl(album);
+      navigator.clipboard.writeText(url).then(() => {
+        const orig = shareAlbumBtn.innerHTML;
+        shareAlbumBtn.textContent = "✓ Link copied!";
+        setTimeout(() => { shareAlbumBtn.innerHTML = orig; }, 2500);
+      }).catch(() => {
+        prompt("Copy this link:", url);
+      });
+    });
     document.querySelectorAll("dialog .dialog-close").forEach(b => b.addEventListener("click", () => b.closest("dialog").close()));
     document.getElementById("detail").addEventListener("click", e => { if (e.target.tagName === "DIALOG") e.target.close(); });
     document.getElementById("detail").addEventListener("close", () => {
@@ -1359,9 +1577,12 @@
   function resetFilters() {
     Object.values(state.filters).forEach(s => s.clear());
     state.activeCustomTags.clear();
+    state.activeAlbum = null;
     state.search = ""; state.page = 1;
     document.getElementById("search").value = "";
     document.querySelectorAll('[aria-pressed="true"]').forEach(c => c.setAttribute("aria-pressed","false"));
+    renderAlbumsNav();
+    updateHeroCopy();
     updateCustomTagsDropdown();
     render();
   }
