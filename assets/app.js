@@ -123,6 +123,14 @@
     if (!val) state.activeCustomTags.clear();
     document.getElementById("nav-home").classList.toggle("active", !val);
     document.getElementById("nav-favorites").classList.toggle("active", val);
+    // Swap hero copy
+    document.getElementById("hero-headline").textContent = val
+      ? "Your favorited websites."
+      : "Webstacks' very own website inspiration library.";
+    document.getElementById("hero-sub").textContent = val
+      ? "All of your saved sites, in one place. Add custom tags and sort by your own filters."
+      : "Find web inspo for whatever you're working on. Filter by overall style, individual design system elements, or even word association terms.";
+    document.getElementById("hero-caution").hidden = !val;
     updateCustomTagsDropdown();
     render();
   }

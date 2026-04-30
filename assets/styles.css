@@ -152,6 +152,18 @@ button { font-family: inherit; }
   font-size: 14px;
   margin: 0 0 18px;
 }
+.hero-caution {
+  font-size: 11px !important;
+  color: var(--text-3) !important;
+  background: rgba(255,200,50,0.07);
+  border: 1px solid rgba(255,200,50,0.18);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: -6px 0 18px !important;
+  max-width: 46ch !important;
+  line-height: 1.5;
+}
+.hero-caution strong { color: rgba(255,200,50,0.8); font-weight: 600; }
 .hero-meta {
   display: flex; align-items: center; gap: 16px;
   flex-wrap: wrap;
