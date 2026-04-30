@@ -82,6 +82,7 @@
     attachEvents();
     paintCollage();
     applyEditAuthUI();
+    updateHeroCopy();   // applies shared-album-mode class before first render
     render();
   }
 
