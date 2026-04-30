@@ -154,6 +154,8 @@
     const caution = document.getElementById("hero-caution");
     const shareBtn = document.getElementById("share-album-btn");
     const banner  = document.getElementById("shared-album-banner");
+    // Hide sidebar + filter bar when viewing a shared album URL
+    document.body.classList.toggle("shared-album-mode", !!state.sharedAlbum);
     if (state.sharedAlbum) {
       h1.textContent  = state.sharedAlbum.name;
       sub.textContent = `Shared album · ${state.sharedAlbum.ids.length} site${state.sharedAlbum.ids.length !== 1 ? "s" : ""}`;

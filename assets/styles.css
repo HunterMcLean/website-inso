@@ -71,6 +71,11 @@ button { font-family: inherit; }
 /* ----- Layout ----- */
 .layout { display: grid; grid-template-columns: var(--sidebar-w) 1fr; min-height: calc(100vh - var(--topbar-h)); }
 
+/* Shared album view — collapse sidebar and filter bar, go full-width */
+body.shared-album-mode .layout { grid-template-columns: 1fr; }
+body.shared-album-mode .sidebar { display: none; }
+body.shared-album-mode .filter-bar { display: none; }
+
 /* ----- Sidebar ----- */
 .sidebar {
   border-right: 1px solid var(--border);
