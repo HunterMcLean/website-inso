@@ -160,6 +160,7 @@ button { font-family: inherit; }
   border-radius: 6px;
   padding: 10px 12px;
   margin: -6px 0 18px !important;
+  width: calc(200% + 32px);
   line-height: 1.5;
 }
 .hero-caution strong { color: rgba(255,200,50,0.8); font-weight: 600; }
