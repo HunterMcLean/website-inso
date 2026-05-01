@@ -1250,6 +1250,11 @@
       ? `<div class="detail-domain"><a href="${visitHref}" target="_blank" rel="noopener">${escapeHtml(e.domain || e.url)} ↗</a></div>`
       : (e.domain ? `<div class="detail-domain">${escapeHtml(e.domain)}</div>` : "");
 
+    const updatedTs = e.screenshotUpdatedAt || e.screenshotCapturedAt;
+    const updatedLine = updatedTs
+      ? `<div class="detail-updated">Screenshot updated ${formatMonthYear(updatedTs)}</div>`
+      : "";
+
     let sections;
     if (!editing) {
       const standout = Object.entries(e.standoutElements||{}).map(([sub, vs]) =>
@@ -1330,6 +1335,7 @@
         <div>
           <div class="detail-name">${escapeHtml(e.name)}</div>
           ${domainLine}
+          ${updatedLine}
         </div>
         <div class="detail-actions">
           ${favBtn}
@@ -1600,5 +1606,6 @@
   // ------- Helpers -------
   function escapeHtml(s){ return String(s ?? "").replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m])); }
   function cssEscape(s){ return String(s).replace(/(["\\])/g, "\\$1"); }
+  function formatMonthYear(iso){ try { return new Date(iso).toLocaleDateString("en-US",{month:"long",year:"numeric"}); } catch(e){ return ""; } }
   window.WebInspo = { resetFilters };
 })();

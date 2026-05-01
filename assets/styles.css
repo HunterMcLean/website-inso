@@ -576,6 +576,7 @@ dialog#detail::backdrop { background: rgba(0,0,0,0.7); backdrop-filter: blur(2px
 .detail-domain { font-family: var(--ff-mono); font-size: 13px; color: var(--text-2); }
 .detail-domain a { color: inherit; }
 .detail-domain a:hover { color: var(--text); text-decoration: underline; }
+.detail-updated { font-size: 11px; color: var(--text-4); margin-top: 4px; }
 .detail-actions {
   display: flex; gap: 8px; flex-shrink: 0;
 }
