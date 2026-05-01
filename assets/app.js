@@ -27,6 +27,7 @@
     albums: [],               // [{id, name, siteIds:[], createdAt}] — persisted to localStorage
     activeAlbum: null,        // album id currently being viewed
     sharedAlbum: null,        // {name, ids} decoded from ?album= URL param (read-only)
+    gridCols: 3,              // 3 or 2 — persisted to localStorage
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -77,6 +78,7 @@
     loadFavorites();
     loadCustomTags();
     loadAlbums();
+    loadGridCols();
     buildSidebar();
     buildFilterBar();
     attachEvents();
@@ -348,6 +350,21 @@
       .catch(err => {
         document.querySelector(".main").innerHTML = `<p style="padding:40px;color:#f08080">Could not load data/inspiration.json: ${err.message}</p>`;
       });
+  }
+
+  // ------- Grid density -------
+  function loadGridCols() {
+    try {
+      const v = localStorage.getItem("inspoGridCols");
+      if (v === "2" || v === "3") state.gridCols = parseInt(v, 10);
+    } catch(e) {}
+    applyGridCols();
+  }
+  function applyGridCols() {
+    document.getElementById("grid").classList.toggle("grid-cols-2", state.gridCols === 2);
+    document.querySelectorAll(".grid-density-btn").forEach(b => {
+      b.classList.toggle("active", parseInt(b.dataset.cols, 10) === state.gridCols);
+    });
   }
 
   // ------- Albums -------
@@ -1457,6 +1474,13 @@
     document.getElementById("search").addEventListener("input", e => { state.search = e.target.value.trim(); state.page = 1; render(); });
     document.getElementById("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
     document.getElementById("reset-filters").addEventListener("click", resetFilters);
+    document.querySelectorAll(".grid-density-btn").forEach(b => {
+      b.addEventListener("click", () => {
+        state.gridCols = parseInt(b.dataset.cols, 10);
+        try { localStorage.setItem("inspoGridCols", state.gridCols); } catch(e) {}
+        applyGridCols();
+      });
+    });
     document.getElementById("nav-home").addEventListener("click", e => { e.preventDefault(); setShowFavorites(false); });
     document.getElementById("nav-favorites").addEventListener("click", e => { e.preventDefault(); setShowFavorites(true); });
 

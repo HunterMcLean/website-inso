@@ -395,7 +395,8 @@ body.shared-album-mode .filter-bar { display: none; }
   display: grid; gap: 16px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-@media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.grid.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .grid:not(.grid-cols-2) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 720px)  { .grid { grid-template-columns: 1fr; } }
 
 .card {
@@ -725,6 +726,26 @@ dialog#submit-dialog::backdrop { background: rgba(0,0,0,0.7); backdrop-filter: b
 }
 
 /* ----- View toggle (Browse / Edit) ----- */
+/* Grid density toggle (3-col / 2-col) */
+.grid-density-toggle {
+  display: inline-flex;
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  border-radius: 999px;
+  padding: 2px;
+  gap: 2px;
+}
+.grid-density-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 28px;
+  border-radius: 999px;
+  background: transparent; color: var(--text-3);
+  border: none; cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+.grid-density-btn:hover { color: var(--text); }
+.grid-density-btn.active { background: var(--accent); color: #fff; }
+
 .view-toggle {
   margin-left: auto;
   display: inline-flex;
