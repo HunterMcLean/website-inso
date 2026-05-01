@@ -161,6 +161,7 @@
         <div class="view-toggle" role="tablist" aria-label="View mode">
           <button class="view-toggle-btn active" data-view="browse" type="button" role="tab" aria-selected="true">Browse</button>
           <button class="view-toggle-btn" data-view="edit" type="button" role="tab" aria-selected="false">Edit</button>
+          <button class="view-toggle-btn" data-view="tags" type="button" role="tab" aria-selected="false">Tags</button>
         </div>
       </section>
 
@@ -168,6 +169,7 @@
 
       <section class="results">
         <div id="grid" class="grid"></div>
+        <div id="tag-table-wrap" class="tag-table-wrap" hidden></div>
         <div id="edit-table-wrap" class="edit-table-wrap" hidden>
           <table id="edit-table" class="edit-table">
             <thead>

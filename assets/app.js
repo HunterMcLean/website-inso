@@ -28,6 +28,7 @@
     activeAlbum: null,        // album id currently being viewed
     sharedAlbum: null,        // {name, ids} decoded from ?album= URL param (read-only)
     gridCols: 3,              // 3 or 2 — persisted to localStorage
+    tagsShowUntagged: false,  // tags view: show only entries missing wordAssociations
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -663,7 +664,22 @@
   function parseDate(s){ if(!s) return 0; const d = Date.parse(s); return isFinite(d) ? d : 0; }
 
   // ------- Render -------
+  const TAG_PAGE_SIZE = 40;
+
   function render() {
+    const grid     = document.getElementById("grid");
+    const tableWrap = document.getElementById("edit-table-wrap");
+    const tagWrap  = document.getElementById("tag-table-wrap");
+
+    if (state.view === "tags") {
+      grid.hidden = true; tableWrap.hidden = true; tagWrap.hidden = false;
+      renderTagTable();
+      document.getElementById("count").textContent = `${state.entries.length} sites`;
+      renderPagination(0, 0); // hide pagination — tag table manages its own
+      return;
+    }
+    tagWrap.hidden = true;
+
     const all = sorted(state.entries.filter(entryMatches));
     document.getElementById("count").textContent = `${all.length} of ${state.entries.length} sites`;
     const pageSize = state.view === "edit" ? EDIT_PAGE_SIZE : PAGE_SIZE;
@@ -671,9 +687,6 @@
     if (state.page > totalPages) state.page = totalPages;
     const start = (state.page - 1) * pageSize;
     const paged = all.slice(start, start + pageSize);
-
-    const grid = document.getElementById("grid");
-    const tableWrap = document.getElementById("edit-table-wrap");
 
     if (state.view === "edit") {
       grid.hidden = true;
@@ -748,6 +761,96 @@
       const more = tr.querySelector(".row-more");
       if (more) more.addEventListener("click", () => openDetail(id, { edit: true }));
     });
+  }
+
+  // ------- Tags view -------
+  function renderTagTable() {
+    const wrap = document.getElementById("tag-table-wrap");
+    const allEntries = sorted(state.entries);
+    const untaggedCount = allEntries.filter(e => !(e.wordAssociations || []).length).length;
+
+    // Filter
+    let visible = allEntries;
+    if (state.tagsShowUntagged) visible = allEntries.filter(e => !(e.wordAssociations || []).length);
+    if (state.search) {
+      const q = state.search.toLowerCase();
+      visible = visible.filter(e => (e.name + " " + (e.domain || "")).toLowerCase().includes(q));
+    }
+
+    // Pagination
+    const total = Math.max(1, Math.ceil(visible.length / TAG_PAGE_SIZE));
+    if (state.page > total) state.page = total;
+    const paged = visible.slice((state.page - 1) * TAG_PAGE_SIZE, state.page * TAG_PAGE_SIZE);
+
+    wrap.innerHTML = `
+      <div class="tag-controls">
+        <span class="tag-stats">${visible.length} site${visible.length !== 1 ? "s" : ""} &nbsp;·&nbsp; <span class="tag-untagged-count">${untaggedCount} untagged</span></span>
+        <button type="button" id="tag-untagged-toggle" class="tag-filter-btn${state.tagsShowUntagged ? " active" : ""}">
+          ${state.tagsShowUntagged ? "Show all" : "Untagged only"}
+        </button>
+      </div>
+      <table class="tag-table">
+        <thead><tr>
+          <th class="ttcol-site">Site</th>
+          <th class="ttcol-words">Word Associations</th>
+        </tr></thead>
+        <tbody>${paged.map(renderTagRow).join("")}</tbody>
+      </table>
+      <div class="tag-pagination"></div>
+    `;
+
+    // Wire chip group events for each row
+    wrap.querySelectorAll("tr.tag-row").forEach(tr => {
+      const entry = state.entries.find(e => e.id === tr.dataset.id);
+      if (!entry) return;
+      attachChipGroupEvents(tr, entry, "wordAssociations", state.schema.wordAssociations);
+    });
+
+    // Untagged-only toggle
+    wrap.querySelector("#tag-untagged-toggle").addEventListener("click", () => {
+      state.tagsShowUntagged = !state.tagsShowUntagged;
+      state.page = 1;
+      renderTagTable();
+    });
+
+    // Simple prev/next pagination
+    const pgEl = wrap.querySelector(".tag-pagination");
+    if (total > 1) {
+      const prev = state.page > 1;
+      const next = state.page < total;
+      pgEl.innerHTML = `
+        <button class="pg-btn${prev ? "" : " disabled"}" data-tpg="${state.page - 1}"${prev ? "" : " disabled"}>‹</button>
+        <span class="pg-info">Page ${state.page} of ${total}</span>
+        <button class="pg-btn${next ? "" : " disabled"}" data-tpg="${state.page + 1}"${next ? "" : " disabled"}>›</button>
+      `;
+      pgEl.querySelectorAll("[data-tpg]").forEach(b => b.addEventListener("click", () => {
+        state.page = parseInt(b.dataset.tpg, 10);
+        wrap.scrollIntoView({ behavior: "smooth" });
+        renderTagTable();
+      }));
+    }
+  }
+
+  function renderTagRow(e) {
+    const hasWords = (e.wordAssociations || []).length > 0;
+    const dirtyClass = state.dirty.has(e.id) ? " is-dirty" : "";
+    const untaggedClass = hasWords ? "" : " tag-row-untagged";
+    const thumb = e.screenshot
+      ? `<img src="${escapeHtml(e.screenshot)}" alt="" loading="lazy"/>`
+      : `<div class="tag-thumb-empty"></div>`;
+    return `
+      <tr class="tag-row${dirtyClass}${untaggedClass}" data-id="${escapeHtml(e.id)}">
+        <td class="ttcol-site">
+          <div class="tag-site-cell">
+            <div class="tag-thumb-wrap">${thumb}</div>
+            <div class="tag-site-meta">
+              <div class="tag-site-name">${escapeHtml(e.name)}</div>
+              <div class="tag-site-domain">${escapeHtml(e.domain || "")}</div>
+            </div>
+          </div>
+        </td>
+        <td class="ttcol-words">${renderChipGroup(e, "wordAssociations")}</td>
+      </tr>`;
   }
 
   function renderEditRow(e) {
@@ -978,9 +1081,10 @@
 
   // ------- Edit mode toggle + save bar -------
   function setView(view) {
-    state.view = view === "edit" ? "edit" : "browse";
+    state.view = ["edit","tags"].includes(view) ? view : "browse";
     state.page = 1;
     document.body.classList.toggle("edit-mode", state.view === "edit");
+    document.body.classList.toggle("tags-mode", state.view === "tags");
     document.querySelectorAll(".view-toggle-btn").forEach(b => {
       const on = b.dataset.view === state.view;
       b.classList.toggle("active", on);
