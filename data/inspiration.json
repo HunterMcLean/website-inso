@@ -14507,7 +14507,7 @@
     },
     {
       "id": "lowe-s-innovation-lab-lowesinnovationlabs-com",
-      "name": "Lowe\u2019s Innovation Lab",
+      "name": "Lowe’s Innovation Lab",
       "url": "https://www.lowesinnovationlabs.com/",
       "domain": "lowesinnovationlabs.com",
       "screenshot": "assets/screenshots/lowe-s-innovation-lab-lowesinnovationlabs-com.jpg",
@@ -17903,7 +17903,7 @@
     },
     {
       "id": "shopify-editions-summer-25-shopify-com",
-      "name": "Shopify Editions [Summer \u201825]",
+      "name": "Shopify Editions [Summer ‘25]",
       "url": "https://www.shopify.com/editions/summer2025",
       "domain": "shopify.com",
       "screenshot": "assets/screenshots/shopify-editions-summer-25-shopify-com.jpg",
@@ -23176,6 +23176,491 @@
       "companySize": [
         "MidMarket"
       ]
+    },
+    {
+      "id": "nextsense-nextsense-io",
+      "name": "NextSense",
+      "url": "https://nextsense.io",
+      "domain": "nextsense.io",
+      "screenshot": "assets/screenshots/nextsense-nextsense-io.jpg",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Healthcare"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Photography Usage"
+        ],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Testimonials Section",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Technical",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:17Z"
+    },
+    {
+      "id": "defined-vc-definedvc-com",
+      "name": "Defined VC",
+      "url": "https://definedvc.com",
+      "domain": "definedvc.com",
+      "screenshot": "assets/screenshots/defined-vc-definedvc-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Eyebrows",
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Premium",
+        "Technical"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:20Z"
+    },
+    {
+      "id": "spade-spade-com",
+      "name": "Spade",
+      "url": "https://spade.com",
+      "domain": "spade.com",
+      "screenshot": "assets/screenshots/spade-spade-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats",
+          "Icon/Image Cards"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Case Study Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Premium"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:24Z"
+    },
+    {
+      "id": "ausify-ausify-com-au",
+      "name": "Ausify",
+      "url": "https://ausify.com.au",
+      "domain": "ausify.com.au",
+      "screenshot": "assets/screenshots/ausify-ausify-com-au.jpg",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Entertainment",
+        "Activism"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Youthful",
+        "Dynamic",
+        "Approachable",
+        "Unconventional"
+      ],
+      "industryLeader": false,
+      "unconventional": true,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:28Z"
+    },
+    {
+      "id": "felt-felt-com",
+      "name": "Felt",
+      "url": "https://felt.com/product",
+      "domain": "felt.com",
+      "screenshot": "assets/screenshots/felt-felt-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Illustrations/Animations"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Conversion Panel"
+        ],
+        "Pages": [
+          "Product/Solution Page"
+        ]
+      },
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Technical",
+        "Dynamic",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:33Z"
+    },
+    {
+      "id": "chatbase-chatbase-co",
+      "name": "Chatbase",
+      "url": "https://www.chatbase.co",
+      "domain": "chatbase.co",
+      "screenshot": "assets/screenshots/chatbase-chatbase-co.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Testimonials Section",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:37Z"
+    },
+    {
+      "id": "graphite-graphite-com",
+      "name": "Graphite",
+      "url": "https://www.graphite.com",
+      "domain": "graphite.com",
+      "screenshot": "assets/screenshots/graphite-graphite-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Unconventional",
+        "Premium"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:41Z"
+    },
+    {
+      "id": "braintrust-braintrust-dev",
+      "name": "Braintrust",
+      "url": "https://www.braintrust.dev",
+      "domain": "braintrust.dev",
+      "screenshot": "assets/screenshots/braintrust-braintrust-dev.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Gradient Usage"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Testimonials Section",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Premium",
+        "Authoritative"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:47Z"
+    },
+    {
+      "id": "mintlify-mintlify-com",
+      "name": "Mintlify",
+      "url": "https://www.mintlify.com",
+      "domain": "mintlify.com",
+      "screenshot": "assets/screenshots/mintlify-mintlify-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Testimonials Section",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:51Z"
+    },
+    {
+      "id": "paypal-home-paypal-com",
+      "name": "PayPal",
+      "url": "https://www.paypal.com/us/home",
+      "domain": "paypal.com",
+      "screenshot": "assets/screenshots/paypal-home-paypal-com.jpg",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Photography Usage"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Primary Navigation",
+          "Trustbar",
+          "Conversion Panel"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Established",
+        "Mainstream",
+        "Authoritative",
+        "Modern",
+        "Friendly"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:51:55Z"
+    },
+    {
+      "id": "dialpad-dialpad-com",
+      "name": "Dialpad",
+      "url": "https://www.dialpad.com",
+      "domain": "dialpad.com",
+      "screenshot": "assets/screenshots/dialpad-dialpad-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Sales Tech"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Primary Navigation",
+          "Testimonials Section",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "createdAt": "May 01, 2026 06:51 PM",
+      "screenshotCapturedAt": "2026-05-01T18:52:01Z"
     }
   ]
 }
