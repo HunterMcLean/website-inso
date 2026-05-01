@@ -667,7 +667,7 @@
   function parseDate(s){ if(!s) return 0; const d = Date.parse(s); return isFinite(d) ? d : 0; }
 
   // ------- Render -------
-  const TAG_PAGE_SIZE = 40;
+  const TAG_PAGE_SIZE = 75;
 
   function render() {
     const grid     = document.getElementById("grid");
@@ -846,10 +846,7 @@
         <td class="ttcol-site">
           <div class="tag-site-cell">
             <div class="tag-thumb-wrap">${thumb}</div>
-            <div class="tag-site-meta">
-              <div class="tag-site-name">${escapeHtml(e.name)}</div>
-              <div class="tag-site-domain">${escapeHtml(e.domain || "")}</div>
-            </div>
+            <span class="tag-site-name">${escapeHtml(e.name)}</span>
           </div>
         </td>
         <td class="ttcol-words">${renderChipGroup(e, "wordAssociations")}</td>
