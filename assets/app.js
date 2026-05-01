@@ -62,6 +62,7 @@
   const FLAG_ICONS = {
     "industryLeader": '<path d="M7 1l1.7 3.5 3.8.6-2.8 2.7.7 3.8L7 9.8l-3.4 1.8.7-3.8L1.5 5.1l3.8-.6L7 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
     "unconventional": '<path d="M7 1l-3 7h3v5l3-7H7V1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>',
+    "webstacksClient": '<rect x="2" y="3" width="10" height="8" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 7h4M7 5v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>',
   };
   const SIZE_ICONS = {
     "Startup":    '<path d="M7 10V6M5 8l2-2 2 2M3 12l2-5M11 12l-2-5M3 12h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>',
@@ -516,6 +517,7 @@
     const flagsEl = document.getElementById("filter-flags");
     flagsEl.appendChild(makeSideOption("flags", "industryLeader", "Industry Leader", state.entries.filter(e => e.industryLeader).length, FLAG_ICONS.industryLeader));
     flagsEl.appendChild(makeSideOption("flags", "unconventional", "Unconventional", state.entries.filter(e => e.unconventional).length, FLAG_ICONS.unconventional));
+    flagsEl.appendChild(makeSideOption("flags", "webstacksClient", "Webstacks Client", state.entries.filter(e => e.webstacksClient).length, FLAG_ICONS.webstacksClient));
   }
   function defaultIcon(){ return '<circle cx="7" cy="7" r="2.5" stroke="currentColor" stroke-width="1.2"/>'; }
 
@@ -638,6 +640,7 @@
       let any = false;
       if (f.flags.has("industryLeader") && e.industryLeader) any = true;
       if (f.flags.has("unconventional") && e.unconventional) any = true;
+      if (f.flags.has("webstacksClient") && e.webstacksClient) any = true;
       if (!any) return false;
     }
     if (state.activeCustomTags.size) {
@@ -1271,7 +1274,7 @@
     Object.entries(state.filters).forEach(([cat, set]) => {
       set.forEach(v => {
         const display = cat === "standoutElements" ? v.split("::")[1]
-                      : cat === "flags" ? (v === "industryLeader" ? "★ Industry Leader" : "⚡ Unconventional")
+                      : cat === "flags" ? (v === "industryLeader" ? "★ Industry Leader" : v === "unconventional" ? "⚡ Unconventional" : "✦ Webstacks Client")
                       : v;
         chips.push(`<button class="active-chip" data-cat="${escapeHtml(cat)}" data-val="${escapeHtml(v)}">${escapeHtml(display)}</button>`);
       });

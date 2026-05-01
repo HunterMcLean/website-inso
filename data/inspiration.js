@@ -20451,7 +20451,7 @@ window.INSPIRATION_DATA = {
       "industryLeader": true,
       "unconventional": false,
       "typefaces": [],
-      "createdAt": "2026-04-27T16:45:16.108699Z",
+      "createdAt": "April 16, 2024 4:06 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:40:09Z",
@@ -20931,7 +20931,7 @@ window.INSPIRATION_DATA = {
       "industryLeader": false,
       "unconventional": false,
       "typefaces": [],
-      "createdAt": "2026-04-27T16:45:16.792654Z",
+      "createdAt": "April 9, 2024 4:01 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:40:26Z",
@@ -21795,7 +21795,7 @@ window.INSPIRATION_DATA = {
       "industryLeader": true,
       "unconventional": false,
       "typefaces": [],
-      "createdAt": "2026-04-27T16:45:18.200228Z",
+      "createdAt": "March 29, 2024 4:09 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:40:54Z",
@@ -21955,7 +21955,7 @@ window.INSPIRATION_DATA = {
       "industryLeader": true,
       "unconventional": false,
       "typefaces": [],
-      "createdAt": "2026-04-27T16:45:18.448389Z",
+      "createdAt": "May 1, 2024 5:13 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:41:00Z",
@@ -22108,7 +22108,7 @@ window.INSPIRATION_DATA = {
       "industryLeader": false,
       "unconventional": false,
       "typefaces": [],
-      "createdAt": "2026-04-27T16:45:18.700796Z",
+      "createdAt": "February 1, 2025 5:19 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:41:09Z",
@@ -23008,7 +23008,7 @@ window.INSPIRATION_DATA = {
       "unconventional": false,
       "typefaces": [],
       "source": "claude-add",
-      "createdAt": "2026-04-27T22:11:23Z",
+      "createdAt": "March 28, 2024 5:11 PM",
       "screenshotCapturedAt": "2026-04-28T21:41:39Z",
       "companySize": [
         "Enterprise"
@@ -24198,7 +24198,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 28, 2024 5:49 PM",
       "screenshotCapturedAt": "2026-05-01T19:57:54Z"
     },
     {
@@ -24242,7 +24242,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 16, 2024 1:01 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:00Z"
     },
     {
@@ -24284,7 +24284,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "August 2, 2024 5:11 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:03Z"
     },
     {
@@ -24325,7 +24325,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 29, 2024 12:31 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:06Z"
     },
     {
@@ -24369,7 +24369,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 26, 2024 11:50 AM",
       "screenshotCapturedAt": "2026-05-01T19:58:12Z"
     },
     {
@@ -24411,7 +24411,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "October 10, 2024 4:15 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:19Z"
     },
     {
@@ -24457,7 +24457,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 28, 2024 5:28 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:23Z"
     },
     {
@@ -24502,7 +24502,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 4, 2025 4:14 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:27Z"
     },
     {
@@ -24546,7 +24546,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "July 1, 2024 12:24 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:30Z"
     },
     {
@@ -24588,7 +24588,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 9, 2024 11:45 AM",
       "screenshotCapturedAt": "2026-05-01T19:58:36Z"
     },
     {
@@ -24633,7 +24633,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 28, 2024 4:58 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:42Z"
     },
     {
@@ -24677,7 +24677,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 29, 2024 12:16 PM",
       "screenshotCapturedAt": "2026-05-01T19:58:50Z"
     },
     {
@@ -24721,7 +24721,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "May 15, 2024 10:26 AM",
       "screenshotCapturedAt": "2026-05-01T19:58:56Z"
     },
     {
@@ -24766,7 +24766,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "May 8, 2024 5:29 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:03Z"
     },
     {
@@ -24810,7 +24810,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 28, 2024 5:44 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:09Z"
     },
     {
@@ -24855,7 +24855,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 9, 2024 3:14 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:15Z"
     },
     {
@@ -24897,7 +24897,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 29, 2024 12:23 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:20Z"
     },
     {
@@ -24941,7 +24941,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "August 26, 2024 12:19 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:24Z"
     },
     {
@@ -24985,7 +24985,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "May 8, 2024 5:45 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:30Z"
     },
     {
@@ -25028,7 +25028,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 28, 2024 5:31 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:36Z"
     },
     {
@@ -25071,7 +25071,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 4, 2025 4:14 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:42Z"
     },
     {
@@ -25114,7 +25114,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "August 29, 2024 9:01 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:48Z"
     },
     {
@@ -25155,7 +25155,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "March 29, 2024 2:58 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:52Z"
     },
     {
@@ -25196,7 +25196,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 1, 2024 6:42 PM",
       "screenshotCapturedAt": "2026-05-01T19:59:55Z"
     },
     {
@@ -25238,7 +25238,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "April 9, 2024 12:02 PM",
       "screenshotCapturedAt": "2026-05-01T20:00:00Z"
     },
     {
@@ -25282,7 +25282,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "February 1, 2025 4:55 PM",
       "screenshotCapturedAt": "2026-05-01T20:00:07Z"
     },
     {
@@ -25323,7 +25323,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "February 1, 2025 4:54 PM",
       "screenshotCapturedAt": "2026-05-01T20:00:11Z"
     },
     {
@@ -25364,7 +25364,7 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "webstacksClient": true,
-      "createdAt": "May 01, 2026 07:57 PM",
+      "createdAt": "October 10, 2024 4:15 PM",
       "screenshotCapturedAt": "2026-05-01T20:00:16Z"
     }
   ]
