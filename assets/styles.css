@@ -459,6 +459,22 @@ body.shared-album-mode .filter-bar { display: none; }
 .card-visit-btn:hover {
   background: var(--surface-2); border-color: var(--border-3, var(--text-3));
 }
+.card-client-badge {
+  position: absolute; bottom: 10px; left: 10px;
+  padding: 4px 9px;
+  background: rgba(8, 12, 30, 0.85);
+  border: 1px solid rgba(99, 179, 237, 0.35);
+  border-radius: 5px;
+  font-family: var(--ff-mono);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.13em;
+  color: #7dd3fc;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
 .card-thumb .placeholder {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center;

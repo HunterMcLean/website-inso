@@ -9353,7 +9353,8 @@ window.INSPIRATION_DATA = {
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:41Z"
+      "screenshotUpdatedAt": "2026-04-28T21:33:41Z",
+      "webstacksClient": true
     },
     {
       "id": "customer-io-customer-io",
@@ -20457,7 +20458,8 @@ window.INSPIRATION_DATA = {
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:09Z"
+      "screenshotUpdatedAt": "2026-04-28T21:40:09Z",
+      "webstacksClient": true
     },
     {
       "id": "airtasker-figma",
@@ -20936,7 +20938,8 @@ window.INSPIRATION_DATA = {
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:26Z"
+      "screenshotUpdatedAt": "2026-04-28T21:40:26Z",
+      "webstacksClient": true
     },
     {
       "id": "headroom-figma",
@@ -21799,7 +21802,8 @@ window.INSPIRATION_DATA = {
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:54Z"
+      "screenshotUpdatedAt": "2026-04-28T21:40:54Z",
+      "webstacksClient": true
     },
     {
       "id": "sanity-figma",
@@ -21958,7 +21962,8 @@ window.INSPIRATION_DATA = {
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:00Z"
+      "screenshotUpdatedAt": "2026-04-28T21:41:00Z",
+      "webstacksClient": true
     },
     {
       "id": "dysrupt-figma",
@@ -22107,7 +22112,8 @@ window.INSPIRATION_DATA = {
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
       "screenshotCapturedAt": "2026-04-28T21:41:09Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:09Z"
+      "screenshotUpdatedAt": "2026-04-28T21:41:09Z",
+      "webstacksClient": true
     },
     {
       "id": "quicknote-figma",
@@ -23007,7 +23013,8 @@ window.INSPIRATION_DATA = {
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:39Z"
+      "screenshotUpdatedAt": "2026-04-28T21:41:39Z",
+      "webstacksClient": true
     },
     {
       "id": "datum-datum-xyz",

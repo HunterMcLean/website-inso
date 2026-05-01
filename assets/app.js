@@ -1218,6 +1218,7 @@
         </div>
         <div class="card-thumb">
           ${thumb}
+          ${e.webstacksClient ? `<div class="card-client-badge">Webstacks Client</div>` : ""}
           <button type="button" class="card-fav-btn${faved ? " active" : ""}" data-fav-id="${escapeHtml(e.id)}" aria-label="${faved ? "Remove from favorites" : "Add to favorites"}">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 12S1.5 8 1.5 4.5a3 3 0 0 1 5.5-1.7A3 3 0 0 1 12.5 4.5C12.5 8 7 12 7 12z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
           </button>
