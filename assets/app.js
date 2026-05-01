@@ -671,6 +671,9 @@
         e.stopPropagation();
         toggleFavorite(btn.dataset.favId);
       }));
+      grid.querySelectorAll(".card-visit-btn").forEach(a => a.addEventListener("click", e => {
+        e.stopPropagation();
+      }));
     }
 
     const emptyEl = document.getElementById("empty");
@@ -1097,6 +1100,10 @@
           <button type="button" class="card-fav-btn${faved ? " active" : ""}" data-fav-id="${escapeHtml(e.id)}" aria-label="${faved ? "Remove from favorites" : "Add to favorites"}">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 12S1.5 8 1.5 4.5a3 3 0 0 1 5.5-1.7A3 3 0 0 1 12.5 4.5C12.5 8 7 12 7 12z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
           </button>
+          <a class="card-visit-btn" href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visit ${escapeHtml(e.name)}">
+            Visit site
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M3 8L8 3M8 3H4.5M8 3V6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
         <div class="card-foot">${tagsHtml}</div>
       </article>`;

@@ -439,6 +439,25 @@ body.shared-album-mode .filter-bar { display: none; }
 .card-fav-btn.active { opacity: 1; }
 .card-fav-btn.active { color: #e05; background: #fff0f3; border-color: #ffc0cb; }
 .card-fav-btn.active svg path { fill: #e05; stroke: #e05; }
+.card-visit-btn {
+  position: absolute; bottom: 10px; right: 10px;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 6px 11px;
+  background: var(--surface); border: 1px solid var(--border-2);
+  border-radius: 20px;
+  font-size: 12px; font-weight: 500; color: var(--text);
+  text-decoration: none;
+  opacity: 0; transform: translateY(4px);
+  transition: opacity 140ms ease, transform 140ms ease, background 120ms ease, border-color 120ms ease;
+  z-index: 2;
+  cursor: pointer;
+}
+.card:hover .card-visit-btn {
+  opacity: 1; transform: translateY(0);
+}
+.card-visit-btn:hover {
+  background: var(--surface-2); border-color: var(--border-3, var(--text-3));
+}
 .card-thumb .placeholder {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
