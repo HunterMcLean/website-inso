@@ -14779,7 +14779,7 @@
     },
     {
       "id": "lowe-s-innovation-lab-lowesinnovationlabs-com",
-      "name": "Lowe\u2019s Innovation Lab",
+      "name": "Lowe’s Innovation Lab",
       "url": "https://www.lowesinnovationlabs.com/",
       "domain": "lowesinnovationlabs.com",
       "screenshot": "assets/screenshots/lowe-s-innovation-lab-lowesinnovationlabs-com.jpg",
@@ -18254,7 +18254,7 @@
     },
     {
       "id": "shopify-editions-summer-25-shopify-com",
-      "name": "Shopify Editions [Summer \u201825]",
+      "name": "Shopify Editions [Summer ‘25]",
       "url": "https://www.shopify.com/editions/summer2025",
       "domain": "shopify.com",
       "screenshot": "assets/screenshots/shopify-editions-summer-25-shopify-com.jpg",
@@ -24155,6 +24155,1216 @@
       "createdAt": "May 01, 2026 06:51 PM",
       "screenshotCapturedAt": "2026-05-01T18:52:01Z",
       "screenshotUpdatedAt": "2026-05-01T18:52:01Z"
+    },
+    {
+      "id": "cribl-cribl-io",
+      "name": "Cribl",
+      "url": "https://cribl.io",
+      "domain": "cribl.io",
+      "screenshot": "assets/screenshots/cribl-cribl-io.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Cybersecurity"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Modern"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:57:54Z"
+    },
+    {
+      "id": "truepic-truepic-com",
+      "name": "Truepic",
+      "url": "https://truepic.com",
+      "domain": "truepic.com",
+      "screenshot": "assets/screenshots/truepic-truepic-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Cybersecurity"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Serious"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:00Z"
+    },
+    {
+      "id": "geological-society-of-america-geosociety-org",
+      "name": "Geological Society of America",
+      "url": "https://www.geosociety.org",
+      "domain": "geosociety.org",
+      "screenshot": "assets/screenshots/geological-society-of-america-geosociety-org.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Energy/Infrastructure"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Editorial"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Primary Navigation"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Established",
+        "Authoritative",
+        "Classic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:03Z"
+    },
+    {
+      "id": "aragorn-ai-aragorn-ai",
+      "name": "Aragorn.ai",
+      "url": "https://www.aragorn.ai",
+      "domain": "aragorn.ai",
+      "screenshot": "assets/screenshots/aragorn-ai-aragorn-ai.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:06Z"
+    },
+    {
+      "id": "klaviyo-klaviyo-com",
+      "name": "Klaviyo",
+      "url": "https://www.klaviyo.com",
+      "domain": "klaviyo.com",
+      "screenshot": "assets/screenshots/klaviyo-klaviyo-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "MarTech"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Dynamic"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:12Z"
+    },
+    {
+      "id": "tanium-tanium-com",
+      "name": "Tanium",
+      "url": "https://www.tanium.com",
+      "domain": "tanium.com",
+      "screenshot": "assets/screenshots/tanium-tanium-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Cybersecurity"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Established"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:19Z"
+    },
+    {
+      "id": "fireworks-ai-fireworks-ai",
+      "name": "Fireworks.ai",
+      "url": "https://fireworks.ai",
+      "domain": "fireworks.ai",
+      "screenshot": "assets/screenshots/fireworks-ai-fireworks-ai.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:23Z"
+    },
+    {
+      "id": "lightcast-lightcast-io",
+      "name": "Lightcast",
+      "url": "https://lightcast.io",
+      "domain": "lightcast.io",
+      "screenshot": "assets/screenshots/lightcast-lightcast-io.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Gradient Usage"
+        ],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Established",
+        "Authoritative",
+        "Technical"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:27Z"
+    },
+    {
+      "id": "varonis-varonis-com",
+      "name": "Varonis",
+      "url": "https://www.varonis.com",
+      "domain": "varonis.com",
+      "screenshot": "assets/screenshots/varonis-varonis-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Cybersecurity"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Established"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:30Z"
+    },
+    {
+      "id": "turing-turing-com",
+      "name": "Turing",
+      "url": "https://www.turing.com",
+      "domain": "turing.com",
+      "screenshot": "assets/screenshots/turing-turing-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Technical",
+        "Authoritative",
+        "Modern"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:36Z"
+    },
+    {
+      "id": "sevenrooms-sevenrooms-com",
+      "name": "SevenRooms",
+      "url": "https://sevenrooms.com",
+      "domain": "sevenrooms.com",
+      "screenshot": "assets/screenshots/sevenrooms-sevenrooms-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Restaurants/Hospitality/Tourism"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Grids"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Testimonials Section",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:42Z"
+    },
+    {
+      "id": "deepgram-deepgram-com",
+      "name": "Deepgram",
+      "url": "https://www.deepgram.com",
+      "domain": "deepgram.com",
+      "screenshot": "assets/screenshots/deepgram-deepgram-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:50Z"
+    },
+    {
+      "id": "upkeep-upkeep-com",
+      "name": "UpKeep",
+      "url": "https://www.upkeep.com",
+      "domain": "upkeep.com",
+      "screenshot": "assets/screenshots/upkeep-upkeep-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Manufacturing"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:58:56Z"
+    },
+    {
+      "id": "logicmonitor-logicmonitor-com",
+      "name": "LogicMonitor",
+      "url": "https://www.logicmonitor.com",
+      "domain": "logicmonitor.com",
+      "screenshot": "assets/screenshots/logicmonitor-logicmonitor-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:03Z"
+    },
+    {
+      "id": "netlify-netlify-com",
+      "name": "Netlify",
+      "url": "https://www.netlify.com",
+      "domain": "netlify.com",
+      "screenshot": "assets/screenshots/netlify-netlify-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "companySize": [
+        "Enterprise"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Technical"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:09Z"
+    },
+    {
+      "id": "heygen-heygen-com",
+      "name": "HeyGen",
+      "url": "https://www.heygen.com",
+      "domain": "heygen.com",
+      "screenshot": "assets/screenshots/heygen-heygen-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "MarTech"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [
+          "Illustrations/Animations"
+        ],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:15Z"
+    },
+    {
+      "id": "mutiny-mutinyhq-com",
+      "name": "Mutiny",
+      "url": "https://www.mutinyhq.com",
+      "domain": "mutinyhq.com",
+      "screenshot": "assets/screenshots/mutiny-mutinyhq-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Sales Tech",
+        "MarTech"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Dynamic",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:20Z"
+    },
+    {
+      "id": "mentorcliq-mentorcliq-com",
+      "name": "MentorcliQ",
+      "url": "https://www.mentorcliq.com",
+      "domain": "mentorcliq.com",
+      "screenshot": "assets/screenshots/mentorcliq-mentorcliq-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Established",
+        "Authoritative",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:24Z"
+    },
+    {
+      "id": "modus-create-moduscreate-com",
+      "name": "Modus Create",
+      "url": "https://moduscreate.com",
+      "domain": "moduscreate.com",
+      "screenshot": "assets/screenshots/modus-create-moduscreate-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools",
+        "Agency"
+      ],
+      "companySize": [
+        "Agency"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Editorial"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Case Study Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Established",
+        "Authoritative",
+        "Technical"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:30Z"
+    },
+    {
+      "id": "breezeway-breezeway-io",
+      "name": "Breezeway",
+      "url": "https://www.breezeway.io",
+      "domain": "breezeway.io",
+      "screenshot": "assets/screenshots/breezeway-breezeway-io.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Restaurants/Hospitality/Tourism"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:36Z"
+    },
+    {
+      "id": "dandy-meetdandy-com",
+      "name": "Dandy",
+      "url": "https://www.meetdandy.com",
+      "domain": "meetdandy.com",
+      "screenshot": "assets/screenshots/dandy-meetdandy-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Healthcare"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Grids"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:42Z"
+    },
+    {
+      "id": "buildops-buildops-com",
+      "name": "BuildOps",
+      "url": "https://www.buildops.com",
+      "domain": "buildops.com",
+      "screenshot": "assets/screenshots/buildops-buildops-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Sales Tech"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Dark Mode",
+        "Grids"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar",
+          "Testimonials Section"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:48Z"
+    },
+    {
+      "id": "workbright-workbright-com",
+      "name": "WorkBright",
+      "url": "https://workbright.com",
+      "domain": "workbright.com",
+      "screenshot": "assets/screenshots/workbright-workbright-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:52Z"
+    },
+    {
+      "id": "rockbot-rockbot-com",
+      "name": "Rockbot",
+      "url": "https://rockbot.com",
+      "domain": "rockbot.com",
+      "screenshot": "assets/screenshots/rockbot-rockbot-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Restaurants/Hospitality/Tourism"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Dynamic",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T19:59:55Z"
+    },
+    {
+      "id": "controlup-controlup-com",
+      "name": "ControlUp",
+      "url": "https://www.controlup.com",
+      "domain": "controlup.com",
+      "screenshot": "assets/screenshots/controlup-controlup-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Cybersecurity"
+      ],
+      "companySize": [
+        "MidMarket"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T20:00:00Z"
+    },
+    {
+      "id": "9fin-9fin-com",
+      "name": "9fin",
+      "url": "https://9fin.com",
+      "domain": "9fin.com",
+      "screenshot": "assets/screenshots/9fin-9fin-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist",
+        "Editorial"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [
+          "Stats"
+        ],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Authoritative",
+        "Elite"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T20:00:07Z"
+    },
+    {
+      "id": "supersure-supersure-com",
+      "name": "Supersure",
+      "url": "https://www.supersure.com",
+      "domain": "supersure.com",
+      "screenshot": "assets/screenshots/supersure-supersure-com.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T20:00:11Z"
+    },
+    {
+      "id": "stackpack-stackpack-ai",
+      "name": "Stackpack",
+      "url": "https://www.stackpack.ai",
+      "domain": "stackpack.ai",
+      "screenshot": "assets/screenshots/stackpack-stackpack-ai.jpg",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "companySize": [
+        "Startup"
+      ],
+      "siteStructure": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [
+          "Hero",
+          "Trustbar"
+        ],
+        "Pages": []
+      },
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "typefaces": [],
+      "source": "claude-add",
+      "webstacksClient": true,
+      "createdAt": "May 01, 2026 07:57 PM",
+      "screenshotCapturedAt": "2026-05-01T20:00:16Z"
     }
   ]
 }
