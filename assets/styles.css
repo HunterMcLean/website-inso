@@ -57,6 +57,7 @@ button { font-family: inherit; }
 .brand { display: flex; align-items: center; gap: 8px; color: var(--text); }
 .brand-mark { color: var(--text); display: inline-flex; }
 .brand-name { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+.topbar-right { display: flex; align-items: center; gap: 8px; }
 
 .submit-cta {
   display: inline-flex; align-items: center; gap: 8px;
@@ -67,6 +68,18 @@ button { font-family: inherit; }
   transition: background 120ms ease;
 }
 .submit-cta:hover { background: var(--accent-hover); }
+
+.edit-token-btn {
+  width: 30px; height: 30px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 7px; color: rgba(255,255,255,0.4); cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease, background 120ms ease;
+  flex-shrink: 0;
+}
+.edit-token-btn:hover { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.35); }
+.edit-token-btn.unlocked { color: #4ade80; border-color: rgba(74,222,128,0.4); background: rgba(74,222,128,0.08); }
+.edit-token-btn.unlocked:hover { background: rgba(74,222,128,0.14); }
 
 /* ----- Layout ----- */
 .layout { display: grid; grid-template-columns: var(--sidebar-w) 1fr; min-height: calc(100vh - var(--topbar-h)); }

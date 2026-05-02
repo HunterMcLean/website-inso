@@ -341,7 +341,26 @@
     const tg = document.querySelector(".view-toggle");
     if (tg) tg.style.display = allowed ? "" : "none";
     if (!allowed && state.view === "edit") setView("browse");
+    const lockBtn = document.getElementById("edit-token-btn");
+    if (lockBtn) lockBtn.classList.toggle("unlocked", allowed);
   }
+
+  document.getElementById("edit-token-btn").addEventListener("click", () => {
+    const current = getEditToken();
+    if (current) {
+      // Already unlocked — offer to lock
+      if (confirm("Edit mode is active. Click OK to sign out of edit mode.")) {
+        try { localStorage.removeItem("inspoEditToken"); } catch(e) {}
+        applyEditAuthUI();
+      }
+    } else {
+      const token = prompt("Enter edit token:");
+      if (token && token.trim()) {
+        try { localStorage.setItem("inspoEditToken", token.trim()); } catch(e) {}
+        applyEditAuthUI();
+      }
+    }
+  });
   // Prefer inline data (works under file://). Fall back to fetch when served over http(s).
   if (window.INSPIRATION_DATA) {
     boot(window.INSPIRATION_DATA);
