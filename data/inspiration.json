@@ -22330,7 +22330,8 @@
         "Premium",
         "Established",
         "Authoritative",
-        "Modern"
+        "Modern",
+        "Editorial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22370,7 +22371,11 @@
       "wordAssociations": [
         "Modern",
         "Technical",
-        "Subtle"
+        "Subtle",
+        "Punchy/Bold",
+        "Bright",
+        "Trendy",
+        "Approachable"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22409,7 +22414,10 @@
       "wordAssociations": [
         "Modern",
         "Premium",
-        "Authoritative"
+        "Authoritative",
+        "Serious",
+        "Elite",
+        "Technical"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22446,7 +22454,16 @@
       "wordAssociations": [
         "Modern",
         "Approachable",
-        "Friendly"
+        "Friendly",
+        "Premium",
+        "Editorial",
+        "Experiential",
+        "Technical",
+        "Dynamic",
+        "Elite",
+        "Industrial",
+        "Unconventional",
+        "Authoritative"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22482,7 +22499,9 @@
       "wordAssociations": [
         "Friendly",
         "Bright",
-        "Approachable"
+        "Approachable",
+        "Trendy",
+        "Youthful"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22519,7 +22538,8 @@
       "wordAssociations": [
         "Modern",
         "Technical",
-        "Bright"
+        "Bright",
+        "Industrial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22563,7 +22583,9 @@
         "Modern",
         "Premium",
         "Technical",
-        "Established"
+        "Established",
+        "Punchy/Bold",
+        "Trendy"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22673,7 +22695,7 @@
         "Approachable",
         "Modern",
         "Established",
-        "Serious"
+        "Punchy/Bold"
       ],
       "industryLeader": true,
       "unconventional": false,
@@ -22722,7 +22744,8 @@
         "Modern",
         "Premium",
         "Authoritative",
-        "Established"
+        "Established",
+        "Editorial"
       ],
       "industryLeader": true,
       "unconventional": false,
@@ -22861,7 +22884,7 @@
         "Approachable",
         "Modern",
         "Established",
-        "Serious"
+        "Punchy/Bold"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22906,7 +22929,8 @@
         "Technical",
         "Serious",
         "Approachable",
-        "Dynamic"
+        "Dynamic",
+        "Punchy/Bold"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22952,7 +22976,8 @@
         "Technical",
         "Premium",
         "Subtle",
-        "Unconventional"
+        "Unconventional",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": true,
@@ -23080,9 +23105,9 @@
       },
       "wordAssociations": [
         "Modern",
-        "Premium",
         "Technical",
-        "Dynamic"
+        "Dynamic",
+        "Approachable"
       ],
       "industryLeader": false,
       "unconventional": true,
@@ -23160,7 +23185,6 @@
       },
       "wordAssociations": [
         "Technical",
-        "Authoritative",
         "Modern",
         "Serious",
         "Premium"
@@ -23199,8 +23223,7 @@
         "Modern",
         "Technical",
         "Approachable",
-        "Dynamic",
-        "Youthful"
+        "Dynamic"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23236,12 +23259,12 @@
         "Pages": []
       },
       "wordAssociations": [
-        "Authoritative",
         "Modern",
-        "Technical",
-        "Serious",
         "Approachable",
-        "Premium"
+        "Natural",
+        "Dynamic",
+        "Playful",
+        "Friendly"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23280,7 +23303,6 @@
         "Authoritative",
         "Approachable",
         "Modern",
-        "Serious",
         "Friendly"
       ],
       "industryLeader": false,
@@ -23320,8 +23342,7 @@
         "Friendly",
         "Approachable",
         "Modern",
-        "Dynamic",
-        "Youthful"
+        "Dynamic"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23357,7 +23378,6 @@
         "Pages": []
       },
       "wordAssociations": [
-        "Youthful",
         "Friendly",
         "Modern",
         "Approachable",
@@ -23397,7 +23417,6 @@
         "Pages": []
       },
       "wordAssociations": [
-        "Youthful",
         "Friendly",
         "Punchy/Bold",
         "Modern",
@@ -23442,8 +23461,9 @@
         "Authoritative",
         "Serious",
         "Technical",
-        "Traditional",
-        "Industrial"
+        "Industrial",
+        "Premium",
+        "Dynamic"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23481,7 +23501,8 @@
         "Modern",
         "Premium",
         "Dynamic",
-        "Serious"
+        "Serious",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23517,7 +23538,6 @@
         "Pages": []
       },
       "wordAssociations": [
-        "Youthful",
         "Friendly",
         "Modern",
         "Dynamic",
@@ -23603,7 +23623,8 @@
         "Technical",
         "Authoritative",
         "Dynamic",
-        "Approachable"
+        "Approachable",
+        "Subtle"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23643,8 +23664,7 @@
         "Approachable",
         "Modern",
         "Mainstream",
-        "Dynamic",
-        "Authoritative"
+        "Dynamic"
       ],
       "industryLeader": true,
       "unconventional": false,
@@ -23789,8 +23809,8 @@
       "wordAssociations": [
         "Modern",
         "Technical",
-        "Authoritative",
-        "Premium"
+        "Premium",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23966,7 +23986,8 @@
         "Modern",
         "Technical",
         "Unconventional",
-        "Premium"
+        "Premium",
+        "Industrial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -24012,7 +24033,8 @@
         "Modern",
         "Technical",
         "Premium",
-        "Authoritative"
+        "Authoritative",
+        "Industrial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -24055,7 +24077,8 @@
         "Modern",
         "Technical",
         "Approachable",
-        "Friendly"
+        "Friendly",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
