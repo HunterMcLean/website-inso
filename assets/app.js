@@ -775,6 +775,12 @@
       if (more) more.addEventListener("click", () => openDetail(id, { edit: true }));
     });
 
+    // Thumbnail click → enlarge popup
+    wrap.querySelectorAll(".et-thumb img").forEach(img => {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", () => openThumbPopup(img.src));
+    });
+
     // Untagged toggle
     wrap.querySelector("#et-untagged-toggle").addEventListener("click", () => {
       state.editShowUntagged = !state.editShowUntagged;
@@ -989,6 +995,25 @@
     pop._onMove = onMove;
     pop.querySelector(".popover-search").focus();
   }
+  function openThumbPopup(src) {
+    const existing = document.getElementById("thumb-popup-overlay");
+    if (existing) existing.remove();
+    const ov = document.createElement("div");
+    ov.id = "thumb-popup-overlay";
+    ov.className = "thumb-popup-overlay";
+    ov.innerHTML = `<img class="thumb-popup-img" src="${escapeHtml(src)}" alt=""/>`;
+    document.body.appendChild(ov);
+    requestAnimationFrame(() => ov.classList.add("visible"));
+    const close = () => {
+      ov.classList.remove("visible");
+      ov.addEventListener("transitionend", () => ov.remove(), { once: true });
+    };
+    ov.addEventListener("click", close);
+    document.addEventListener("keydown", function onKey(e) {
+      if (e.key === "Escape") { close(); document.removeEventListener("keydown", onKey); }
+    });
+  }
+
   function closePopover() {
     document.querySelectorAll(".popover").forEach(p => {
       if (p._outside) document.removeEventListener("click", p._outside, true);
