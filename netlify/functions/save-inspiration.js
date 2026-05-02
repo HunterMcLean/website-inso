@@ -30,6 +30,16 @@ function jsonResponse(status, obj) {
 
 exports.handler = async (event) => {
   if (event.httpMethod === "OPTIONS") return jsonResponse(204, {});
+
+  // GET ?verify=1 — lightweight token check used by the lock-button UI
+  if (event.httpMethod === "GET") {
+    const expected = process.env.EDIT_SECRET;
+    const headerToken = event.headers["x-edit-token"] || event.headers["X-Edit-Token"] || "";
+    if (!expected) return jsonResponse(500, { error: "Server misconfig" });
+    if (!headerToken || !timingSafeEqual(headerToken, expected)) return jsonResponse(401, { ok: false });
+    return jsonResponse(200, { ok: true });
+  }
+
   if (event.httpMethod !== "POST") {
     return jsonResponse(405, { error: "Method not allowed" });
   }

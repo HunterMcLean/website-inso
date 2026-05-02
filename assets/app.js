@@ -355,10 +355,27 @@
       }
     } else {
       const token = prompt("Enter edit token:");
-      if (token && token.trim()) {
-        try { localStorage.setItem("inspoEditToken", token.trim()); } catch(e) {}
-        applyEditAuthUI();
-      }
+      if (!token || !token.trim()) return;
+      const trimmed = token.trim();
+      // Verify token against the function before unlocking
+      fetch("/.netlify/functions/save-inspiration", {
+        method: "GET",
+        headers: { "X-Edit-Token": trimmed },
+      })
+        .then(r => r.json().then(d => ({ ok: r.ok, data: d })).catch(() => ({ ok: false, data: {} })))
+        .then(({ ok }) => {
+          if (ok) {
+            try { localStorage.setItem("inspoEditToken", trimmed); } catch(e) {}
+            applyEditAuthUI();
+          } else {
+            alert("Incorrect token — edit mode not unlocked.");
+          }
+        })
+        .catch(() => {
+          // Offline / function unreachable — store anyway, will fail at save time
+          try { localStorage.setItem("inspoEditToken", trimmed); } catch(e) {}
+          applyEditAuthUI();
+        });
     }
   });
   // Prefer inline data (works under file://). Fall back to fetch when served over http(s).
