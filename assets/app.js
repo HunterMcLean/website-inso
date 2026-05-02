@@ -1,7 +1,7 @@
 /* Webstacks Inspiration Library — vanilla JS frontend */
 (function(){
   const PAGE_SIZE = 12;
-  const EDIT_PAGE_SIZE = 25;
+  const EDIT_PAGE_SIZE = 25; // browse pagination (unused in edit view)
   const state = {
     entries: [], schema: null,
     filters: {
@@ -28,7 +28,7 @@
     activeAlbum: null,        // album id currently being viewed
     sharedAlbum: null,        // {name, ids} decoded from ?album= URL param (read-only)
     gridCols: 3,              // 3 or 2 — persisted to localStorage
-    tagsShowUntagged: false,  // tags view: show only entries missing wordAssociations
+    editShowUntagged: false,  // edit view: show only entries missing wordAssociations
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -686,37 +686,28 @@
   function parseDate(s){ if(!s) return 0; const d = Date.parse(s); return isFinite(d) ? d : 0; }
 
   // ------- Render -------
-  const TAG_PAGE_SIZE = 75;
+  const EDIT_TABLE_PAGE_SIZE = 75;
 
   function render() {
-    const grid     = document.getElementById("grid");
+    const grid      = document.getElementById("grid");
     const tableWrap = document.getElementById("edit-table-wrap");
-    const tagWrap  = document.getElementById("tag-table-wrap");
-
-    if (state.view === "tags") {
-      grid.hidden = true; tableWrap.hidden = true; tagWrap.hidden = false;
-      renderTagTable();
-      document.getElementById("count").textContent = `${state.entries.length} sites`;
-      renderPagination(0, 0); // hide pagination — tag table manages its own
-      return;
-    }
-    tagWrap.hidden = true;
 
     const all = sorted(state.entries.filter(entryMatches));
     document.getElementById("count").textContent = `${all.length} of ${state.entries.length} sites`;
-    const pageSize = state.view === "edit" ? EDIT_PAGE_SIZE : PAGE_SIZE;
-    const totalPages = Math.max(1, Math.ceil(all.length / pageSize));
-    if (state.page > totalPages) state.page = totalPages;
-    const start = (state.page - 1) * pageSize;
-    const paged = all.slice(start, start + pageSize);
 
     if (state.view === "edit") {
+      const totalPages = Math.max(1, Math.ceil(all.length / EDIT_TABLE_PAGE_SIZE));
+      if (state.page > totalPages) state.page = totalPages;
       grid.hidden = true;
       tableWrap.hidden = false;
-      renderEditTable(paged);
+      renderEditTable(all);
+      renderPagination(0, 0); // edit table has its own inline pagination
     } else {
-      grid.hidden = false;
       tableWrap.hidden = true;
+      grid.hidden = false;
+      const totalPages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
+      if (state.page > totalPages) state.page = totalPages;
+      const paged = all.slice((state.page - 1) * PAGE_SIZE, state.page * PAGE_SIZE);
       grid.innerHTML = paged.map(renderCard).join("");
       grid.querySelectorAll(".card").forEach(c => c.addEventListener("click", () => openDetail(c.dataset.id)));
       grid.querySelectorAll(".card-fav-btn").forEach(btn => btn.addEventListener("click", e => {
@@ -726,6 +717,7 @@
       grid.querySelectorAll(".card-visit-btn").forEach(a => a.addEventListener("click", e => {
         e.stopPropagation();
       }));
+      renderPagination(state.page, totalPages);
     }
 
     const emptyEl = document.getElementById("empty");
@@ -735,108 +727,63 @@
     } else if (all.length === 0) {
       emptyEl.innerHTML = `<p>No sites match these filters.</p><button class="link-btn" type="button" onclick="window.WebInspo.resetFilters()">Reset filters</button>`;
     }
-    renderPagination(state.page, totalPages);
     renderActiveChips();
   }
 
   // ------- Edit table -------
-  function renderEditTable(entries) {
-    const tbody = document.querySelector("#edit-table tbody");
-    tbody.innerHTML = entries.map(renderEditRow).join("");
+  function renderEditTable(allFiltered) {
+    const wrap = document.getElementById("edit-table-wrap");
 
-    tbody.querySelectorAll("tr.edit-row").forEach(tr => {
+    // Untagged filter applied on top of whatever browse filters are already active
+    const untaggedCount = allFiltered.filter(e => !(e.wordAssociations || []).length).length;
+    const visible = state.editShowUntagged
+      ? allFiltered.filter(e => !(e.wordAssociations || []).length)
+      : allFiltered;
+
+    const total = Math.max(1, Math.ceil(visible.length / EDIT_TABLE_PAGE_SIZE));
+    if (state.page > total) state.page = total;
+    const paged = visible.slice((state.page - 1) * EDIT_TABLE_PAGE_SIZE, state.page * EDIT_TABLE_PAGE_SIZE);
+
+    // Rebuild the whole wrap each render so controls stay in sync
+    wrap.innerHTML = `
+      <div class="et-controls">
+        <span class="et-stats">${visible.length} site${visible.length !== 1 ? "s" : ""}&thinsp;·&thinsp;<span class="et-untagged-count">${untaggedCount} untagged</span></span>
+        <button type="button" id="et-untagged-toggle" class="et-filter-btn${state.editShowUntagged ? " active" : ""}">
+          ${state.editShowUntagged ? "Show all" : "Untagged only"}
+        </button>
+      </div>
+      <table class="et-table">
+        <thead><tr>
+          <th class="etc-site">Site</th>
+          <th class="etc-words">Word Associations</th>
+          <th class="etc-industry">Industry</th>
+          <th class="etc-more"></th>
+        </tr></thead>
+        <tbody>${paged.map(renderEditRow).join("")}</tbody>
+      </table>
+      <div class="et-pagination"></div>
+    `;
+
+    // Wire all rows
+    wrap.querySelectorAll("tr.edit-row").forEach(tr => {
       const id = tr.dataset.id;
       const entry = state.entries.find(e => e.id === id);
       if (!entry) return;
-
-      // Single-select Type (B2B/B2C) — partial update, no row replacement
-      tr.querySelectorAll(".single-pick-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const v = btn.dataset.val;
-          const cur = entry.companyType || [];
-          entry.companyType = cur.includes(v) ? cur.filter(x => x !== v) : [v];
-          markDirty(id);
-          tr.querySelectorAll(".single-pick-btn").forEach(b => {
-            b.setAttribute("aria-pressed", (entry.companyType || []).includes(b.dataset.val) ? "true" : "false");
-          });
-          tr.classList.add("is-dirty");
-        });
-      });
-
-      // Chip editors (industry / aesthetic / words)
-      attachChipGroupEvents(tr, entry, "companyIndustry", state.schema.companyIndustry);
-      attachChipGroupEvents(tr, entry, "designAesthetic", state.schema.designAesthetic);
       attachChipGroupEvents(tr, entry, "wordAssociations", state.schema.wordAssociations);
-
-      // Flag toggles — partial update, no row replacement
-      tr.querySelectorAll(".flag-toggle input[type=checkbox]").forEach(cb => {
-        cb.addEventListener("change", () => {
-          const field = cb.dataset.field;
-          entry[field] = cb.checked;
-          markDirty(id);
-          cb.closest(".flag-toggle").classList.toggle("on", cb.checked);
-          tr.classList.add("is-dirty");
-        });
-      });
-
-      // More button → open detail modal in edit mode
+      attachChipGroupEvents(tr, entry, "companyIndustry", state.schema.companyIndustry);
       const more = tr.querySelector(".row-more");
       if (more) more.addEventListener("click", () => openDetail(id, { edit: true }));
     });
-  }
 
-  // ------- Tags view -------
-  function renderTagTable() {
-    const wrap = document.getElementById("tag-table-wrap");
-    const allEntries = sorted(state.entries);
-    const untaggedCount = allEntries.filter(e => !(e.wordAssociations || []).length).length;
-
-    // Filter
-    let visible = allEntries;
-    if (state.tagsShowUntagged) visible = allEntries.filter(e => !(e.wordAssociations || []).length);
-    if (state.search) {
-      const q = state.search.toLowerCase();
-      visible = visible.filter(e => (e.name + " " + (e.domain || "")).toLowerCase().includes(q));
-    }
-
-    // Pagination
-    const total = Math.max(1, Math.ceil(visible.length / TAG_PAGE_SIZE));
-    if (state.page > total) state.page = total;
-    const paged = visible.slice((state.page - 1) * TAG_PAGE_SIZE, state.page * TAG_PAGE_SIZE);
-
-    wrap.innerHTML = `
-      <div class="tag-controls">
-        <span class="tag-stats">${visible.length} site${visible.length !== 1 ? "s" : ""} &nbsp;·&nbsp; <span class="tag-untagged-count">${untaggedCount} untagged</span></span>
-        <button type="button" id="tag-untagged-toggle" class="tag-filter-btn${state.tagsShowUntagged ? " active" : ""}">
-          ${state.tagsShowUntagged ? "Show all" : "Untagged only"}
-        </button>
-      </div>
-      <table class="tag-table">
-        <thead><tr>
-          <th class="ttcol-site">Site</th>
-          <th class="ttcol-words">Word Associations</th>
-        </tr></thead>
-        <tbody>${paged.map(renderTagRow).join("")}</tbody>
-      </table>
-      <div class="tag-pagination"></div>
-    `;
-
-    // Wire chip group events for each row
-    wrap.querySelectorAll("tr.tag-row").forEach(tr => {
-      const entry = state.entries.find(e => e.id === tr.dataset.id);
-      if (!entry) return;
-      attachChipGroupEvents(tr, entry, "wordAssociations", state.schema.wordAssociations);
-    });
-
-    // Untagged-only toggle
-    wrap.querySelector("#tag-untagged-toggle").addEventListener("click", () => {
-      state.tagsShowUntagged = !state.tagsShowUntagged;
+    // Untagged toggle
+    wrap.querySelector("#et-untagged-toggle").addEventListener("click", () => {
+      state.editShowUntagged = !state.editShowUntagged;
       state.page = 1;
-      renderTagTable();
+      render();
     });
 
-    // Simple prev/next pagination
-    const pgEl = wrap.querySelector(".tag-pagination");
+    // Inline pagination
+    const pgEl = wrap.querySelector(".et-pagination");
     if (total > 1) {
       const prev = state.page > 1;
       const next = state.page < total;
@@ -848,73 +795,30 @@
       pgEl.querySelectorAll("[data-tpg]").forEach(b => b.addEventListener("click", () => {
         state.page = parseInt(b.dataset.tpg, 10);
         wrap.scrollIntoView({ behavior: "smooth" });
-        renderTagTable();
+        render();
       }));
     }
   }
 
-  function renderTagRow(e) {
+  function renderEditRow(e) {
     const hasWords = (e.wordAssociations || []).length > 0;
     const dirtyClass = state.dirty.has(e.id) ? " is-dirty" : "";
-    const untaggedClass = hasWords ? "" : " tag-row-untagged";
+    const untaggedClass = hasWords ? "" : " et-row-untagged";
     const thumb = e.screenshot
       ? `<img src="${escapeHtml(e.screenshot)}" alt="" loading="lazy"/>`
-      : `<div class="tag-thumb-empty"></div>`;
+      : `<div class="et-thumb-empty"></div>`;
     return `
-      <tr class="tag-row${dirtyClass}${untaggedClass}" data-id="${escapeHtml(e.id)}">
-        <td class="ttcol-site">
-          <div class="tag-site-cell">
-            <div class="tag-thumb-wrap">${thumb}</div>
-            <span class="tag-site-name">${escapeHtml(e.name)}</span>
+      <tr class="edit-row${dirtyClass}${untaggedClass}" data-id="${escapeHtml(e.id)}">
+        <td class="etc-site">
+          <div class="et-site-cell">
+            <div class="et-thumb">${thumb}</div>
+            <span class="et-site-name">${escapeHtml(e.name)}</span>
           </div>
         </td>
-        <td class="ttcol-words">${renderChipGroup(e, "wordAssociations")}</td>
-      </tr>`;
-  }
-
-  function renderEditRow(e) {
-    const dirtyClass = state.dirty.has(e.id) ? " is-dirty" : "";
-    const thumb = e.screenshot
-      ? `<img src="${escapeHtml(e.screenshot)}" alt="" loading="lazy" />`
-      : `<div class="row-thumb-empty">no shot</div>`;
-    const domain = e.url
-      ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.domain || e.url)}</a>`
-      : escapeHtml(e.domain || "");
-
-    const types = state.schema.companyType.map(v => {
-      const on = (e.companyType || []).includes(v);
-      return `<button type="button" class="single-pick-btn" data-val="${escapeHtml(v)}" aria-pressed="${on}">${escapeHtml(v)}</button>`;
-    }).join("");
-
-    return `
-      <tr class="edit-row${dirtyClass}" data-id="${escapeHtml(e.id)}">
-        <td>
-          <div class="row-site">
-            <div class="row-thumb">${thumb}</div>
-            <div class="row-meta">
-              <div class="row-name">${escapeHtml(e.name)}</div>
-              <div class="row-domain">${domain}</div>
-            </div>
-          </div>
-        </td>
-        <td><div class="single-pick">${types}</div></td>
-        <td>${renderChipGroup(e, "companyIndustry")}</td>
-        <td>${renderChipGroup(e, "designAesthetic")}</td>
-        <td>${renderChipGroup(e, "wordAssociations")}</td>
-        <td>
-          <div class="flag-toggles">
-            <label class="flag-toggle${e.industryLeader ? " on" : ""}">
-              <input type="checkbox" data-field="industryLeader"${e.industryLeader ? " checked" : ""}/>
-              <span class="flag-mark">★</span><span>Industry Leader</span>
-            </label>
-            <label class="flag-toggle${e.unconventional ? " on" : ""}">
-              <input type="checkbox" data-field="unconventional"${e.unconventional ? " checked" : ""}/>
-              <span class="flag-mark">⚡</span><span>Unconventional</span>
-            </label>
-          </div>
-        </td>
-        <td>
-          <button type="button" class="row-more" title="Edit standout elements + typefaces">⋯</button>
+        <td class="etc-words">${renderChipGroup(e, "wordAssociations")}</td>
+        <td class="etc-industry">${renderChipGroup(e, "companyIndustry")}</td>
+        <td class="etc-more">
+          <button type="button" class="row-more" title="Edit all fields">⋯</button>
         </td>
       </tr>`;
   }
@@ -1100,10 +1004,9 @@
 
   // ------- Edit mode toggle + save bar -------
   function setView(view) {
-    state.view = ["edit","tags"].includes(view) ? view : "browse";
+    state.view = view === "edit" ? "edit" : "browse";
     state.page = 1;
     document.body.classList.toggle("edit-mode", state.view === "edit");
-    document.body.classList.toggle("tags-mode", state.view === "tags");
     document.querySelectorAll(".view-toggle-btn").forEach(b => {
       const on = b.dataset.view === state.view;
       b.classList.toggle("active", on);

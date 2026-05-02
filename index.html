@@ -166,7 +166,6 @@
         <div class="view-toggle" role="tablist" aria-label="View mode">
           <button class="view-toggle-btn active" data-view="browse" type="button" role="tab" aria-selected="true">Browse</button>
           <button class="view-toggle-btn" data-view="edit" type="button" role="tab" aria-selected="false">Edit</button>
-          <button class="view-toggle-btn" data-view="tags" type="button" role="tab" aria-selected="false">Tags</button>
         </div>
       </section>
 
@@ -174,23 +173,7 @@
 
       <section class="results">
         <div id="grid" class="grid"></div>
-        <div id="tag-table-wrap" class="tag-table-wrap" hidden></div>
-        <div id="edit-table-wrap" class="edit-table-wrap" hidden>
-          <table id="edit-table" class="edit-table">
-            <thead>
-              <tr>
-                <th class="col-thumb">Site</th>
-                <th class="col-type">Type</th>
-                <th class="col-tags">Industry</th>
-                <th class="col-tags">Aesthetic</th>
-                <th class="col-tags">Word Associations</th>
-                <th class="col-flags">Flags</th>
-                <th class="col-more"></th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <div id="edit-table-wrap" class="edit-table-wrap" hidden></div>
         <div id="empty" class="empty hidden">
           <p>No sites match these filters.</p>
           <button class="link-btn" type="button" onclick="window.WebInspo.resetFilters()">Reset filters</button>
