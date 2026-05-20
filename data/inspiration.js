@@ -22331,7 +22331,8 @@ window.INSPIRATION_DATA = {
         "Premium",
         "Established",
         "Authoritative",
-        "Modern"
+        "Modern",
+        "Editorial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22371,7 +22372,11 @@ window.INSPIRATION_DATA = {
       "wordAssociations": [
         "Modern",
         "Technical",
-        "Subtle"
+        "Subtle",
+        "Punchy/Bold",
+        "Bright",
+        "Trendy",
+        "Approachable"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22410,7 +22415,10 @@ window.INSPIRATION_DATA = {
       "wordAssociations": [
         "Modern",
         "Premium",
-        "Authoritative"
+        "Authoritative",
+        "Serious",
+        "Elite",
+        "Technical"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22447,7 +22455,16 @@ window.INSPIRATION_DATA = {
       "wordAssociations": [
         "Modern",
         "Approachable",
-        "Friendly"
+        "Friendly",
+        "Premium",
+        "Editorial",
+        "Experiential",
+        "Technical",
+        "Dynamic",
+        "Elite",
+        "Industrial",
+        "Unconventional",
+        "Authoritative"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22483,7 +22500,9 @@ window.INSPIRATION_DATA = {
       "wordAssociations": [
         "Friendly",
         "Bright",
-        "Approachable"
+        "Approachable",
+        "Trendy",
+        "Youthful"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22520,7 +22539,8 @@ window.INSPIRATION_DATA = {
       "wordAssociations": [
         "Modern",
         "Technical",
-        "Bright"
+        "Bright",
+        "Industrial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22564,7 +22584,9 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Premium",
         "Technical",
-        "Established"
+        "Established",
+        "Punchy/Bold",
+        "Trendy"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22674,7 +22696,7 @@ window.INSPIRATION_DATA = {
         "Approachable",
         "Modern",
         "Established",
-        "Serious"
+        "Punchy/Bold"
       ],
       "industryLeader": true,
       "unconventional": false,
@@ -22723,7 +22745,8 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Premium",
         "Authoritative",
-        "Established"
+        "Established",
+        "Editorial"
       ],
       "industryLeader": true,
       "unconventional": false,
@@ -22862,7 +22885,7 @@ window.INSPIRATION_DATA = {
         "Approachable",
         "Modern",
         "Established",
-        "Serious"
+        "Punchy/Bold"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22907,7 +22930,8 @@ window.INSPIRATION_DATA = {
         "Technical",
         "Serious",
         "Approachable",
-        "Dynamic"
+        "Dynamic",
+        "Punchy/Bold"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -22953,7 +22977,8 @@ window.INSPIRATION_DATA = {
         "Technical",
         "Premium",
         "Subtle",
-        "Unconventional"
+        "Unconventional",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": true,
@@ -23081,9 +23106,9 @@ window.INSPIRATION_DATA = {
       },
       "wordAssociations": [
         "Modern",
-        "Premium",
         "Technical",
-        "Dynamic"
+        "Dynamic",
+        "Approachable"
       ],
       "industryLeader": false,
       "unconventional": true,
@@ -23161,7 +23186,6 @@ window.INSPIRATION_DATA = {
       },
       "wordAssociations": [
         "Technical",
-        "Authoritative",
         "Modern",
         "Serious",
         "Premium"
@@ -23200,8 +23224,7 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Technical",
         "Approachable",
-        "Dynamic",
-        "Youthful"
+        "Dynamic"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23237,12 +23260,12 @@ window.INSPIRATION_DATA = {
         "Pages": []
       },
       "wordAssociations": [
-        "Authoritative",
         "Modern",
-        "Technical",
-        "Serious",
         "Approachable",
-        "Premium"
+        "Natural",
+        "Dynamic",
+        "Playful",
+        "Friendly"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23281,7 +23304,6 @@ window.INSPIRATION_DATA = {
         "Authoritative",
         "Approachable",
         "Modern",
-        "Serious",
         "Friendly"
       ],
       "industryLeader": false,
@@ -23321,8 +23343,7 @@ window.INSPIRATION_DATA = {
         "Friendly",
         "Approachable",
         "Modern",
-        "Dynamic",
-        "Youthful"
+        "Dynamic"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23358,7 +23379,6 @@ window.INSPIRATION_DATA = {
         "Pages": []
       },
       "wordAssociations": [
-        "Youthful",
         "Friendly",
         "Modern",
         "Approachable",
@@ -23398,7 +23418,6 @@ window.INSPIRATION_DATA = {
         "Pages": []
       },
       "wordAssociations": [
-        "Youthful",
         "Friendly",
         "Punchy/Bold",
         "Modern",
@@ -23443,8 +23462,9 @@ window.INSPIRATION_DATA = {
         "Authoritative",
         "Serious",
         "Technical",
-        "Traditional",
-        "Industrial"
+        "Industrial",
+        "Premium",
+        "Dynamic"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23482,7 +23502,8 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Premium",
         "Dynamic",
-        "Serious"
+        "Serious",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23518,7 +23539,6 @@ window.INSPIRATION_DATA = {
         "Pages": []
       },
       "wordAssociations": [
-        "Youthful",
         "Friendly",
         "Modern",
         "Dynamic",
@@ -23604,7 +23624,8 @@ window.INSPIRATION_DATA = {
         "Technical",
         "Authoritative",
         "Dynamic",
-        "Approachable"
+        "Approachable",
+        "Subtle"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23644,8 +23665,7 @@ window.INSPIRATION_DATA = {
         "Approachable",
         "Modern",
         "Mainstream",
-        "Dynamic",
-        "Authoritative"
+        "Dynamic"
       ],
       "industryLeader": true,
       "unconventional": false,
@@ -23696,9 +23716,11 @@ window.INSPIRATION_DATA = {
       },
       "wordAssociations": [
         "Modern",
-        "Premium",
-        "Technical",
-        "Approachable"
+        "Approachable",
+        "Subtle",
+        "Trendy",
+        "Mainstream",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23788,8 +23810,8 @@ window.INSPIRATION_DATA = {
       "wordAssociations": [
         "Modern",
         "Technical",
-        "Authoritative",
-        "Premium"
+        "Premium",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -23965,7 +23987,8 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Technical",
         "Unconventional",
-        "Premium"
+        "Premium",
+        "Industrial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -24011,7 +24034,8 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Technical",
         "Premium",
-        "Authoritative"
+        "Authoritative",
+        "Industrial"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -24054,7 +24078,8 @@ window.INSPIRATION_DATA = {
         "Modern",
         "Technical",
         "Approachable",
-        "Friendly"
+        "Friendly",
+        "Natural"
       ],
       "industryLeader": false,
       "unconventional": false,
@@ -25366,6 +25391,227 @@ window.INSPIRATION_DATA = {
       "webstacksClient": true,
       "createdAt": "October 10, 2024 4:15 PM",
       "screenshotCapturedAt": "2026-05-01T20:00:16Z"
+    },
+    {
+      "name": "Consensys",
+      "url": "https://consensys.io",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Blockchain/Web3",
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Authoritative",
+        "Technical",
+        "Established",
+        "Modern",
+        "Premium"
+      ],
+      "industryLeader": true,
+      "unconventional": false,
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "domain": "consensys.io",
+      "id": "consensys-consensys-io",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "May 20, 2026 10:44 PM",
+      "screenshot": "assets/screenshots/consensys-consensys-io.jpg",
+      "screenshotCapturedAt": "2026-05-20T22:44:33Z"
+    },
+    {
+      "name": "Rig",
+      "url": "https://rig.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Technical",
+        "Modern",
+        "Unconventional",
+        "Subtle",
+        "Premium"
+      ],
+      "industryLeader": false,
+      "unconventional": true,
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "domain": "rig.ai",
+      "id": "rig-rig-ai",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "May 20, 2026 10:44 PM",
+      "screenshot": "assets/screenshots/rig-rig-ai.jpg",
+      "screenshotCapturedAt": "2026-05-20T22:44:40Z"
+    },
+    {
+      "name": "IsoMeet",
+      "url": "https://www.isomeet.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Entertainment"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Friendly",
+        "Youthful",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "domain": "isomeet.com",
+      "id": "isomeet-isomeet-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "May 20, 2026 10:44 PM",
+      "screenshot": "assets/screenshots/isomeet-isomeet-com.jpg",
+      "screenshotCapturedAt": "2026-05-20T22:44:45Z"
+    },
+    {
+      "name": "NovaVoice",
+      "url": "https://novavoice.app",
+      "companyType": [
+        "B2B",
+        "B2C"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist",
+        "Dark Mode"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Dynamic"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "domain": "novavoice.app",
+      "id": "novavoice-novavoice-app",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "May 20, 2026 10:44 PM",
+      "screenshot": "assets/screenshots/novavoice-novavoice-app.jpg",
+      "screenshotCapturedAt": "2026-05-20T22:44:49Z"
+    },
+    {
+      "name": "Topanga",
+      "url": "https://topanga.io",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Restaurants/Hospitality/Tourism"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Serious",
+        "Technical",
+        "Authoritative",
+        "Subtle"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "domain": "topanga.io",
+      "id": "topanga-topanga-io",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "May 20, 2026 10:44 PM",
+      "screenshot": "assets/screenshots/topanga-topanga-io.jpg",
+      "screenshotCapturedAt": "2026-05-20T22:44:54Z"
+    },
+    {
+      "name": "Firsty",
+      "url": "https://www.firsty.app",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "eCommerce"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Youthful",
+        "Bright",
+        "Approachable",
+        "Friendly"
+      ],
+      "industryLeader": false,
+      "unconventional": false,
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "domain": "firsty.app",
+      "id": "firsty-firsty-app",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "May 20, 2026 10:44 PM",
+      "screenshot": "assets/screenshots/firsty-firsty-app.jpg",
+      "screenshotCapturedAt": "2026-05-20T22:44:58Z"
     }
   ]
 };
