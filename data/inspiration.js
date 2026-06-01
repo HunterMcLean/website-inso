@@ -362,8 +362,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:32 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:29:22Z",
-      "screenshotUpdatedAt": "2026-04-28T21:29:22Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "mercury-mercury-com",
@@ -611,8 +611,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:29:29Z",
-      "screenshotUpdatedAt": "2026-04-28T21:29:29Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "labaton-keller-sucharow-labaton-com",
@@ -660,8 +660,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 1:59 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:29:28Z",
-      "screenshotUpdatedAt": "2026-04-28T21:29:28Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "cadro-cadro-com",
@@ -848,8 +848,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 2:13 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:29:31Z",
-      "screenshotUpdatedAt": "2026-04-28T21:29:31Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "panascais-panascais-net",
@@ -1054,11 +1054,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 4:35 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:29:40Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:29:40Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rew-technology-rewtechnology-com",
@@ -1611,11 +1611,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 28, 2024 5:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:29:52Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:29:52Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "phunk-phunk-co-uk",
@@ -2188,11 +2188,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 11:52 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:07Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:07Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "hashicorp-hashicorp-com",
@@ -2501,11 +2501,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:23 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:12Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:12Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "deso-deso-com",
@@ -2554,8 +2554,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:20Z",
-      "screenshotUpdatedAt": "2026-04-28T21:30:20Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "cosmos-cosmos-network",
@@ -2653,11 +2653,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 12:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:18Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:18Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "good-meat-goodmeat-co",
@@ -3061,8 +3061,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 1:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:32Z",
-      "screenshotUpdatedAt": "2026-04-28T21:30:32Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "flow-party-joinflowparty-com",
@@ -3612,11 +3612,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:48Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:48Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "zkpass-zkpass-org",
@@ -3764,11 +3764,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:44 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:48Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:48Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "vention-ventionteams-com",
@@ -3913,11 +3913,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 3:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:49Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:49Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "tailwind-tailwindui-com",
@@ -4017,11 +4017,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 4:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:30:53Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:30:53Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "popwork-pop-work",
@@ -4160,8 +4160,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 29, 2024 4:14 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:00Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:00Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "flexe-flexe-com",
@@ -4311,11 +4311,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 31, 2024 11:21 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:01Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:01Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "hotjar-hotjar-com",
@@ -4417,11 +4417,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 9:18 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:06Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:06Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "nuro-nuro-ai",
@@ -4632,8 +4632,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 10:29 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:12Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:12Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "3coresec-3coresec-com",
@@ -4735,11 +4735,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 5:48 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:16Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:16Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "bambassadors-bambassadors-com",
@@ -4787,8 +4787,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 5:53 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:17Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:17Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "clickup-clickup-com",
@@ -4837,11 +4837,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 5:56 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:19Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:19Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "kive-kive-ai",
@@ -5105,8 +5105,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:17 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:27Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:27Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "metronome-metronome-com",
@@ -5160,8 +5160,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:30Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:30Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "quilter-quilter-ai",
@@ -5212,8 +5212,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 1, 2024 8:43 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:31Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:31Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "sprig-sprig-com",
@@ -5320,8 +5320,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:05 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:38Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:38Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "moov-moov-io",
@@ -5589,11 +5589,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 2, 2024 11:26 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:43Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:43Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "scratchpad-scratchpad-com",
@@ -5636,8 +5636,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:35 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:44Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:44Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "sardine-sardine-ai",
@@ -5742,8 +5742,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:45 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:49Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:49Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "triple-whale-triplewhale-com",
@@ -5791,8 +5791,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:48 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:48Z",
-      "screenshotUpdatedAt": "2026-04-28T21:31:48Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "orum-orum-com",
@@ -5952,11 +5952,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 11:59 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:54Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:54Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "carta-carta-com",
@@ -6006,11 +6006,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 12:02 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:55Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:55Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "evernote-evernote-com",
@@ -6109,11 +6109,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 12:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:56Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:56Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "shopify-shopify-com",
@@ -6166,11 +6166,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 12:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:31:57Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:31:57Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "unicorn-studio-unicorn-studio",
@@ -6269,8 +6269,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 2:54 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:02Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:02Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rogo-data-rogodata-com",
@@ -6327,8 +6327,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 2:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:02Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:02Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "harness-vercel-harness-next-vercel-app",
@@ -6436,8 +6436,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:13Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:13Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "one-guard-oneg-org",
@@ -6636,8 +6636,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:27 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:09Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:09Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "quantum-wallet-quantumwallet-tech",
@@ -6681,8 +6681,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 3:29 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:10Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:10Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "custo-custo-io",
@@ -7157,11 +7157,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:23Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:32:23Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "flashform-flshfrm-com",
@@ -7327,8 +7327,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:29 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:27Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:27Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "metadrop-metadrop-com",
@@ -7433,8 +7433,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 9, 2024 4:39 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:34Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:34Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "vercel-ship-events-vercel-com",
@@ -7768,8 +7768,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 12:57 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:37Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:37Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "stereolabs-stereolabs-com",
@@ -7820,8 +7820,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:01 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:41Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:41Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "joselow-associates-ajoselowpc-com",
@@ -7923,11 +7923,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:45Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:32:45Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "bolt-bolt-com",
@@ -8036,8 +8036,8 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "April 16, 2024 1:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:32:57Z",
-      "screenshotUpdatedAt": "2026-04-28T21:32:57Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "whimsical-whimsical-com",
@@ -8490,11 +8490,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 2:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:04Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:04Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "spotify-web-player-webplayer-byspotify-com",
@@ -8691,8 +8691,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:29Z",
-      "screenshotUpdatedAt": "2026-04-28T21:33:29Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "catona-climate-catona-com",
@@ -8991,11 +8991,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 16, 2024 4:23 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:26Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:26Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "jams-basic-dept-jams-basicagency-com",
@@ -9092,8 +9092,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:32 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:31Z",
-      "screenshotUpdatedAt": "2026-04-28T21:33:31Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "culture-amp-cultureamp-com",
@@ -9142,11 +9142,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:34 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:35Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:35Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "sprout-social-sproutsocial-com",
@@ -9196,11 +9196,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:37 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:36Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:36Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "monday-com-monday-com",
@@ -9248,11 +9248,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:40 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:39Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:39Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "zendesk-zendesk-com",
@@ -9300,11 +9300,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:42 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:41Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:41Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "gong-gong-io",
@@ -9349,11 +9349,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:44 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:41Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:41Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z",
       "webstacksClient": true
     },
     {
@@ -9409,11 +9409,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 11:49 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:43Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:43Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "gitbook-gitbook-com",
@@ -9464,11 +9464,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 18, 2024 12:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:46Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:46Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "roblox-corp-roblox-com",
@@ -9512,11 +9512,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:26 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:47Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:47Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "akaru-akaru-fr",
@@ -9939,11 +9939,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:53 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:56Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:33:56Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "docusign-brand-brand-docusign-com",
@@ -9984,11 +9984,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:56 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:01Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:34:01Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "teenage-engineering-teenage-engineering",
@@ -10035,8 +10035,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 26, 2024 11:59 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:33:59Z",
-      "screenshotUpdatedAt": "2026-04-28T21:33:59Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "better-stack-betterstack-com",
@@ -10239,8 +10239,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:33 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:07Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:07Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "axelar-axelar-network",
@@ -10342,8 +10342,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 4:46 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:10Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:10Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "evoke-hr-evokehr-ca",
@@ -10545,8 +10545,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:16Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:16Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "firststreet-firststreet-org",
@@ -10600,8 +10600,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:21Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:21Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "jasper-jasper-ai",
@@ -10874,8 +10874,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 1, 2024 5:53 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:33Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:33Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "render-render-com",
@@ -11184,11 +11184,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 8, 2024 4:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:41Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:34:41Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "formcarry-formcarry-com",
@@ -11614,11 +11614,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:18 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:50Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:34:50Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "packsmith-packsmith-io",
@@ -11719,8 +11719,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:26 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:57Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:57Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "supa-stellar-supastellar-co",
@@ -11776,8 +11776,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:30 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:34:57Z",
-      "screenshotUpdatedAt": "2026-04-28T21:34:57Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "style-port-styleport-co-jp",
@@ -11885,8 +11885,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 15, 2024 10:39 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:05Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:05Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "scepter-scepterwallet-com",
@@ -11983,8 +11983,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 17, 2024 5:22 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:01Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:01Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "canopy-canopyservicing-com",
@@ -12294,8 +12294,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:41 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:38Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:38Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "token-token-com",
@@ -12460,11 +12460,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 2, 2024 8:59 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:18Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:35:18Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "raycast-raycast-com",
@@ -12678,8 +12678,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 3, 2024 12:45 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:27Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:27Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "lemon-squeezy-lemonsqueezy-com",
@@ -12832,8 +12832,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:26 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:35Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:35Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "cake-equity-cakeequity-com",
@@ -12888,8 +12888,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:39Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:39Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "q-industrial-q-industrial-com",
@@ -13050,8 +13050,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:43 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:42Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:42Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "modernloop-modernloop-com",
@@ -13155,11 +13155,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 8:52 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:43Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:35:43Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "mercu-mercu-com",
@@ -13319,8 +13319,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 9:02 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:50Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:50Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "cloaked-cloaked-com",
@@ -13373,8 +13373,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 16, 2024 11:09 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:50Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:50Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "depoly-depoly-co",
@@ -13590,8 +13590,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 26, 2024 10:53 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:39Z",
-      "screenshotUpdatedAt": "2026-04-28T21:36:39Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "erthos-planeterthos-com",
@@ -13649,8 +13649,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 12:21 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:35:56Z",
-      "screenshotUpdatedAt": "2026-04-28T21:35:56Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "mellow-mellow-io",
@@ -13806,11 +13806,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 12:30 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:02Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:36:02Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "heid-heid-webflow-io",
@@ -13922,11 +13922,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 12:38 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:03Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:36:03Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "heva-health-hevahealth-com",
@@ -13980,8 +13980,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "July 1, 2024 5:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:09Z",
-      "screenshotUpdatedAt": "2026-04-28T21:36:09Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "ramp-ramp-com",
@@ -14412,11 +14412,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 5:04 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:26Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:36:26Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rendezvous-myrendezvous-ca",
@@ -14517,8 +14517,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 2, 2024 5:11 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:29Z",
-      "screenshotUpdatedAt": "2026-04-28T21:36:29Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "intrepid-intrepidautomation-com",
@@ -14886,11 +14886,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 4, 2024 11:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:47Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:36:47Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "tripadvisor-brandswetravelwith-tripadvisor-com",
@@ -14997,8 +14997,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:05 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:50Z",
-      "screenshotUpdatedAt": "2026-04-28T21:36:50Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "outloud-breaking-com",
@@ -15055,8 +15055,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:50Z",
-      "screenshotUpdatedAt": "2026-04-28T21:36:50Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "the-food-truck-club-defoodtruckclub-nl",
@@ -15114,8 +15114,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 26, 2024 1:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:54Z",
-      "screenshotUpdatedAt": "2026-04-28T21:36:54Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "eppo-geteppo-com",
@@ -15267,11 +15267,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 29, 2024 8:54 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:36:57Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:36:57Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "arc-search-arc-net",
@@ -15531,8 +15531,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 2, 2024 3:28 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:07Z",
-      "screenshotUpdatedAt": "2026-04-28T21:37:07Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "webisoft-webisoft-com",
@@ -15749,11 +15749,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "September 23, 2024 11:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:16Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:37:16Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "cloudbees-cloudbees-com",
@@ -15799,11 +15799,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 10, 2024 4:15 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:19Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:37:19Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "surfe-surfe-com",
@@ -16082,8 +16082,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 10, 2024 5:21 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:26Z",
-      "screenshotUpdatedAt": "2026-04-28T21:37:26Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "dora-dora-run",
@@ -16300,8 +16300,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "October 15, 2024 6:02 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:32Z",
-      "screenshotUpdatedAt": "2026-04-28T21:37:32Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "sound-ethics-soundethics-org",
@@ -16443,8 +16443,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 11:20 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:39Z",
-      "screenshotUpdatedAt": "2026-04-28T21:37:39Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "circle-circle-so",
@@ -16507,11 +16507,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 12:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:39Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:37:39Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "popcorn-popcorn-space",
@@ -16593,11 +16593,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 12:41 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:42Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:37:42Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "peers-peers-solutions",
@@ -16655,8 +16655,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 1:20 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:47Z",
-      "screenshotUpdatedAt": "2026-04-28T21:37:47Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "succinct-succinct-xyz",
@@ -16713,11 +16713,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "January 30, 2025 1:24 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:49Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:37:49Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "https-social-impact-capital-com-ocial-impact-capital-social-impact-capital-com",
@@ -16807,8 +16807,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 4:55 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:53Z",
-      "screenshotUpdatedAt": "2026-04-28T21:37:53Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "tola-usetola-com",
@@ -16949,11 +16949,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:03 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:37:57Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:37:57Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "zembula-zembula-com",
@@ -17022,8 +17022,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:04Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:04Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "uplink-uplink-itsoffbrand-com",
@@ -17135,8 +17135,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:13Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:13Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "dtre-dtre-com",
@@ -17169,8 +17169,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:18 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:04Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:04Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "jasper-jasper-ai",
@@ -17203,11 +17203,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "February 1, 2025 5:19 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:12Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:12Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "portal-gaming-portalgaming-com",
@@ -17428,11 +17428,11 @@ window.INSPIRATION_DATA = {
       ],
       "createdAt": "March 26, 2025 8:11 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:16Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:16Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "endex-endex-ai",
@@ -17675,11 +17675,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:06 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:28Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:28Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "stacker-stackerhq-com",
@@ -17758,8 +17758,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:08 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:29Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:29Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "incident-io-incident-io",
@@ -17796,11 +17796,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:10 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:32Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:32Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "nvg8-nvg8-io",
@@ -17840,8 +17840,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:12 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:33Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:33Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "localyzer-localyzer-io",
@@ -17922,11 +17922,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:16 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:36Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:36Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "runway-runwayml-com",
@@ -17966,11 +17966,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 4, 2025 4:21 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:36Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:36Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "invertase-invertase-io",
@@ -18051,8 +18051,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "April 17, 2025 12:40 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:43Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:43Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "micro-micro-so",
@@ -18193,11 +18193,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 11:54 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:50Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Agency"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:50Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "drewl-drewl-com",
@@ -18301,11 +18301,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 12:00 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:56Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:38:56Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "origin-useorigin-com",
@@ -18571,8 +18571,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 5:31 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:01Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:01Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "hyperbolic-hyperbolic-studiofreight-com",
@@ -18625,8 +18625,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "May 27, 2025 5:34 PM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:38:59Z",
-      "screenshotUpdatedAt": "2026-04-28T21:38:59Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "deepjudge-deepjudge-ai",
@@ -18682,8 +18682,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 12, 2025 9:30 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:02Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:02Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "gynger-gynger-io",
@@ -18730,8 +18730,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 12, 2025 9:31 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:16Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:16Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "realm-withrealm-com",
@@ -18832,8 +18832,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "June 12, 2025 9:35 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:07Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:07Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "windsurf-windsurf-com",
@@ -19222,8 +19222,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 9:18 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:25Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:25Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "wa-solutions-wasolutions-com",
@@ -19386,8 +19386,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:07 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:25Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:25Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "terminal-industries-terminal-industries-com",
@@ -19441,8 +19441,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:27 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:28Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:28Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "virya-energy-virya-energy-com",
@@ -19549,8 +19549,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "createdAt": "August 14, 2025 10:28 AM",
       "source": "notion-seed",
-      "screenshotCapturedAt": "2026-04-28T21:39:30Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:30Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "normative-figma",
@@ -19668,11 +19668,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:14.879785Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:33Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:33Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "superhuman-figma",
@@ -19748,11 +19748,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:14.989766Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:36Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:36Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "cake-figma",
@@ -19824,11 +19824,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.098946Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:40Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:40Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "opencall-figma",
@@ -19941,11 +19941,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.266334Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:47Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:47Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "airtable-figma",
@@ -20056,11 +20056,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.460877Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:53Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:53Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "handshake-figma",
@@ -20137,11 +20137,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.587273Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:54Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:54Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rollups-figma",
@@ -20177,8 +20177,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.648645Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:55Z",
-      "screenshotUpdatedAt": "2026-04-28T21:39:55Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "zapier-figma",
@@ -20255,11 +20255,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.832889Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:04Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:04Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "factory-ai-figma",
@@ -20297,11 +20297,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.866239Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:39:58Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:39:58Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "palantir-figma",
@@ -20339,11 +20339,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:15.904773Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:03Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:03Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "miter-figma",
@@ -20572,11 +20572,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.279677Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:12Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:12Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "deezer-figma",
@@ -20694,11 +20694,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.476007Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:18Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:18Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "front-figma",
@@ -20734,11 +20734,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.525721Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:19Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:19Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rogo-figma",
@@ -20774,8 +20774,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.565131Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:21Z",
-      "screenshotUpdatedAt": "2026-04-28T21:40:21Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "mongodb-figma",
@@ -20811,11 +20811,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.610958Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:20Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:20Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "sana-labs-figma",
@@ -20934,11 +20934,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "April 9, 2024 4:01 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:26Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:26Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z",
       "webstacksClient": true
     },
     {
@@ -20975,8 +20975,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.840210Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:25Z",
-      "screenshotUpdatedAt": "2026-04-28T21:40:25Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "profounders-figma",
@@ -21049,11 +21049,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:16.956052Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:29Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:29Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "chargetrip-figma",
@@ -21160,11 +21160,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.101230Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:41Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:41Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "paypal-figma",
@@ -21240,11 +21240,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.247119Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:34Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:34Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "northlane-figma",
@@ -21398,11 +21398,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.495107Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:43Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:43Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "toggl-figma",
@@ -21479,11 +21479,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.663324Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:46Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:46Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "public-figma",
@@ -21519,11 +21519,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.752330Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:48Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:48Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "ada-figma",
@@ -21600,11 +21600,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.885425Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:50Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:50Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "miro-figma",
@@ -21641,11 +21641,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:17.957027Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:50Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:40:50Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "smartersociety-figma",
@@ -21718,8 +21718,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:18.077933Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:40:56Z",
-      "screenshotUpdatedAt": "2026-04-28T21:40:56Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "stripe-figma",
@@ -21838,11 +21838,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:18.279112Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:00Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:00Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "wiz-figma",
@@ -21920,8 +21920,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:18.390849Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:02Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:02Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "gong-webstacks-figma",
@@ -21958,11 +21958,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "May 1, 2024 5:13 PM",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:00Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:00Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z",
       "webstacksClient": true
     },
     {
@@ -22185,8 +22185,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:18.857437Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:13Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:13Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rox-figma",
@@ -22223,8 +22223,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:18.883606Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:12Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:12Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "speakeasy-figma",
@@ -22260,11 +22260,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:18.927815Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:14Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:14Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "telescope-figma",
@@ -22340,11 +22340,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:19.001604Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:19Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:19Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "reducto-figma",
@@ -22384,11 +22384,11 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:19.063652Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:20Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:20Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "pipe-figma",
@@ -22472,8 +22472,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:19.179927Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:22Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:22Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "perk-figma",
@@ -22510,8 +22510,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:19.238112Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:22Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:22Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "base-figma",
@@ -22548,8 +22548,8 @@ window.INSPIRATION_DATA = {
       "createdAt": "2026-04-27T16:45:19.273786Z",
       "source": "figma-export",
       "scoredAt": "2026-04-27T17:27:16Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:26Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:26Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "name": "Gradial",
@@ -22648,11 +22648,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "April 27, 2026 09:39 PM",
-      "screenshotCapturedAt": "2026-04-28T21:41:28Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:28Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "harvest-getharvest-com",
@@ -22703,11 +22703,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "April 27, 2026 10:05 PM",
-      "screenshotCapturedAt": "2026-04-28T21:41:26Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "MidMarket"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:26Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "mistral-mistral-ai",
@@ -22753,11 +22753,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:33Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:33Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "integratedbio-integratedbio-com",
@@ -22799,8 +22799,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "2026-04-27T22:11:23Z",
-      "screenshotCapturedAt": "2026-04-28T21:41:33Z",
-      "screenshotUpdatedAt": "2026-04-28T21:41:33Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "bricx-bricxlabs-com",
@@ -23034,11 +23034,11 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "March 28, 2024 5:11 PM",
-      "screenshotCapturedAt": "2026-04-28T21:41:39Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Enterprise"
       ],
-      "screenshotUpdatedAt": "2026-04-28T21:41:39Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z",
       "webstacksClient": true
     },
     {
@@ -23353,11 +23353,11 @@ window.INSPIRATION_DATA = {
       "id": "quin-heyquin-io",
       "createdAt": "April 29, 2026 01:24 AM",
       "screenshot": "assets/screenshots/quin-heyquin-io.jpg",
-      "screenshotCapturedAt": "2026-04-29T01:24:41Z",
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "companySize": [
         "Startup"
       ],
-      "screenshotUpdatedAt": "2026-04-29T01:24:41Z"
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "name": "Multi",
@@ -23727,8 +23727,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "May 01, 2026 06:51 PM",
-      "screenshotCapturedAt": "2026-05-01T18:51:17Z",
-      "screenshotUpdatedAt": "2026-05-01T18:51:17Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "defined-vc-definedvc-com",
@@ -23772,8 +23772,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "May 01, 2026 06:51 PM",
-      "screenshotCapturedAt": "2026-05-01T18:51:20Z",
-      "screenshotUpdatedAt": "2026-05-01T18:51:20Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "spade-spade-com",
@@ -24086,8 +24086,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "May 01, 2026 06:51 PM",
-      "screenshotCapturedAt": "2026-05-01T18:51:51Z",
-      "screenshotUpdatedAt": "2026-05-01T18:51:51Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "paypal-home-paypal-com",
@@ -24133,8 +24133,8 @@ window.INSPIRATION_DATA = {
       "typefaces": [],
       "source": "claude-add",
       "createdAt": "May 01, 2026 06:51 PM",
-      "screenshotCapturedAt": "2026-05-01T18:51:55Z",
-      "screenshotUpdatedAt": "2026-05-01T18:51:55Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "dialpad-dialpad-com",
@@ -24224,7 +24224,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "March 28, 2024 5:49 PM",
-      "screenshotCapturedAt": "2026-05-01T19:57:54Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "truepic-truepic-com",
@@ -24310,7 +24311,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "August 2, 2024 5:11 PM",
-      "screenshotCapturedAt": "2026-05-01T19:58:03Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "aragorn-ai-aragorn-ai",
@@ -24395,7 +24397,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "April 26, 2024 11:50 AM",
-      "screenshotCapturedAt": "2026-05-01T19:58:12Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "tanium-tanium-com",
@@ -24437,7 +24440,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "October 10, 2024 4:15 PM",
-      "screenshotCapturedAt": "2026-05-01T19:58:19Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "fireworks-ai-fireworks-ai",
@@ -24614,7 +24618,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "April 9, 2024 11:45 AM",
-      "screenshotCapturedAt": "2026-05-01T19:58:36Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "sevenrooms-sevenrooms-com",
@@ -24659,7 +24664,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "March 28, 2024 4:58 PM",
-      "screenshotCapturedAt": "2026-05-01T19:58:42Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "deepgram-deepgram-com",
@@ -24747,7 +24753,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "May 15, 2024 10:26 AM",
-      "screenshotCapturedAt": "2026-05-01T19:58:56Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "logicmonitor-logicmonitor-com",
@@ -24836,7 +24843,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "March 28, 2024 5:44 PM",
-      "screenshotCapturedAt": "2026-05-01T19:59:09Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "heygen-heygen-com",
@@ -24881,7 +24889,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "April 9, 2024 3:14 PM",
-      "screenshotCapturedAt": "2026-05-01T19:59:15Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "mutiny-mutinyhq-com",
@@ -25097,7 +25106,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "April 4, 2025 4:14 PM",
-      "screenshotCapturedAt": "2026-05-01T19:59:42Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "buildops-buildops-com",
@@ -25140,7 +25150,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "August 29, 2024 9:01 PM",
-      "screenshotCapturedAt": "2026-05-01T19:59:48Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "workbright-workbright-com",
@@ -25181,7 +25192,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "March 29, 2024 2:58 PM",
-      "screenshotCapturedAt": "2026-05-01T19:59:52Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "rockbot-rockbot-com",
@@ -25264,7 +25276,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "April 9, 2024 12:02 PM",
-      "screenshotCapturedAt": "2026-05-01T20:00:00Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "9fin-9fin-com",
@@ -25308,7 +25321,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "February 1, 2025 4:55 PM",
-      "screenshotCapturedAt": "2026-05-01T20:00:07Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "supersure-supersure-com",
@@ -25349,7 +25363,8 @@ window.INSPIRATION_DATA = {
       "source": "claude-add",
       "webstacksClient": true,
       "createdAt": "February 1, 2025 4:54 PM",
-      "screenshotCapturedAt": "2026-05-01T20:00:11Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "id": "stackpack-stackpack-ai",
@@ -25428,7 +25443,8 @@ window.INSPIRATION_DATA = {
       },
       "createdAt": "May 20, 2026 10:44 PM",
       "screenshot": "assets/screenshots/consensys-consensys-io.jpg",
-      "screenshotCapturedAt": "2026-05-20T22:44:33Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     },
     {
       "name": "Rig",
@@ -25611,7 +25627,8 @@ window.INSPIRATION_DATA = {
       },
       "createdAt": "May 20, 2026 10:44 PM",
       "screenshot": "assets/screenshots/firsty-firsty-app.jpg",
-      "screenshotCapturedAt": "2026-05-20T22:44:58Z"
+      "screenshotCapturedAt": "2026-06-01T15:06:35Z",
+      "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
     }
   ]
 };
