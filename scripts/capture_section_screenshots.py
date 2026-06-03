@@ -54,16 +54,35 @@ Flags:
     --concurrency N     Parallel workers (default 3)
     --timeout MS        Per-page timeout ms (default 28000)
     --dry-run           Run detection + report but don't write image files
+    --vision            On DOM misses, ask Claude to locate the section in a
+                        full-page screenshot. Only fires for static components
+                        (conversion-panel, accordion, case-study, testimonials,
+                        trustbar, switchback) — never interaction-gated ones.
+                        Needs ANTHROPIC_API_KEY in scripts/.env or the env.
+    --vision-model M    Override vision model (default claude-sonnet-4-5;
+                        or set ANTHROPIC_MODEL).
+
+Examples with vision:
+    # Re-run accordion misses with the vision backstop (skips already-captured files)
+    python3 scripts/capture_section_screenshots.py --component accordion --vision
+    # Vision sweep of all static components
+    python3 scripts/capture_section_screenshots.py --vision
 
 Dependencies (same as capture_screenshots.py):
     pip3 install playwright pillow --break-system-packages
     playwright install chromium
+
+Vision adds NO new pip deps — it calls the Anthropic API directly via urllib.
+Cost is tiny (~1 small image + <200 tokens per missed site).
 """
 
 import argparse
+import base64
 import json
+import re
 import sys
 import time
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter, defaultdict
 from io import BytesIO
@@ -116,6 +135,17 @@ SLUG_MAP = {
 
 # slugs that have a reliable positional fallback worth saving when detection misses
 POSITIONAL_FALLBACK = {"hero": "top", "navigation": "top", "footer": "bottom"}
+
+# Components where a Claude-vision backstop is worth running on DOM misses.
+# Only STATIC, visually-distinct sections — NOT interaction-gated ones (mega-menu
+# hover, tabbed/timed switchers, search) where a static screenshot is meaningless.
+VISION_COMPONENTS = {"conversion-panel", "accordion", "case-study", "testimonials", "trustbar", "switchback"}
+
+# Set in main() when --vision is passed.
+VISION_API_KEY = ""
+VISION_MODEL   = "claude-sonnet-4-5"   # override with --vision-model or ANTHROPIC_MODEL
+VISION_ENABLED = False
+ENV_FILE       = ROOT / "scripts" / ".env"
 
 
 # ─── Cookie/consent blocking (same as other scripts) ─────────────────────────
@@ -416,10 +446,96 @@ def _positional_shot(page, where: str) -> bytes:
     return page.screenshot(full_page=False, type="png")
 
 
+# ─── Vision backstop ──────────────────────────────────────────────────────────
+
+def _resize_for_vision(png_bytes: bytes, width: int = 768) -> bytes:
+    """Downscale a (possibly very tall) full-page PNG to keep the API payload small."""
+    with Image.open(BytesIO(png_bytes)) as im:
+        im = im.convert("RGB")
+        if im.width > width:
+            ratio = width / im.width
+            im = im.resize((width, int(im.height * ratio)), Image.LANCZOS)
+        buf = BytesIO()
+        im.save(buf, "PNG", optimize=True)
+        return buf.getvalue()
+
+
+def _crop_fraction(png_bytes: bytes, top_frac: float, bottom_frac: float) -> bytes:
+    """Crop a full-page PNG to a vertical band [top_frac, bottom_frac] of its height."""
+    with Image.open(BytesIO(png_bytes)) as im:
+        H = im.height
+        top = max(0, int(top_frac * H))
+        bot = min(H, int(bottom_frac * H))
+        if bot - top < 40:
+            bot = min(H, top + 40)
+        cropped = im.crop((0, top, im.width, bot))
+        buf = BytesIO()
+        cropped.save(buf, "PNG")
+        return buf.getvalue()
+
+
+def vision_locate(full_png: bytes, schema_name: str):
+    """
+    Ask Claude for the vertical bounds of the target section in a full-page
+    screenshot. Returns (top_frac, bottom_frac) in 0..1, or None.
+    """
+    if not VISION_API_KEY:
+        return None
+    small = _resize_for_vision(full_png)
+    b64 = base64.standard_b64encode(small).decode()
+    prompt = (
+        f"This is a full-page screenshot of a marketing website, top to bottom. "
+        f"Find the FIRST clear \"{schema_name}\" section. "
+        f"Reply with ONLY compact JSON, no prose: "
+        f'{{"found": true_or_false, "top": <0..1>, "bottom": <0..1>}} '
+        f"where top and bottom are fractions of the TOTAL image height marking that "
+        f"section's vertical bounds. If the page has no such section, return "
+        f'{{"found": false}}. Keep the band tight to the section.'
+    )
+    body = {
+        "model": VISION_MODEL,
+        "max_tokens": 150,
+        "messages": [{
+            "role": "user",
+            "content": [
+                {"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": b64}},
+                {"type": "text", "text": prompt},
+            ],
+        }],
+    }
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=json.dumps(body).encode(),
+        headers={
+            "x-api-key": VISION_API_KEY,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            data = json.loads(resp.read())
+        text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+        m = re.search(r"\{.*\}", text, re.S)
+        if not m:
+            return None
+        obj = json.loads(m.group(0))
+        if not obj.get("found"):
+            return None
+        top = max(0.0, min(1.0, float(obj.get("top", 0))))
+        bot = max(0.0, min(1.0, float(obj.get("bottom", 1))))
+        if bot - top < 0.02:
+            return None
+        return (top, bot)
+    except Exception:
+        return None
+
+
 def capture(playwright, url: str, slug: str, timeout_ms: int):
     """
     Returns (png_bytes, layer, confidence) or (None, 'missed', None) when a hard
-    component matches nothing and has no safe positional fallback.
+    component matches nothing and no fallback (positional or vision) applies.
     """
     browser, ctx, page = _load_page(playwright, url, timeout_ms)
     try:
@@ -439,11 +555,24 @@ def capture(playwright, url: str, slug: str, timeout_ms: int):
                     png = page.screenshot(full_page=False, type="png")  # too tall → viewport slice
                 return png, res.get("layer", "?"), res.get("confidence", "?")
             except Exception:
-                pass  # fall through to positional / missed
+                pass  # fall through to positional / vision / missed
 
-        # No element (or element screenshot failed)
+        # No element (or element screenshot failed) → positional fallback if safe
         if slug in POSITIONAL_FALLBACK:
             return _positional_shot(page, POSITIONAL_FALLBACK[slug]), "positional", "low"
+
+        # Vision backstop for static-but-mislocated components
+        if VISION_ENABLED and slug in VISION_COMPONENTS:
+            try:
+                page.evaluate("window.scrollTo(0, 0)")
+                time.sleep(0.2)
+                full = page.screenshot(full_page=True, type="png", timeout=15000)
+                bounds = vision_locate(full, SLUG_MAP[slug])
+                if bounds:
+                    return _crop_fraction(full, *bounds), "vision", "med"
+            except Exception:
+                pass
+
         return None, "missed", None
     finally:
         ctx.close()
@@ -482,13 +611,45 @@ def parse_args():
     ap.add_argument("--concurrency", type=int, default=3)
     ap.add_argument("--timeout",     type=int, default=28000)
     ap.add_argument("--dry-run",     action="store_true")
+    ap.add_argument("--vision",      action="store_true",
+                    help="Use Claude vision as a backstop on DOM misses for static "
+                         "components (" + ", ".join(sorted(VISION_COMPONENTS)) + "). "
+                         "Needs ANTHROPIC_API_KEY in env or scripts/.env.")
+    ap.add_argument("--vision-model", help="Override the vision model (default claude-sonnet-4-5)")
     return ap.parse_args()
 
 
+def _load_anthropic_key() -> str:
+    import os
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not key and ENV_FILE.exists():
+        for line in ENV_FILE.read_text().splitlines():
+            line = line.strip()
+            if line.startswith("ANTHROPIC_API_KEY") and "=" in line:
+                key = line.split("=", 1)[1].strip().strip('"').strip("'")
+                break
+    return key
+
+
+def _load_anthropic_model() -> str:
+    import os
+    return os.environ.get("ANTHROPIC_MODEL", "").strip() or "claude-sonnet-4-5"
+
+
 def main():
+    global VISION_API_KEY, VISION_MODEL, VISION_ENABLED
     args = parse_args()
     data = json.loads(JSON_PATH.read_text())
     only = set(s.strip() for s in args.only.split(",")) if args.only else None
+
+    if args.vision:
+        VISION_API_KEY = _load_anthropic_key()
+        VISION_MODEL   = args.vision_model or _load_anthropic_model()
+        if not VISION_API_KEY:
+            sys.exit("--vision needs an API key.\n"
+                     "  Add ANTHROPIC_API_KEY=sk-ant-... to scripts/.env (or export it).")
+        VISION_ENABLED = True
+        print(f"Vision backstop ON · model={VISION_MODEL} · components={', '.join(sorted(VISION_COMPONENTS))}")
 
     if args.component:
         slug = args.component.lower().strip()
