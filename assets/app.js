@@ -339,10 +339,11 @@
   function applyEditAuthUI() {
     const allowed = !!getEditToken();
     document.body.classList.toggle("edit-allowed", allowed);
-    // Browse + Sections are public; only the Edit button is token-gated.
-    const editBtn = document.querySelector('.view-toggle-btn[data-view="edit"]');
-    if (editBtn) editBtn.style.display = allowed ? "" : "none";
-    if (!allowed && state.view === "edit") setView("browse");
+    // Browse is public. Sections + Edit are token-gated for now — Sections stays
+    // internal-only until section-detection quality is good enough to ship publicly.
+    document.querySelectorAll('.view-toggle-btn[data-view="edit"], .view-toggle-btn[data-view="sections"]')
+      .forEach(b => { b.style.display = allowed ? "" : "none"; });
+    if (!allowed && (state.view === "edit" || state.view === "sections")) setView("browse");
     const lockBtn = document.getElementById("edit-token-btn");
     if (lockBtn) lockBtn.classList.toggle("unlocked", allowed);
   }

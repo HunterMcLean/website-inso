@@ -232,7 +232,7 @@ body.shared-album-mode .filter-bar { display: none; }
 .album-check-count { font-size: 11px; color: var(--text-4); font-variant-numeric: tabular-nums; }
 
 /* ----- Main content ----- */
-.main { padding: 24px 32px 80px; }
+.main { padding: 24px 32px 80px; min-width: 0; }
 
 /* ----- Hero ----- */
 .hero {

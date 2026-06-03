@@ -250,12 +250,16 @@ DETECT_JS = r"""
     return best;
   };
 
-  // a Switchback: section containing a 2-col row, one column an image, the other text
+  // a Switchback: a MID-PAGE 2-col row, one column media + the other body text.
+  // Heroes also use a text+visual 2-col layout, so we exclude the top-of-page
+  // hero zone and require the text column to read like body copy, not a headline.
+  const HERO_ZONE = Math.max(640, window.innerHeight * 0.9);  // detection runs at scroll 0
   const switchbackScan = () => {
     let best=null, bestScore=0;
     for (const s of document.querySelectorAll('section,div')) {
       const r = s.getBoundingClientRect();
       if (r.width < vw*0.6 || r.height < 220 || r.height > 950) continue;
+      if (r.top < HERO_ZONE) continue;                         // skip hero / first-fold band
       const conts = [s, ...s.querySelectorAll(':scope > div, :scope > div > div')];
       for (const c of conts) {
         const cc = Array.from(c.children).filter(x => { const xr=x.getBoundingClientRect(); return xr.width>100 && xr.height>100; });
@@ -263,9 +267,15 @@ DETECT_JS = r"""
         const [a,b] = cc;
         const ar=a.getBoundingClientRect(), br=b.getBoundingClientRect();
         if (Math.abs(ar.top-br.top) > Math.max(ar.height,br.height)*0.5) continue;  // must share a row
-        const aMedia = a.querySelector('img,picture,svg,video'), bMedia = b.querySelector('img,picture,svg,video');
-        const aText = txt(a).length>30, bText = txt(b).length>30;
-        if ((aMedia && bText && !aText) || (bMedia && aText && !bText)) {
+        // columns must be roughly balanced (heroes often have a tiny text col + huge graphic)
+        const ratio = Math.min(ar.width, br.width) / Math.max(ar.width, br.width);
+        if (ratio < 0.45) continue;
+        const aMedia = a.querySelector('img,picture,video'), bMedia = b.querySelector('img,picture,video');
+        const aTxt = txt(a), bTxt = txt(b);
+        // the text column must have real body copy (not just a short headline + CTA)
+        const aBody = aTxt.length > 80, bBody = bTxt.length > 80;
+        const aThin = aTxt.length <= 80, bThin = bTxt.length <= 80;
+        if ((aMedia && bBody && aThin) || (bMedia && aBody && bThin)) {
           const score = r.width * Math.min(r.height, 500);
           if (score > bestScore) { bestScore = score; best = s; }
         }
