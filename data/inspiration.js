@@ -25629,6 +25629,908 @@ window.INSPIRATION_DATA = {
       "screenshot": "assets/screenshots/firsty-firsty-app.jpg",
       "screenshotCapturedAt": "2026-06-01T15:06:35Z",
       "screenshotUpdatedAt": "2026-06-01T15:06:35Z"
+    },
+    {
+      "name": "Mollie",
+      "url": "https://www.mollie.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Established",
+        "Friendly",
+        "Approachable",
+        "Bright"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "mollie.com",
+      "id": "mollie-mollie-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/mollie-mollie-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:06Z"
+    },
+    {
+      "name": "More Nutrition",
+      "url": "https://more-nutrition.webflow.io",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "eCommerce"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Bright",
+        "Youthful",
+        "Friendly",
+        "Playful",
+        "Natural",
+        "Approachable"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "more-nutrition.webflow.io",
+      "id": "more-nutrition-more-nutrition-webflow-io",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/more-nutrition-more-nutrition-webflow-io.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:13Z"
+    },
+    {
+      "name": "General Intelligence Company",
+      "url": "https://www.generalintelligencecompany.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Unconventional",
+        "Subtle",
+        "Premium"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "generalintelligencecompany.com",
+      "id": "general-intelligence-company-generalintelligencecompany-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/general-intelligence-company-generalintelligencecompany-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:19Z"
+    },
+    {
+      "name": "ON.Energy",
+      "url": "https://www.on.energy",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Energy/Infrastructure",
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Industrial",
+        "Serious"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "on.energy",
+      "id": "on-energy-on-energy",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/on-energy-on-energy.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:37Z"
+    },
+    {
+      "name": "MindMarket",
+      "url": "https://mindmarket.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "MarTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Friendly",
+        "Approachable",
+        "Established",
+        "Bright"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "mindmarket.com",
+      "id": "mindmarket-mindmarket-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/mindmarket-mindmarket-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:42Z"
+    },
+    {
+      "name": "Novu",
+      "url": "https://www.withnovu.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Friendly",
+        "Approachable",
+        "Subtle",
+        "Youthful"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "withnovu.com",
+      "id": "novu-withnovu-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/novu-withnovu-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:49Z"
+    },
+    {
+      "name": "Aqua Voice",
+      "url": "https://aquavoice.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Dynamic",
+        "Premium"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "aquavoice.com",
+      "id": "aqua-voice-aquavoice-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/aqua-voice-aquavoice-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:33:55Z"
+    },
+    {
+      "name": "Twenty",
+      "url": "https://twenty.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Sales Tech",
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Unconventional"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "twenty.com",
+      "id": "twenty-twenty-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/twenty-twenty-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:03Z"
+    },
+    {
+      "name": "Phantom",
+      "url": "https://phantom.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Blockchain/Web3",
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Technical",
+        "Dynamic",
+        "Elite"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "phantom.com",
+      "id": "phantom-phantom-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/phantom-phantom-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:13Z"
+    },
+    {
+      "name": "Anima",
+      "url": "https://www.anima.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Agency"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Natural",
+        "Subtle",
+        "Premium",
+        "Approachable"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "anima.ai",
+      "id": "anima-anima-ai",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/anima-anima-ai.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:22Z"
+    },
+    {
+      "name": "Daydream",
+      "url": "https://www.withdaydream.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "MarTech",
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Technical",
+        "Authoritative"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "withdaydream.com",
+      "id": "daydream-withdaydream-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/daydream-withdaydream-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:29Z"
+    },
+    {
+      "name": "Complex Law",
+      "url": "https://www.complexlaw.co.uk",
+      "companyType": [
+        "B2B",
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Legal"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Authoritative",
+        "Established",
+        "Serious",
+        "Approachable",
+        "Traditional"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "complexlaw.co.uk",
+      "id": "complex-law-complexlaw-co-uk",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/complex-law-complexlaw-co-uk.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:32Z"
+    },
+    {
+      "name": "Acctual",
+      "url": "https://www.acctual.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Friendly",
+        "Approachable",
+        "Economical",
+        "Technical"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "acctual.com",
+      "id": "acctual-acctual-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/acctual-acctual-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:38Z"
+    },
+    {
+      "name": "Browserbase",
+      "url": "https://www.browserbase.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Premium",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "browserbase.com",
+      "id": "browserbase-browserbase-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/browserbase-browserbase-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:45Z"
+    },
+    {
+      "name": "Anchor",
+      "url": "https://getanchor.co",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech",
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Approachable"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "getanchor.co",
+      "id": "anchor-getanchor-co",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/anchor-getanchor-co.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:34:50Z"
+    },
+    {
+      "name": "Oryzo",
+      "url": "https://oryzo.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "oryzo.ai",
+      "id": "oryzo-oryzo-ai",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/oryzo-oryzo-ai.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:35:04Z"
+    },
+    {
+      "name": "Frontify",
+      "url": "https://www.frontify.com/en",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "MarTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Established",
+        "Authoritative",
+        "Elite"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "frontify.com",
+      "id": "frontify-frontify-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/frontify-frontify-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:35:11Z"
+    },
+    {
+      "name": "Function Health",
+      "url": "https://www.functionhealth.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Healthcare"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Authoritative",
+        "Approachable",
+        "Elite"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "functionhealth.com",
+      "id": "function-health-functionhealth-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/function-health-functionhealth-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:35:23Z"
+    },
+    {
+      "name": "Resend",
+      "url": "https://resend.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Subtle",
+        "Approachable"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "resend.com",
+      "id": "resend-resend-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/resend-resend-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:35:53Z"
+    },
+    {
+      "name": "Parker",
+      "url": "https://www.getparker.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Premium",
+        "Technical",
+        "Dynamic",
+        "Elite"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "getparker.com",
+      "id": "parker-getparker-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/parker-getparker-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:36:00Z"
+    },
+    {
+      "name": "Lightdash",
+      "url": "https://www.lightdash.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools",
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "lightdash.com",
+      "id": "lightdash-lightdash-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/lightdash-lightdash-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:36:05Z"
+    },
+    {
+      "name": "ToDesktop",
+      "url": "https://www.todesktop.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Premium",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "todesktop.com",
+      "id": "todesktop-todesktop-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/todesktop-todesktop-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:36:11Z"
+    },
+    {
+      "name": "Ease Health",
+      "url": "https://easehealth.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Healthcare",
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Friendly",
+        "Technical",
+        "Serious"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "easehealth.com",
+      "id": "ease-health-easehealth-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/ease-health-easehealth-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:36:17Z"
+    },
+    {
+      "name": "Voiceflow",
+      "url": "https://www.voiceflow.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Approachable",
+        "Friendly",
+        "Natural",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "voiceflow.com",
+      "id": "voiceflow-voiceflow-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": null
+    },
+    {
+      "name": "Mews",
+      "url": "https://www.mews.com/en",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Restaurants/Hospitality/Tourism"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Bright",
+        "Friendly",
+        "Approachable",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "mews.com",
+      "id": "mews-mews-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "June 03, 2026 07:32 PM",
+      "screenshot": "assets/screenshots/mews-mews-com.jpg",
+      "screenshotCapturedAt": "2026-06-03T19:36:51Z"
     }
   ]
 };
