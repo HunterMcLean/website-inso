@@ -404,6 +404,10 @@ body.shared-album-mode .filter-bar { display: none; }
 
 /* ----- Card grid ----- */
 .results { padding-top: 4px; }
+/* The `hidden` attribute must win over any explicit display (.grid uses
+   display:grid, .section-grid uses grid, etc.) so view switching truly hides
+   the inactive panels instead of stacking them. */
+[hidden] { display: none !important; }
 .grid {
   display: grid; gap: 16px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1031,8 +1035,9 @@ body.grid-cols-2 .section-grid { grid-template-columns: repeat(2, minmax(0, 1fr)
 
 .sections-empty { color: var(--text-3); font-size: 14px; padding: 40px 0; }
 
-/* Sections mode: hide sidebar filters that don't apply */
-body.sections-mode .filter-bar { visibility: hidden; pointer-events: none; }
+/* Sections mode: the component pills are the filter, so hide the browse
+   filter-bar (its dropdowns don't apply here) to avoid a dead gap. */
+body.sections-mode .filter-bar { display: none; }
 
 /* Editable chip group */
 .chip-edit-group {

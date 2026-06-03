@@ -339,8 +339,9 @@
   function applyEditAuthUI() {
     const allowed = !!getEditToken();
     document.body.classList.toggle("edit-allowed", allowed);
-    const tg = document.querySelector(".view-toggle");
-    if (tg) tg.style.display = allowed ? "" : "none";
+    // Browse + Sections are public; only the Edit button is token-gated.
+    const editBtn = document.querySelector('.view-toggle-btn[data-view="edit"]');
+    if (editBtn) editBtn.style.display = allowed ? "" : "none";
     if (!allowed && state.view === "edit") setView("browse");
     const lockBtn = document.getElementById("edit-token-btn");
     if (lockBtn) lockBtn.classList.toggle("unlocked", allowed);
