@@ -17,6 +17,25 @@
   [headers.values]
     Cache-Control = "no-cache"
 
+# App code must revalidate every load so deploys show up immediately (no stale
+# app.js/styles.css). "no-cache" still allows 304s when unchanged — it's cheap,
+# not "never cache". This is the fix for the recurring stale-asset problem.
+[[headers]]
+  for = "/assets/app.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/assets/styles.css"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Screenshots are content-addressed by id and rarely change → safe to cache long.
 [[headers]]
   for = "/assets/screenshots/*"
   [headers.values]
