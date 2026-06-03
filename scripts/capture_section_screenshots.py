@@ -1,14 +1,36 @@
 #!/usr/bin/env python3
 """
-Section screenshot capture pipeline.
+Section screenshot capture pipeline — layered detection.
 
 For each entry tagged with a component in standoutElements.Components, loads
 the live URL and attempts to find + screenshot just that section.  Saves to:
   assets/screenshots/sections/<component-slug>/<id>.jpg
 
-Does NOT modify inspiration.json or overwrite existing screenshots.
+Does NOT modify inspiration.json or overwrite existing full-page screenshots.
 
-Usage (run from project root):
+── How detection works (stack-agnostic, in priority order) ───────────────────
+Modern marketing sites name things wildly differently (Tailwind has no semantic
+class names; styled-components/Framer hash them; Divi/HubSpot reuse one generic
+wrapper class everywhere). So class-name matching is the WEAKEST signal and runs
+last. Each component is detected by trying these layers in order:
+
+  1. landmark   — HTML5 semantics (<header>/<nav>/<footer>/[role=...]). Rock-solid.
+  2. aria       — ARIA interaction patterns ([role=tablist], [aria-expanded]).
+  3. semantic   — meaningful elements (<details>, <blockquote>).
+  4. heading    — scan headings for keyword text ("what our customers say"), grab
+                  the section ancestor. Works regardless of class names.
+  5. geometry   — rendered layout shape: a Switchback is an image+text 2-col row;
+                  a Card Deck is 3+ similarly-sized siblings. Independent of markup.
+  6. class      — class/id keyword match. Last resort, well-named sites only.
+  7. positional — viewport-top (hero) / scroll-bottom (footer) fallback.
+
+Every capture records which layer fired + a confidence rating into
+data/section-capture-report.json so coverage is measurable, never assumed.
+Hard components that match nothing are recorded as "missed" and NO file is
+written — the UI then shows the labelled full-page fallback instead of a
+misleading crop.
+
+── Usage (run from project root) ─────────────────────────────────────────────
     # Smoke-test: 3 hero captures
     python3 scripts/capture_section_screenshots.py --component hero --limit 3
 
@@ -16,22 +38,22 @@ Usage (run from project root):
     python3 scripts/capture_section_screenshots.py --component hero
 
     # Specific entries
-    python3 scripts/capture_section_screenshots.py --component switchback --only stripe-stripe-com,linear-linear-app
+    python3 scripts/capture_section_screenshots.py --component switchback --only stripe-stripe-com
 
     # All components (long — run overnight)
     python3 scripts/capture_section_screenshots.py
 
-    # Preview without saving
-    python3 scripts/capture_section_screenshots.py --component hero --dry-run
+    # Preview + coverage report without saving
+    python3 scripts/capture_section_screenshots.py --component switchback --dry-run
 
 Flags:
     --component SLUG    Only capture this component (see SLUG_MAP keys)
     --only IDs          Comma-separated entry IDs
-    --limit N           Stop after N captures
+    --limit N           Stop after N entries per component
     --redo              Re-capture even if a file already exists
     --concurrency N     Parallel workers (default 3)
     --timeout MS        Per-page timeout ms (default 28000)
-    --dry-run           Run capture logic but don't write files
+    --dry-run           Run detection + report but don't write image files
 
 Dependencies (same as capture_screenshots.py):
     pip3 install playwright pillow --break-system-packages
@@ -40,10 +62,10 @@ Dependencies (same as capture_screenshots.py):
 
 import argparse
 import json
-import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import Counter, defaultdict
 from io import BytesIO
 from pathlib import Path
 
@@ -57,19 +79,21 @@ try:
 except ImportError:
     sys.exit("pillow not installed.\n  pip3 install pillow --break-system-packages")
 
-ROOT       = Path(__file__).resolve().parent.parent
-JSON_PATH  = ROOT / "data" / "inspiration.json"
-SHOTS_DIR  = ROOT / "assets" / "screenshots" / "sections"
+ROOT        = Path(__file__).resolve().parent.parent
+JSON_PATH   = ROOT / "data" / "inspiration.json"
+SHOTS_DIR   = ROOT / "assets" / "screenshots" / "sections"
+REPORT_PATH = ROOT / "data" / "section-capture-report.json"
 
-VIEWPORT     = {"width": 1440, "height": 900}
-TARGET_WIDTH = 800
-JPEG_QUALITY = 72
-USER_AGENT   = (
+VIEWPORT      = {"width": 1440, "height": 900}
+TARGET_WIDTH  = 800
+JPEG_QUALITY  = 72
+MAX_ELEM_H    = 1600   # px (pre-downscale): taller than this → viewport capture instead
+USER_AGENT    = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
-# Map schema display name → url-safe slug (must match SECTION_SLUGS in app.js)
+# slug → schema display name. Slugs MUST match SECTION_SLUGS in assets/app.js.
 SLUG_MAP = {
     "hero":             "Hero",
     "switchback":       "Switchback",
@@ -84,152 +108,14 @@ SLUG_MAP = {
     "conversion-panel": "Conversion Panel",
     "navigation":       "Primary Navigation",
     "mega-menu":        "Mega Menu",
-    "footer":           "Footer",
-    "case-study":       "Case Study Section",
+    "dropdown-menu":    "Dropdown Menu",
     "search":           "Search Experience/Search Results",
+    "case-study":       "Case Study Section",
+    "footer":           "Footer",
 }
 
-# For each slug: ordered list of CSS selectors to try, then a fallback strategy.
-# Fallback strategies: "viewport_top" | "scroll_bottom" | "scan_sections" | None
-STRATEGIES = {
-    "hero": {
-        "selectors": [
-            "[class*='hero' i]:not(header):not(nav)",
-            "[id*='hero' i]",
-            "main > section:first-of-type",
-            "body > section:first-of-type",
-            "main > div:first-of-type > section:first-of-type",
-        ],
-        "fallback": "viewport_top",
-        "padding": 0,
-    },
-    "navigation": {
-        "selectors": [
-            "header nav", "header", "[role='banner']",
-            "[class*='navbar' i]", "[class*='nav-bar' i]", "[class*='site-header' i]",
-        ],
-        "fallback": "viewport_top_partial",
-        "padding": 0,
-    },
-    "footer": {
-        "selectors": [
-            "footer", "[role='contentinfo']",
-            "[class*='footer' i]", "[id*='footer' i]",
-        ],
-        "fallback": "scroll_bottom",
-        "padding": 0,
-    },
-    "trustbar": {
-        "selectors": [
-            "[class*='trust' i]", "[class*='logo-bar' i]", "[class*='logobar' i]",
-            "[class*='partner' i]", "[class*='client-logo' i]",
-            "[class*='brand' i]:not(header)",
-        ],
-        "fallback": None,
-        "padding": 20,
-    },
-    "switchback": {
-        "selectors": [
-            "[class*='switchback' i]", "[class*='alternating' i]",
-            "[class*='feature-row' i]", "[class*='split-section' i]",
-            "[class*='two-col' i]", "[class*='two-column' i]",
-        ],
-        "fallback": "scan_sections",
-        "padding": 0,
-    },
-    "testimonials": {
-        "selectors": [
-            "[class*='testimonial' i]", "[class*='review' i]",
-            "[class*='quote' i]", "[class*='social-proof' i]",
-            "[class*='customer' i]:not(header)",
-        ],
-        "fallback": None,
-        "padding": 0,
-    },
-    "tabbed-switcher": {
-        "selectors": [
-            "[role='tablist']", "[class*='tab-' i]",
-            "[class*='tabs' i]", "[class*='switcher' i]",
-        ],
-        "fallback": None,
-        "padding": 40,
-    },
-    "timed-switcher": {
-        "selectors": [
-            "[class*='carousel' i]", "[class*='slider' i]",
-            "[class*='rotating' i]", "[class*='auto-play' i]",
-        ],
-        "fallback": None,
-        "padding": 0,
-    },
-    "accordion": {
-        "selectors": [
-            "[class*='accordion' i]", "details",
-            "[class*='faq' i]", "[class*='collapse' i]",
-        ],
-        "fallback": None,
-        "padding": 20,
-    },
-    "conversion-panel": {
-        "selectors": [
-            "[class*='cta' i]:not(button):not(a)",
-            "[class*='conversion' i]", "[class*='call-to-action' i]",
-            "[class*='signup' i]", "[class*='get-started' i]",
-        ],
-        "fallback": None,
-        "padding": 0,
-    },
-    "icon-card-deck": {
-        "selectors": [
-            "[class*='icon-card' i]", "[class*='feature-card' i]",
-            "[class*='benefits' i]", "[class*='features-grid' i]",
-            "[class*='card-grid' i]",
-        ],
-        "fallback": "scan_sections",
-        "padding": 0,
-    },
-    "image-card-deck": {
-        "selectors": [
-            "[class*='image-card' i]", "[class*='blog-grid' i]",
-            "[class*='post-grid' i]", "[class*='resource-grid' i]",
-            "[class*='card-deck' i]",
-        ],
-        "fallback": "scan_sections",
-        "padding": 0,
-    },
-    "heading-block": {
-        "selectors": [
-            "[class*='heading-block' i]", "[class*='section-header' i]",
-            "[class*='page-header' i]:not(header)",
-        ],
-        "fallback": None,
-        "padding": 20,
-    },
-    "mega-menu": {
-        "selectors": [
-            "[class*='mega-menu' i]", "[class*='megamenu' i]",
-            "nav [class*='dropdown' i]",
-        ],
-        "fallback": None,
-        "padding": 0,
-    },
-    "case-study": {
-        "selectors": [
-            "[class*='case-study' i]", "[class*='casestudy' i]",
-            "[class*='success-story' i]", "[class*='customer-story' i]",
-        ],
-        "fallback": None,
-        "padding": 0,
-    },
-    "search": {
-        "selectors": [
-            "[class*='search' i]:not(input):not(button)",
-            "[role='search']",
-        ],
-        "fallback": None,
-        "padding": 20,
-    },
-}
+# slugs that have a reliable positional fallback worth saving when detection misses
+POSITIONAL_FALLBACK = {"hero": "top", "navigation": "top", "footer": "bottom"}
 
 
 # ─── Cookie/consent blocking (same as other scripts) ─────────────────────────
@@ -255,16 +141,241 @@ COOKIE_DISMISS_JS = """
 """
 
 
-# ─── Image helpers ────────────────────────────────────────────────────────────
+# ─── Layered detection (runs in the page; tags the winning element) ──────────
+# Returns {found, layer, confidence, w, h}. When found, marks the element with
+# data-wsdetect="1" so Python can locate + screenshot it without coordinate math.
+DETECT_JS = r"""
+(slug) => {
+  document.querySelectorAll('[data-wsdetect]').forEach(e => e.removeAttribute('data-wsdetect'));
+  const vw = window.innerWidth;
 
-def crop_and_save(png_bytes: bytes, max_height: int = 900) -> bytes:
-    """Downscale to TARGET_WIDTH, cap height, return JPEG bytes."""
+  const rectOf = el => { const r = el.getBoundingClientRect(); return {w:r.width, h:r.height, top:r.top, left:r.left}; };
+  const visible = el => {
+    if (!el) return false;
+    const r = el.getBoundingClientRect();
+    if (r.width < 80 || r.height < 30) return false;
+    const st = getComputedStyle(el);
+    if (st.display==='none' || st.visibility==='hidden' || parseFloat(st.opacity||'1')===0) return false;
+    return true;
+  };
+  const txt = el => (el.textContent||'').trim().toLowerCase().replace(/\s+/g,' ');
+
+  // climb to the nearest full-width section-like ancestor (capped so we don't grab the whole page)
+  const sectionAncestor = el => {
+    let cur = el;
+    for (let i=0; i<7 && cur && cur.parentElement; i++) {
+      const tag = cur.tagName.toLowerCase();
+      const r = cur.getBoundingClientRect();
+      if ((tag==='section' || tag==='article') && r.height>120 && r.height<1600) return cur;
+      if (cur.matches && cur.matches('[class*="section" i]') && r.width>=vw*0.7 && r.height>120 && r.height<1600) return cur;
+      cur = cur.parentElement;
+    }
+    cur = el;
+    for (let i=0; i<8 && cur && cur.parentElement; i++) {
+      const r = cur.getBoundingClientRect();
+      if (r.width >= vw*0.8 && r.height >= 150) return cur;
+      cur = cur.parentElement;
+    }
+    return el;
+  };
+
+  const firstVisible = sels => {
+    for (const s of sels) { try { const e = document.querySelector(s); if (visible(e)) return e; } catch(_){} }
+    return null;
+  };
+
+  const headingScan = keywords => {
+    const heads = document.querySelectorAll('h1,h2,h3,h4,[class*="heading" i],[class*="title" i]');
+    for (const h of heads) {
+      const t = txt(h);
+      if (!t || t.length>140) continue;
+      if (keywords.some(k => t.includes(k))) {
+        const sec = sectionAncestor(h);
+        if (visible(sec)) return sec;
+      }
+    }
+    return null;
+  };
+
+  // 3+ similarly-sized sibling children → a card deck. needImg: true=image cards, false=icon cards.
+  const deckScan = (minN, needImg) => {
+    let best=null, bestScore=0;
+    for (const p of document.querySelectorAll('ul,ol,div,section')) {
+      const kids = Array.from(p.children).filter(c => { const r=c.getBoundingClientRect(); return r.width>90 && r.height>80; });
+      if (kids.length < minN) continue;
+      const ws = kids.map(k => k.getBoundingClientRect().width);
+      const hs = kids.map(k => k.getBoundingClientRect().height);
+      const avgW = ws.reduce((a,b)=>a+b,0)/ws.length;
+      const avgH = hs.reduce((a,b)=>a+b,0)/hs.length;
+      if (avgW < 120 || avgH < 80) continue;
+      if (!ws.every(w => Math.abs(w-avgW) < avgW*0.28)) continue;     // similar widths
+      if (!hs.every(h => Math.abs(h-avgH) < avgH*0.45)) continue;     // roughly similar heights
+      const withImg = kids.filter(k => k.querySelector('img,picture')).length;
+      const withSvg = kids.filter(k => k.querySelector('svg')).length;
+      if (needImg === true  && withImg < kids.length*0.6) continue;
+      if (needImg === false) { if (withImg > kids.length*0.5) continue; if (withSvg < kids.length*0.4) continue; }
+      const score = kids.length * Math.min(avgH, 380);
+      if (score > bestScore) { bestScore = score; best = sectionAncestor(p); }
+    }
+    return best;
+  };
+
+  // a Switchback: section containing a 2-col row, one column an image, the other text
+  const switchbackScan = () => {
+    let best=null, bestScore=0;
+    for (const s of document.querySelectorAll('section,div')) {
+      const r = s.getBoundingClientRect();
+      if (r.width < vw*0.6 || r.height < 220 || r.height > 950) continue;
+      const conts = [s, ...s.querySelectorAll(':scope > div, :scope > div > div')];
+      for (const c of conts) {
+        const cc = Array.from(c.children).filter(x => { const xr=x.getBoundingClientRect(); return xr.width>100 && xr.height>100; });
+        if (cc.length !== 2) continue;
+        const [a,b] = cc;
+        const ar=a.getBoundingClientRect(), br=b.getBoundingClientRect();
+        if (Math.abs(ar.top-br.top) > Math.max(ar.height,br.height)*0.5) continue;  // must share a row
+        const aMedia = a.querySelector('img,picture,svg,video'), bMedia = b.querySelector('img,picture,svg,video');
+        const aText = txt(a).length>30, bText = txt(b).length>30;
+        if ((aMedia && bText && !aText) || (bMedia && aText && !bText)) {
+          const score = r.width * Math.min(r.height, 500);
+          if (score > bestScore) { bestScore = score; best = s; }
+        }
+      }
+    }
+    return best;
+  };
+
+  const mark = (el, layer, confidence) => {
+    el.setAttribute('data-wsdetect','1');
+    const r = rectOf(el);
+    return {found:true, layer, confidence, w:Math.round(r.w), h:Math.round(r.h)};
+  };
+
+  let el=null, layer=null, conf=null;
+
+  switch (slug) {
+    case 'navigation':
+      el = firstVisible(['header nav','header[role="banner"]','[role="banner"]','header','[class*="navbar" i]','[class*="site-header" i]']);
+      if (el) { layer='landmark'; conf='high'; }
+      break;
+
+    case 'footer':
+      el = firstVisible(['footer','[role="contentinfo"]','[class*="site-footer" i]','[class*="footer" i]']);
+      if (el) { layer='landmark'; conf='high'; }
+      break;
+
+    case 'hero': {
+      const main = document.querySelector('main') || document.body;
+      for (const s of Array.from(main.children)) {
+        if (!visible(s)) continue;
+        const tag = s.tagName.toLowerCase();
+        if (tag==='header' || (s.matches && s.matches('nav,[role="banner"]'))) continue;
+        if (s.getBoundingClientRect().height > 200) { el = s; break; }
+      }
+      if (el) { layer='positional'; conf='high'; }
+      break;
+    }
+
+    case 'tabbed-switcher':
+      el = firstVisible(['[role="tablist"]']);
+      if (el) { el = sectionAncestor(el); layer='aria'; conf='high'; }
+      else { el = firstVisible(['[class*="tab-list" i]','[class*="tabbed" i]','[class*="tabs" i]']); if (el) { layer='class'; conf='med'; } }
+      break;
+
+    case 'accordion': {
+      const det = document.querySelector('details');
+      if (visible(det)) { el = sectionAncestor(det); layer='semantic'; conf='high'; }
+      if (!el && document.querySelectorAll('[aria-expanded]').length >= 2) {
+        const ax = firstVisible(['[aria-expanded]']); if (ax) { el = sectionAncestor(ax); layer='aria'; conf='high'; }
+      }
+      if (!el) { el = headingScan(['frequently asked','common questions','faqs','faq','questions','any questions']); if (el) { layer='heading'; conf='med'; } }
+      if (!el) { el = firstVisible(['[class*="accordion" i]','[class*="faq" i]','[class*="collapse" i]']); if (el) { layer='class'; conf='med'; } }
+      break;
+    }
+
+    case 'testimonials':
+      el = headingScan(['what our customers','what our clients','what customers say',"don't just take",'testimonial','loved by','hear from our','our customers say','customer stories','rated','what people say','trusted by thousands']);
+      if (el) { layer='heading'; conf='high'; }
+      if (!el) { const bq = document.querySelector('blockquote'); if (visible(bq)) { el = sectionAncestor(bq); layer='semantic'; conf='med'; } }
+      if (!el) { el = firstVisible(['[class*="testimonial" i]','[class*="review" i]','[class*="quote" i]','[class*="social-proof" i]']); if (el) { layer='class'; conf='med'; } }
+      break;
+
+    case 'trustbar':
+      el = headingScan(['trusted by','powered by','as seen in','backed by','join thousands','companies that','used by','our customers include']);
+      if (el) { layer='heading'; conf='med'; }
+      if (!el) { el = firstVisible(['[class*="trust" i]','[class*="logo-bar" i]','[class*="logobar" i]','[class*="logos" i]','[class*="marquee" i]','[class*="partner" i]']); if (el) { layer='class'; conf='med'; } }
+      break;
+
+    case 'conversion-panel':
+      el = headingScan(['ready to','get started','start your','start building',"let's talk",'book a demo','request a demo','get a demo','sign up','try it free','start free','get started for free','start now']);
+      if (el) { layer='heading'; conf='med'; }
+      if (!el) { el = firstVisible(['[class*="cta" i]','[class*="conversion" i]','[class*="call-to-action" i]','[class*="get-started" i]','[class*="final-cta" i]']); if (el) { layer='class'; conf='low'; } }
+      break;
+
+    case 'icon-card-deck':
+      el = deckScan(3, false);
+      if (el) { layer='geometry'; conf='med'; }
+      if (!el) { el = firstVisible(['[class*="icon-card" i]','[class*="feature-card" i]','[class*="features" i]','[class*="benefits" i]']); if (el) { layer='class'; conf='low'; } }
+      break;
+
+    case 'image-card-deck':
+      el = deckScan(3, true);
+      if (el) { layer='geometry'; conf='med'; }
+      if (!el) { el = firstVisible(['[class*="image-card" i]','[class*="blog" i]','[class*="resource" i]','[class*="card-grid" i]','[class*="post-grid" i]']); if (el) { layer='class'; conf='low'; } }
+      break;
+
+    case 'switchback':
+      el = switchbackScan();
+      if (el) { layer='geometry'; conf='med'; }
+      if (!el) { el = firstVisible(['[class*="switchback" i]','[class*="alternating" i]','[class*="feature-row" i]','[class*="media-text" i]','[class*="split-section" i]']); if (el) { layer='class'; conf='low'; } }
+      break;
+
+    case 'heading-block':
+      el = firstVisible(['[class*="heading-block" i]','[class*="section-header" i]','[class*="section-title" i]','[class*="page-header" i]']);
+      if (el) { layer='class'; conf='low'; }
+      break;
+
+    case 'timed-switcher':
+      el = firstVisible(['[class*="carousel" i]','[class*="slider" i]','[class*="swiper" i]','[class*="rotating" i]']);
+      if (el) { el = sectionAncestor(el); layer='class'; conf='med'; }
+      break;
+
+    case 'mega-menu':
+      el = firstVisible(['[class*="mega-menu" i]','[class*="megamenu" i]','nav [class*="dropdown" i]']);
+      if (el) { layer='class'; conf='low'; }
+      break;
+
+    case 'dropdown-menu':
+      el = firstVisible(['nav [class*="dropdown" i]','[class*="dropdown-menu" i]','[aria-haspopup="true"]']);
+      if (el) { layer='class'; conf='low'; }
+      break;
+
+    case 'case-study':
+      el = headingScan(['case study','case studies','success story','customer story','customer success','the results','their results']);
+      if (el) { layer='heading'; conf='med'; }
+      if (!el) { el = firstVisible(['[class*="case-study" i]','[class*="casestudy" i]','[class*="success-story" i]']); if (el) { layer='class'; conf='low'; } }
+      break;
+
+    case 'search':
+      el = firstVisible(['[role="search"]']);
+      if (el) { el = sectionAncestor(el); layer='aria'; conf='high'; }
+      if (!el) { el = firstVisible(['[class*="search-results" i]','[class*="search-experience" i]','[class*="search" i]']); if (el) { layer='class'; conf='low'; } }
+      break;
+  }
+
+  if (visible(el)) return mark(el, layer, conf);
+  return {found:false};
+}
+"""
+
+
+# ─── Image helper ─────────────────────────────────────────────────────────────
+
+def to_jpeg(png_bytes: bytes, max_height: int = 1400) -> bytes:
     with Image.open(BytesIO(png_bytes)) as im:
         im = im.convert("RGB")
         if im.width > TARGET_WIDTH:
             ratio = TARGET_WIDTH / im.width
-            new_h = int(im.height * ratio)
-            im = im.resize((TARGET_WIDTH, new_h), Image.LANCZOS)
+            im = im.resize((TARGET_WIDTH, int(im.height * ratio)), Image.LANCZOS)
         if im.height > max_height:
             im = im.crop((0, 0, im.width, max_height))
         buf = BytesIO()
@@ -272,7 +383,7 @@ def crop_and_save(png_bytes: bytes, max_height: int = 900) -> bytes:
         return buf.getvalue()
 
 
-# ─── Playwright capture ───────────────────────────────────────────────────────
+# ─── Page load ────────────────────────────────────────────────────────────────
 
 def _load_page(playwright, url: str, timeout_ms: int):
     if not url.startswith(("http://", "https://")):
@@ -295,67 +406,45 @@ def _load_page(playwright, url: str, timeout_ms: int):
     return browser, ctx, page
 
 
-def capture_section(playwright, url: str, slug: str, timeout_ms: int) -> bytes:
-    """
-    Returns raw PNG bytes of the best-matching section, or raises on failure.
-    """
-    strategy = STRATEGIES.get(slug, {"selectors": [], "fallback": "viewport_top", "padding": 0})
-    selectors = strategy["selectors"]
-    fallback  = strategy["fallback"]
-    padding   = strategy.get("padding", 0)
+def _positional_shot(page, where: str) -> bytes:
+    if where == "bottom":
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        time.sleep(0.4)
+    else:
+        page.evaluate("window.scrollTo(0, 0)")
+        time.sleep(0.2)
+    return page.screenshot(full_page=False, type="png")
 
+
+def capture(playwright, url: str, slug: str, timeout_ms: int):
+    """
+    Returns (png_bytes, layer, confidence) or (None, 'missed', None) when a hard
+    component matches nothing and has no safe positional fallback.
+    """
     browser, ctx, page = _load_page(playwright, url, timeout_ms)
     try:
-        # 1. Try each selector in order
-        for sel in selectors:
+        try:
+            res = page.evaluate(DETECT_JS, slug)
+        except Exception:
+            res = {"found": False}
+
+        if res.get("found"):
+            loc = page.locator('[data-wsdetect="1"]').first
             try:
-                loc = page.locator(sel).first
-                if loc.count() == 0:
-                    continue
-                box = loc.bounding_box(timeout=3000)
-                if not box or box["width"] < 100 or box["height"] < 40:
-                    continue
-                # Scroll element into view
                 loc.scroll_into_view_if_needed(timeout=3000)
                 time.sleep(0.3)
-                # Screenshot the element with optional padding
-                if padding:
-                    # Expand clip region
-                    clip = {
-                        "x":      max(0, box["x"] - padding),
-                        "y":      max(0, box["y"] - padding),
-                        "width":  min(VIEWPORT["width"], box["width"] + padding * 2),
-                        "height": min(2400, box["height"] + padding * 2),
-                    }
-                    return page.screenshot(clip=clip, full_page=False, type="png")
+                if res.get("h", 0) <= MAX_ELEM_H:
+                    png = loc.screenshot(type="png", timeout=6000)
                 else:
-                    return loc.screenshot(type="png", timeout=5000)
+                    png = page.screenshot(full_page=False, type="png")  # too tall → viewport slice
+                return png, res.get("layer", "?"), res.get("confidence", "?")
             except Exception:
-                continue
+                pass  # fall through to positional / missed
 
-        # 2. Fallback strategies
-        if fallback == "viewport_top":
-            page.evaluate("window.scrollTo(0, 0)")
-            time.sleep(0.2)
-            return page.screenshot(full_page=False, type="png")
-
-        if fallback == "viewport_top_partial":
-            page.evaluate("window.scrollTo(0, 0)")
-            return page.screenshot(clip={"x": 0, "y": 0, "width": VIEWPORT["width"], "height": 120}, type="png")
-
-        if fallback == "scroll_bottom":
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            time.sleep(0.4)
-            return page.screenshot(full_page=False, type="png")
-
-        if fallback == "scan_sections":
-            # Take full-page screenshot and crop to a mid-page section
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.3)")
-            time.sleep(0.3)
-            return page.screenshot(full_page=False, type="png")
-
-        raise RuntimeError(f"No element found for {slug} and no fallback matched")
-
+        # No element (or element screenshot failed)
+        if slug in POSITIONAL_FALLBACK:
+            return _positional_shot(page, POSITIONAL_FALLBACK[slug]), "positional", "low"
+        return None, "missed", None
     finally:
         ctx.close()
         browser.close()
@@ -369,23 +458,27 @@ def process_entry(entry, slug: str, out_dir: Path, args) -> dict:
         return {"status": "skipped"}
     try:
         with sync_playwright() as p:
-            png = capture_section(p, entry["url"], slug, args.timeout)
-        jpg = crop_and_save(png, max_height=1000)
-        if not args.dry_run:
-            out_path.write_bytes(jpg)
-        return {"status": "ok", "bytes": len(jpg)}
+            png, layer, conf = capture(p, entry["url"], slug, args.timeout)
     except Exception as e:
         return {"status": "failed", "error": repr(e)}
+
+    if png is None:
+        return {"status": "missed", "layer": layer}
+
+    jpg = to_jpeg(png)
+    if not args.dry_run:
+        out_path.write_bytes(jpg)
+    return {"status": "ok", "bytes": len(jpg), "layer": layer, "confidence": conf}
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def parse_args():
-    ap = argparse.ArgumentParser(description="Capture section-specific screenshots")
-    ap.add_argument("--component",   help="Component slug to capture (e.g. hero, switchback)")
+    ap = argparse.ArgumentParser(description="Capture section-specific screenshots (layered detection)")
+    ap.add_argument("--component",   help="Component slug (e.g. hero, switchback). Omit for all.")
     ap.add_argument("--only",        help="Comma-separated entry IDs")
     ap.add_argument("--limit",       type=int, default=0)
-    ap.add_argument("--redo",        action="store_true", help="Re-capture even if file exists")
+    ap.add_argument("--redo",        action="store_true")
     ap.add_argument("--concurrency", type=int, default=3)
     ap.add_argument("--timeout",     type=int, default=28000)
     ap.add_argument("--dry-run",     action="store_true")
@@ -393,24 +486,24 @@ def parse_args():
 
 
 def main():
-    args   = parse_args()
-    data   = json.loads(JSON_PATH.read_text())
-    entries_by_id = {e["id"]: e for e in data["entries"]}
+    args = parse_args()
+    data = json.loads(JSON_PATH.read_text())
     only = set(s.strip() for s in args.only.split(",")) if args.only else None
 
-    # Determine which slugs to process
     if args.component:
-        slugs = [args.component.lower().strip()]
-        if slugs[0] not in SLUG_MAP:
-            sys.exit(f"Unknown component slug '{slugs[0]}'.\nKnown slugs: {', '.join(sorted(SLUG_MAP))}")
+        slug = args.component.lower().strip()
+        if slug not in SLUG_MAP:
+            sys.exit(f"Unknown slug '{slug}'.\nKnown: {', '.join(sorted(SLUG_MAP))}")
+        slugs = [slug]
     else:
         slugs = list(SLUG_MAP.keys())
 
-    total_ok = total_skip = total_fail = 0
+    now_ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    report = {"ranAt": now_ts, "dryRun": args.dry_run, "components": {}}
+    grand = Counter()
 
     for slug in slugs:
         schema_name = SLUG_MAP[slug]
-        # Entries tagged with this component and having a URL
         targets = [
             e for e in data["entries"]
             if schema_name in (e.get("standoutElements") or {}).get("Components", [])
@@ -419,9 +512,8 @@ def main():
         ]
         if args.limit:
             targets = targets[: args.limit]
-
         if not targets:
-            print(f"[{slug}] No tagged entries found — skipping")
+            print(f"[{slug}] no tagged entries — skipping")
             continue
 
         out_dir = SHOTS_DIR / slug
@@ -431,11 +523,13 @@ def main():
         dry = " [DRY RUN]" if args.dry_run else ""
         print(f"\n=== {schema_name} ({slug}) — {len(targets)} entries{dry} ===")
 
-        ok = skip = fail = 0
+        layer_counts = Counter()
+        conf_counts  = Counter()
+        stat = Counter()
         done = 0
 
-        def worker(entry):
-            return entry, process_entry(entry, slug, out_dir, args)
+        def worker(e):
+            return e, process_entry(e, slug, out_dir, args)
 
         with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
             futures = {ex.submit(worker, e): e for e in targets}
@@ -447,23 +541,52 @@ def main():
                     res = {"status": "failed", "error": str(exc)}
                 done += 1
                 s = res["status"]
+                stat[s] += 1
                 if s == "ok":
-                    ok += 1
-                    kb = res["bytes"] // 1024
-                    print(f"  [{done:>4}/{len(targets)}] ✓  {entry['name'][:35]:35}  {kb}KB")
+                    layer_counts[res["layer"]] += 1
+                    conf_counts[res["confidence"]] += 1
+                    print(f"  [{done:>4}/{len(targets)}] ✓ {res['layer']:<10} {res.get('confidence',''):<4} {entry['name'][:34]:34} {res['bytes']//1024}KB")
+                elif s == "missed":
+                    print(f"  [{done:>4}/{len(targets)}] – missed     {entry['name'][:34]:34} (no match — UI shows full-page)")
                 elif s == "skipped":
-                    skip += 1
+                    pass
                 else:
-                    fail += 1
-                    print(f"  [{done:>4}/{len(targets)}] ✗  {entry['name'][:35]:35}  {res.get('error','?')[:60]}")
+                    print(f"  [{done:>4}/{len(targets)}] ✗ failed     {entry['name'][:34]:34} {res.get('error','?')[:50]}")
 
-        print(f"  → Done: {ok} captured, {skip} skipped, {fail} failed")
-        total_ok += ok; total_skip += skip; total_fail += fail
+        captured = stat["ok"]
+        cov = (captured / len(targets) * 100) if targets else 0
+        print(f"  → {captured}/{len(targets)} captured ({cov:.0f}% coverage)"
+              f"  ·  missed {stat['missed']}  skipped {stat['skipped']}  failed {stat['failed']}")
+        if layer_counts:
+            print("    by layer:  " + "  ".join(f"{k}={v}" for k, v in layer_counts.most_common()))
+        if conf_counts:
+            print("    by conf:   " + "  ".join(f"{k}={v}" for k, v in conf_counts.most_common()))
 
-    print(f"\n{'─'*50}")
-    print(f"Total: {total_ok} captured, {total_skip} skipped, {total_fail} failed")
+        report["components"][slug] = {
+            "schemaName": schema_name,
+            "tagged": len(targets),
+            "captured": captured,
+            "coveragePct": round(cov, 1),
+            "missed": stat["missed"],
+            "failed": stat["failed"],
+            "skipped": stat["skipped"],
+            "byLayer": dict(layer_counts),
+            "byConfidence": dict(conf_counts),
+        }
+        grand["tagged"] += len(targets); grand["captured"] += captured
+        grand["missed"] += stat["missed"]; grand["failed"] += stat["failed"]; grand["skipped"] += stat["skipped"]
+
+    report["totals"] = dict(grand)
+    if not args.dry_run or True:  # always write the report (cheap, useful even on dry runs)
+        REPORT_PATH.write_text(json.dumps(report, indent=2))
+
+    print(f"\n{'─'*56}")
+    tot_cov = (grand['captured'] / grand['tagged'] * 100) if grand['tagged'] else 0
+    print(f"TOTAL: {grand['captured']}/{grand['tagged']} captured ({tot_cov:.0f}%)  ·  "
+          f"missed {grand['missed']}  skipped {grand['skipped']}  failed {grand['failed']}")
+    print(f"Report: {REPORT_PATH.relative_to(ROOT)}")
     if args.dry_run:
-        print("[DRY RUN] No files written.")
+        print("[DRY RUN] No image files written.")
 
 
 if __name__ == "__main__":
