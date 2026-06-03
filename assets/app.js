@@ -29,6 +29,7 @@
     sharedAlbum: null,        // {name, ids} decoded from ?album= URL param (read-only)
     gridCols: 3,              // 3 or 2 — persisted to localStorage
     editShowUntagged: false,  // edit view: show only entries missing wordAssociations
+    activeSection: null,      // sections view: currently selected component name
   };
 
   // Industries get tiny SVG icons (Lucide-style) for the sidebar
@@ -706,8 +707,19 @@
   const EDIT_TABLE_PAGE_SIZE = 75;
 
   function render() {
-    const grid      = document.getElementById("grid");
-    const tableWrap = document.getElementById("edit-table-wrap");
+    const grid        = document.getElementById("grid");
+    const tableWrap   = document.getElementById("edit-table-wrap");
+    const sectionsWrap = document.getElementById("sections-wrap");
+
+    if (state.view === "sections") {
+      grid.hidden = true; tableWrap.hidden = true; sectionsWrap.hidden = false;
+      document.getElementById("count").textContent = `${state.entries.length} sites`;
+      renderSectionsView();
+      renderPagination(0, 0);
+      renderActiveChips();
+      return;
+    }
+    sectionsWrap.hidden = true;
 
     const all = sorted(state.entries.filter(entryMatches));
     document.getElementById("count").textContent = `${all.length} of ${state.entries.length} sites`;
@@ -745,6 +757,158 @@
       emptyEl.innerHTML = `<p>No sites match these filters.</p><button class="link-btn" type="button" onclick="window.WebInspo.resetFilters()">Reset filters</button>`;
     }
     renderActiveChips();
+  }
+
+  // ------- Sections view -------
+  const SECTION_SLUGS = {
+    "Hero":                          "hero",
+    "Switchback":                    "switchback",
+    "Icon Card Deck":                "icon-card-deck",
+    "Image Card Deck":               "image-card-deck",
+    "Heading Block":                 "heading-block",
+    "Testimonials Section":          "testimonials",
+    "Tabbed Switcher":               "tabbed-switcher",
+    "Timed Switchers":               "timed-switcher",
+    "Accordions/FAQs":               "accordion",
+    "Trustbar":                      "trustbar",
+    "Conversion Panel":              "conversion-panel",
+    "Primary Navigation":            "navigation",
+    "Mega Menu":                     "mega-menu",
+    "Dropdown Menu":                 "dropdown-menu",
+    "Search Experience/Search Results": "search",
+    "Case Study Section":            "case-study",
+    "Footer":                        "footer",
+  };
+
+  function sectionSlug(name) {
+    return SECTION_SLUGS[name] || name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  }
+
+  function renderSectionsView() {
+    const wrap = document.getElementById("sections-wrap");
+
+    // Build component list sorted by count desc
+    const counts = {};
+    for (const e of state.entries) {
+      for (const c of (e.standoutElements && e.standoutElements.Components || [])) {
+        counts[c] = (counts[c] || 0) + 1;
+      }
+    }
+    const components = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+    // Default to first component on first load
+    if (!state.activeSection || !counts[state.activeSection]) {
+      state.activeSection = components[0] ? components[0][0] : null;
+    }
+    if (!state.activeSection) { wrap.innerHTML = `<p class="sections-empty">No component tags found.</p>`; return; }
+
+    // Entries tagged with active section, respecting search
+    const q = state.search.toLowerCase();
+    let visible = state.entries.filter(e => {
+      if (!(e.standoutElements && e.standoutElements.Components || []).includes(state.activeSection)) return false;
+      if (q) {
+        const hay = [e.name, e.domain || ""].join(" ").toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+    visible = sorted(visible);
+
+    const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+    if (state.page > totalPages) state.page = totalPages;
+    const paged = visible.slice((state.page - 1) * PAGE_SIZE, state.page * PAGE_SIZE);
+
+    wrap.innerHTML = `
+      <div class="section-pills-wrap">
+        <div class="section-pills">
+          ${components.map(([name, count]) => `
+            <button type="button" class="section-pill${name === state.activeSection ? " active" : ""}" data-section="${escapeHtml(name)}">
+              ${escapeHtml(name)}<span class="section-pill-count">${count}</span>
+            </button>
+          `).join("")}
+        </div>
+      </div>
+      <div class="section-results-meta">
+        <span>${visible.length} site${visible.length !== 1 ? "s" : ""} with <strong>${escapeHtml(state.activeSection)}</strong></span>
+      </div>
+      <div class="section-grid" id="section-grid">
+        ${paged.map(e => renderSectionCard(e)).join("")}
+      </div>
+      <nav id="section-pagination" class="pagination" aria-label="Pagination"></nav>
+    `;
+
+    // Wire pill clicks
+    wrap.querySelectorAll(".section-pill").forEach(pill => {
+      pill.addEventListener("click", () => {
+        state.activeSection = pill.dataset.section;
+        state.page = 1;
+        renderSectionsView();
+      });
+    });
+
+    // Wire card clicks and visit buttons
+    wrap.querySelectorAll(".section-card").forEach(card => {
+      card.addEventListener("click", () => openDetail(card.dataset.id));
+    });
+    wrap.querySelectorAll(".card-visit-btn").forEach(a => a.addEventListener("click", e => e.stopPropagation()));
+
+    // Pagination
+    if (totalPages > 1) {
+      const pgEl = wrap.querySelector("#section-pagination");
+      renderPaginationInto(pgEl, state.page, totalPages, p => {
+        state.page = p;
+        wrap.scrollIntoView({ behavior: "smooth" });
+        renderSectionsView();
+      });
+    }
+  }
+
+  function renderSectionCard(e) {
+    const slug = sectionSlug(state.activeSection);
+    const sectionSrc = `assets/screenshots/sections/${slug}/${escapeHtml(e.id)}.jpg`;
+    const fallbackSrc = e.screenshot ? escapeHtml(e.screenshot) : "";
+    const imgHtml = fallbackSrc
+      ? `<img class="section-card-img"
+           src="${sectionSrc}"
+           data-fallback="${fallbackSrc}"
+           alt=""
+           loading="lazy"
+           onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src=this.dataset.fallback;this.closest('.section-card-thumb').classList.add('is-fallback')}"
+         />`
+      : `<div class="section-card-no-shot"></div>`;
+    const url = e.url ? escapeHtml(e.url) : "#";
+    return `
+      <div class="section-card" data-id="${escapeHtml(e.id)}">
+        <div class="section-card-thumb">
+          ${imgHtml}
+          <div class="section-crop-badge">Section</div>
+          <div class="section-fallback-badge">Full page</div>
+          <a class="card-visit-btn" href="${url}" target="_blank" rel="noopener noreferrer">
+            Visit site <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5l7-7M9.5 2.5H4M9.5 2.5v5.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="section-card-meta">
+          <span class="section-card-name">${escapeHtml(e.name)}</span>
+          ${e.domain ? `<span class="section-card-domain">${escapeHtml(e.domain)}</span>` : ""}
+        </div>
+      </div>`;
+  }
+
+  function renderPaginationInto(el, page, total, onPage) {
+    if (!el || total <= 1) return;
+    const prev = page > 1, next = page < total;
+    el.innerHTML = "";
+    const mkBtn = (label, p, disabled) => {
+      const b = document.createElement("button");
+      b.className = "pg-btn" + (disabled ? " disabled" : "");
+      b.textContent = label; b.disabled = disabled;
+      if (!disabled) b.addEventListener("click", () => onPage(p));
+      return b;
+    };
+    el.appendChild(mkBtn("‹", page - 1, !prev));
+    const info = document.createElement("span"); info.className = "pg-info"; info.textContent = `Page ${page} of ${total}`;
+    el.appendChild(info);
+    el.appendChild(mkBtn("›", page + 1, !next));
   }
 
   // ------- Edit table -------
@@ -1046,9 +1210,10 @@
 
   // ------- Edit mode toggle + save bar -------
   function setView(view) {
-    state.view = view === "edit" ? "edit" : "browse";
+    state.view = ["edit","sections"].includes(view) ? view : "browse";
     state.page = 1;
     document.body.classList.toggle("edit-mode", state.view === "edit");
+    document.body.classList.toggle("sections-mode", state.view === "sections");
     document.querySelectorAll(".view-toggle-btn").forEach(b => {
       const on = b.dataset.view === state.view;
       b.classList.toggle("active", on);

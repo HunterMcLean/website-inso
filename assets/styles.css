@@ -904,6 +904,136 @@ dialog#submit-dialog::backdrop { background: rgba(0,0,0,0.7); backdrop-filter: b
 }
 .et-pagination .pg-info { font-size: 12px; color: var(--text-3); }
 
+/* ----- Sections view ----- */
+.sections-wrap { width: 100%; }
+
+/* Component pill row */
+.section-pills-wrap {
+  padding: 14px 0 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.section-pills-wrap::-webkit-scrollbar { display: none; }
+.section-pills {
+  display: flex; gap: 6px;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+.section-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  font: inherit; font-size: 12px; font-weight: 500;
+  padding: 6px 12px; border-radius: 999px;
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  color: var(--text-2); cursor: pointer;
+  transition: background 100ms ease, color 100ms ease, border-color 100ms ease;
+  flex-shrink: 0;
+}
+.section-pill:hover { color: var(--text); border-color: var(--border-3, var(--text-4)); }
+.section-pill.active {
+  background: var(--accent); border-color: var(--accent);
+  color: #fff;
+}
+.section-pill-count {
+  font-size: 11px; font-weight: 400; opacity: 0.75;
+}
+.section-pill.active .section-pill-count { opacity: 0.85; }
+
+/* Meta line */
+.section-results-meta {
+  font-size: 12px; color: var(--text-3);
+  padding: 0 0 12px;
+}
+.section-results-meta strong { color: var(--text-2); font-weight: 500; }
+
+/* Card grid — same density toggle as browse */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.grid-cols-2 ~ * .section-grid,
+body.grid-cols-2 .section-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 900px) {
+  .section-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Section card */
+.section-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); overflow: hidden;
+  cursor: pointer;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+.section-card:hover {
+  border-color: var(--border-2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.section-card-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.section-card-img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top;
+  display: block;
+}
+.section-card-no-shot {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-4); font-size: 11px;
+}
+
+/* Section / Full page badges */
+.section-crop-badge,
+.section-fallback-badge {
+  position: absolute; top: 8px; left: 8px;
+  padding: 3px 8px; border-radius: 4px;
+  font-family: var(--ff-mono); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  pointer-events: none; z-index: 2;
+}
+.section-crop-badge {
+  background: rgba(8,12,30,0.82); border: 1px solid rgba(99,179,237,0.4);
+  color: #7dd3fc;
+  backdrop-filter: blur(4px);
+}
+/* Hide crop badge and show fallback badge when image fell back */
+.section-fallback-badge { display: none; }
+.section-card-thumb.is-fallback .section-crop-badge { display: none; }
+.section-card-thumb.is-fallback .section-fallback-badge {
+  display: block;
+  background: rgba(8,12,30,0.7); border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text-3);
+  backdrop-filter: blur(4px);
+}
+
+/* Reuse card-visit-btn from browse */
+.section-card-thumb .card-visit-btn { z-index: 3; }
+
+/* Card meta */
+.section-card-meta {
+  padding: 10px 12px;
+  display: flex; align-items: baseline; gap: 8px;
+}
+.section-card-name {
+  font-size: 13px; font-weight: 500; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  min-width: 0;
+}
+.section-card-domain {
+  font-family: var(--ff-mono); font-size: 11px; color: var(--text-4);
+  white-space: nowrap; flex-shrink: 0;
+}
+
+.sections-empty { color: var(--text-3); font-size: 14px; padding: 40px 0; }
+
+/* Sections mode: hide sidebar filters that don't apply */
+body.sections-mode .filter-bar { visibility: hidden; pointer-events: none; }
+
 /* Editable chip group */
 .chip-edit-group {
   display: flex; flex-wrap: wrap; gap: 4px;
