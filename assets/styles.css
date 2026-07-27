@@ -1039,6 +1039,92 @@ body.grid-cols-2 .section-grid { grid-template-columns: repeat(2, minmax(0, 1fr)
    filter-bar (its dropdowns don't apply here) to avoid a dead gap. */
 body.sections-mode .filter-bar { display: none; }
 
+/* ----- Album organize view (album-scoped groups) ----- */
+.album-organize-wrap { width: 100%; }
+/* An open album is scoped by its own groups — the browse filter-bar doesn't apply */
+body.album-mode .filter-bar { display: none; }
+
+.ao-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 4px 0 16px;
+}
+.ao-hint { font-size: 12px; color: var(--text-3); }
+.ao-newgroup {
+  font: inherit; font-size: 12px; font-weight: 500;
+  padding: 6px 12px; border-radius: 999px;
+  background: var(--accent); border: 1px solid var(--accent); color: #fff;
+  cursor: pointer; flex-shrink: 0;
+  transition: background 120ms ease;
+}
+.ao-newgroup:hover { background: var(--accent-hover); }
+
+.album-group { margin-bottom: 28px; }
+.album-group-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+.album-group-title { font-size: 15px; font-weight: 600; color: var(--text); margin: 0; }
+.album-group-count {
+  font-size: 11px; font-weight: 600; color: var(--text-3);
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 999px; padding: 1px 8px;
+}
+.album-group.is-ungrouped .album-group-title { color: var(--text-3); }
+.album-group-actions { margin-left: auto; display: flex; gap: 6px; }
+.ao-group-rename, .ao-group-del {
+  font: inherit; font-size: 11px; font-weight: 500;
+  background: transparent; border: 1px solid var(--border-2);
+  color: var(--text-3); padding: 3px 9px; border-radius: 6px; cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.ao-group-rename:hover { color: var(--text); border-color: var(--text-4); }
+.ao-group-del:hover { color: #ff8080; border-color: rgba(255,80,80,0.4); }
+
+.album-group-grid {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 1100px) { .album-group-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px)  { .album-group-grid { grid-template-columns: 1fr; } }
+
+.ao-empty { font-size: 13px; color: var(--text-4); font-style: italic; padding: 8px 0 4px; grid-column: 1 / -1; }
+
+/* Inline group chips on album cards */
+.card-groups {
+  display: flex; flex-wrap: wrap; gap: 5px; align-items: center;
+}
+.grp-chip {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 5px 3px 9px;
+  background: rgba(99,179,237,0.12);
+  border: 1px solid rgba(99,179,237,0.35);
+  border-radius: 999px;
+  font-size: 11px; font-weight: 500; color: #7dd3fc;
+  white-space: nowrap;
+}
+.grp-remove {
+  font: inherit; font-size: 13px; line-height: 1;
+  width: 15px; height: 15px; padding: 0;
+  border: none; background: transparent; color: inherit; cursor: pointer;
+  border-radius: 999px; display: inline-flex; align-items: center; justify-content: center;
+  opacity: 0.7;
+}
+.grp-remove:hover { opacity: 1; background: rgba(255,80,80,0.25); color: #ff8080; }
+.grp-add {
+  font: inherit; font-size: 11px; font-weight: 500;
+  padding: 3px 9px;
+  background: transparent; border: 1px dashed var(--border-2);
+  border-radius: 999px; color: var(--text-3); cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+.grp-add:hover { border-color: var(--accent); color: var(--text); border-style: solid; }
+
+/* Create-new row in the shared popover */
+.popover-item.popover-create { color: var(--accent); font-weight: 500; }
+.popover-item.popover-create .check { color: var(--accent); font-weight: 700; }
+
 /* Editable chip group */
 .chip-edit-group {
   display: flex; flex-wrap: wrap; gap: 4px;

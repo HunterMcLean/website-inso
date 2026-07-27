@@ -417,7 +417,51 @@
         if (Array.isArray(parsed)) state.albums = parsed;
       }
     } catch(e) {}
+    // Migrate: ensure album-scoped grouping fields exist on every album
+    state.albums.forEach(a => {
+      if (!Array.isArray(a.groups)) a.groups = [];
+      if (!a.siteGroups || typeof a.siteGroups !== "object") a.siteGroups = {};
+    });
     renderAlbumsNav();
+  }
+
+  // ── Album-scoped groups ──────────────────────────────────────────────
+  // Each album has: groups: [name,...] (ordered) and siteGroups: {siteId:[name,...]}
+  function albumGetSiteGroups(album, siteId) {
+    return (album.siteGroups && album.siteGroups[siteId]) || [];
+  }
+  function albumEnsureGroup(album, name) {
+    name = (name || "").trim();
+    if (name && !album.groups.includes(name)) album.groups.push(name);
+    return name;
+  }
+  function albumSetSiteGroups(album, siteId, groups) {
+    album.siteGroups = album.siteGroups || {};
+    const clean = [];
+    (groups || []).forEach(g => { const n = albumEnsureGroup(album, g); if (n && !clean.includes(n)) clean.push(n); });
+    if (clean.length) album.siteGroups[siteId] = clean;
+    else delete album.siteGroups[siteId];
+    saveAlbums();
+  }
+  function albumDeleteGroup(album, name) {
+    album.groups = album.groups.filter(g => g !== name);
+    Object.keys(album.siteGroups || {}).forEach(sid => {
+      album.siteGroups[sid] = album.siteGroups[sid].filter(g => g !== name);
+      if (!album.siteGroups[sid].length) delete album.siteGroups[sid];
+    });
+    saveAlbums();
+  }
+  function albumRenameGroup(album, oldName, newName) {
+    newName = (newName || "").trim();
+    if (!newName || oldName === newName) return;
+    album.groups = album.groups.map(g => g === oldName ? newName : g);
+    // de-dupe if renamed into an existing group
+    album.groups = album.groups.filter((g, i) => album.groups.indexOf(g) === i);
+    Object.keys(album.siteGroups || {}).forEach(sid => {
+      album.siteGroups[sid] = album.siteGroups[sid].map(g => g === oldName ? newName : g);
+      album.siteGroups[sid] = album.siteGroups[sid].filter((g, i) => album.siteGroups[sid].indexOf(g) === i);
+    });
+    saveAlbums();
   }
   function saveAlbums() {
     try { localStorage.setItem("inspoAlbums", JSON.stringify(state.albums)); } catch(e) {}
@@ -712,9 +756,11 @@
     const grid        = document.getElementById("grid");
     const tableWrap   = document.getElementById("edit-table-wrap");
     const sectionsWrap = document.getElementById("sections-wrap");
+    const albumWrap   = document.getElementById("album-organize-wrap");
 
     if (state.view === "sections") {
-      grid.hidden = true; tableWrap.hidden = true; sectionsWrap.hidden = false;
+      grid.hidden = true; tableWrap.hidden = true; sectionsWrap.hidden = false; albumWrap.hidden = true;
+      document.body.classList.remove("album-mode");
       document.getElementById("count").textContent = `${state.entries.length} sites`;
       renderSectionsView();
       renderPagination(0, 0);
@@ -722,6 +768,24 @@
       return;
     }
     sectionsWrap.hidden = true;
+
+    // Album organize view: viewing one of your own albums (not a shared read-only album)
+    if (state.view === "browse" && state.activeAlbum && !state.sharedAlbum) {
+      const album = state.albums.find(a => a.id === state.activeAlbum);
+      if (album) {
+        grid.hidden = true; tableWrap.hidden = true; albumWrap.hidden = false;
+        document.body.classList.add("album-mode");
+        const n = album.siteIds.length;
+        document.getElementById("count").textContent = `${n} site${n !== 1 ? "s" : ""}`;
+        renderAlbumOrganize(album);
+        renderPagination(0, 0);
+        renderActiveChips();
+        document.getElementById("empty").classList.add("hidden");
+        return;
+      }
+    }
+    albumWrap.hidden = true;
+    document.body.classList.remove("album-mode");
 
     const all = sorted(state.entries.filter(entryMatches));
     document.getElementById("count").textContent = `${all.length} of ${state.entries.length} sites`;
@@ -1095,7 +1159,7 @@
   // Now takes getValues + setValues callbacks so it stays in sync if the
   // entry's array is mutated externally (e.g. user clicks a chip × while
   // the popover is open).
-  function openPopover(anchor, options, getValues, setValues) {
+  function openPopover(anchor, options, getValues, setValues, opts = {}) {
     closePopover();
 
     // Render inside the active <dialog> if one is open — otherwise the
@@ -1114,23 +1178,42 @@
     host.appendChild(pop);
 
     const list = pop.querySelector(".popover-list");
-    let q = "";
+    let q = "";       // lowercased, for matching
+    let rawQ = "";    // original case, for create
 
     function paint() {
       const current = new Set(getValues());
-      const filtered = options.filter(o => o.toLowerCase().includes(q));
-      if (!filtered.length) {
+      const allOpts = typeof options === "function" ? options() : options;
+      const filtered = allOpts.filter(o => o.toLowerCase().includes(q));
+      const exact = allOpts.some(o => o.toLowerCase() === q);
+      const showCreate = opts.allowCreate && rawQ && !exact;
+
+      if (!filtered.length && !showCreate) {
         list.innerHTML = `<div class="popover-empty">no matches</div>`;
         return;
       }
-      list.innerHTML = filtered.map(o => {
+      let html = "";
+      if (showCreate) {
+        html += `<div class="popover-item popover-create" data-create="1">
+          <span class="check">+</span><span>Create “${escapeHtml(rawQ)}”</span>
+        </div>`;
+      }
+      html += filtered.map(o => {
         const on = current.has(o);
         return `<div class="popover-item${on ? " selected" : ""}" data-val="${escapeHtml(o)}">
           <span class="check">${on ? `<svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>` : ""}</span>
           <span>${escapeHtml(o)}</span>
         </div>`;
       }).join("");
-      list.querySelectorAll(".popover-item").forEach(item => {
+      list.innerHTML = html;
+
+      const createEl = list.querySelector(".popover-create");
+      if (createEl) createEl.addEventListener("click", () => {
+        if (opts.onCreate) opts.onCreate(rawQ);
+        const search = pop.querySelector(".popover-search");
+        search.value = ""; q = ""; rawQ = ""; paint(); search.focus();
+      });
+      list.querySelectorAll(".popover-item:not(.popover-create)").forEach(item => {
         item.addEventListener("click", () => {
           const cur = new Set(getValues());
           const v = item.dataset.val;
@@ -1142,7 +1225,8 @@
     }
 
     pop.querySelector(".popover-search").addEventListener("input", e => {
-      q = e.target.value.trim().toLowerCase(); paint();
+      rawQ = e.target.value.trim();
+      q = rawQ.toLowerCase(); paint();
     });
 
     // Position near anchor — using fixed positioning, viewport coords
@@ -1176,6 +1260,7 @@
     }
     pop._outside = outsideHandler;
     pop._onMove = onMove;
+    pop._onClose = opts.onClose;
     pop.querySelector(".popover-search").focus();
   }
   function openThumbPopup(src) {
@@ -1204,7 +1289,9 @@
         window.removeEventListener("scroll", p._onMove, true);
         window.removeEventListener("resize", p._onMove);
       }
+      const cb = p._onClose;
       p.remove();
+      if (cb) { try { cb(); } catch(e) {} }
     });
     const root = document.getElementById("popover-root");
     if (root) root.hidden = true;
@@ -1360,6 +1447,157 @@
         </div>
         <div class="card-foot">${tagsHtml}</div>
       </article>`;
+  }
+
+  // ------- Album organize view (album-scoped groups) -------
+  function renderAlbumOrganize(album) {
+    const wrap = document.getElementById("album-organize-wrap");
+    const byId = id => state.entries.find(e => e.id === id);
+    const sites = album.siteIds.map(byId).filter(Boolean);
+
+    const toolbar = `
+      <div class="ao-toolbar">
+        <span class="ao-hint">Tag each site to sort it into groups — a site can be in more than one.</span>
+        <button type="button" class="ao-newgroup">+ New group</button>
+      </div>`;
+
+    if (!sites.length) {
+      wrap.innerHTML = toolbar + `<p class="sections-empty">This album is empty. Open any site and use “Add to album…” to save it here.</p>`;
+      wrap.querySelector(".ao-newgroup").addEventListener("click", () => promptNewGroup(album));
+      return;
+    }
+
+    const sections = [];
+    album.groups.forEach(g => {
+      const members = sites.filter(e => albumGetSiteGroups(album, e.id).includes(g));
+      sections.push(renderAlbumGroupSection(album, g, members, false));
+    });
+    const ungrouped = sites.filter(e => !albumGetSiteGroups(album, e.id).length);
+    sections.push(renderAlbumGroupSection(album, null, ungrouped, true));
+
+    wrap.innerHTML = toolbar + sections.join("");
+    wireAlbumOrganize(album, wrap);
+  }
+
+  function renderAlbumGroupSection(album, groupName, members, isUngrouped) {
+    const title = isUngrouped ? "Ungrouped" : groupName;
+    const del = isUngrouped ? "" :
+      `<button type="button" class="ao-group-del" data-group="${escapeHtml(groupName)}" title="Delete group">Delete group</button>`;
+    const rename = isUngrouped ? "" :
+      `<button type="button" class="ao-group-rename" data-group="${escapeHtml(groupName)}" title="Rename group">Rename</button>`;
+    const cards = members.length
+      ? members.map(e => renderAlbumCard(e, album)).join("")
+      : `<p class="ao-empty">No sites here yet.</p>`;
+    return `
+      <section class="album-group${isUngrouped ? " is-ungrouped" : ""}">
+        <div class="album-group-head">
+          <h3 class="album-group-title">${escapeHtml(title)}</h3>
+          <span class="album-group-count">${members.length}</span>
+          <span class="album-group-actions">${rename}${del}</span>
+        </div>
+        <div class="grid album-group-grid">${cards}</div>
+      </section>`;
+  }
+
+  function renderAlbumCard(e, album) {
+    const groups = albumGetSiteGroups(album, e.id);
+    const chips = groups.map(g =>
+      `<span class="grp-chip">${escapeHtml(g)}<button type="button" class="grp-remove" data-group="${escapeHtml(g)}" aria-label="Remove from ${escapeHtml(g)}">×</button></span>`
+    ).join("");
+    const thumb = e.screenshot
+      ? `<img src="${escapeHtml(e.screenshot)}" alt="${escapeHtml(e.name)} screenshot" loading="lazy" />`
+      : `<div class="placeholder"><span class="ph-domain">${escapeHtml(e.domain || e.name)}</span></div>`;
+    return `
+      <article class="card album-card" data-id="${escapeHtml(e.id)}">
+        <div class="card-head">
+          <div class="card-title">${escapeHtml(e.name)}</div>
+          <span class="card-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 10L10 4M10 4H5M10 4V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+        <div class="card-thumb">
+          ${thumb}
+          <a class="card-visit-btn" href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visit ${escapeHtml(e.name)}">
+            Visit site
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M3 8L8 3M8 3H4.5M8 3V6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="card-foot">
+          <div class="card-groups" data-id="${escapeHtml(e.id)}">
+            ${chips}
+            <button type="button" class="grp-add" data-id="${escapeHtml(e.id)}">+ Group</button>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function promptNewGroup(album) {
+    const name = prompt("New group name:");
+    if (name && name.trim()) { albumEnsureGroup(album, name); saveAlbums(); renderAlbumOrganize(album); }
+  }
+
+  function wireAlbumOrganize(album, wrap) {
+    // Open detail on card click (but not when interacting with group controls or visit)
+    wrap.querySelectorAll(".album-card").forEach(card => {
+      card.addEventListener("click", ev => {
+        if (ev.target.closest(".card-groups") || ev.target.closest(".card-visit-btn")) return;
+        openDetail(card.dataset.id);
+      });
+    });
+    wrap.querySelectorAll(".card-visit-btn").forEach(a => a.addEventListener("click", e => e.stopPropagation()));
+
+    // Remove a site from a group (chip ×)
+    wrap.querySelectorAll(".grp-remove").forEach(btn => {
+      btn.addEventListener("click", ev => {
+        ev.stopPropagation();
+        const holder = btn.closest(".card-groups");
+        const sid = holder.dataset.id;
+        const next = albumGetSiteGroups(album, sid).filter(g => g !== btn.dataset.group);
+        albumSetSiteGroups(album, sid, next);
+        renderAlbumOrganize(album);
+      });
+    });
+
+    // Add site to group(s) — popover with create-new
+    wrap.querySelectorAll(".grp-add").forEach(btn => {
+      btn.addEventListener("click", ev => {
+        ev.stopPropagation();
+        const sid = btn.dataset.id;
+        openPopover(
+          btn,
+          () => album.groups.slice(),
+          () => albumGetSiteGroups(album, sid),
+          (newVals) => albumSetSiteGroups(album, sid, newVals),
+          {
+            allowCreate: true,
+            onCreate: (name) => {
+              const cur = albumGetSiteGroups(album, sid);
+              albumSetSiteGroups(album, sid, cur.concat(name));
+            },
+            onClose: () => { if (state.activeAlbum === album.id && state.view === "browse") renderAlbumOrganize(album); },
+          }
+        );
+      });
+    });
+
+    // Group header actions
+    wrap.querySelectorAll(".ao-group-del").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const g = btn.dataset.group;
+        if (confirm(`Delete the “${g}” group? Sites stay in the album — they just lose this group tag.`)) {
+          albumDeleteGroup(album, g);
+          renderAlbumOrganize(album);
+        }
+      });
+    });
+    wrap.querySelectorAll(".ao-group-rename").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const g = btn.dataset.group;
+        const next = prompt(`Rename “${g}” to:`, g);
+        if (next && next.trim()) { albumRenameGroup(album, g, next); renderAlbumOrganize(album); }
+      });
+    });
+
+    const newBtn = wrap.querySelector(".ao-newgroup");
+    if (newBtn) newBtn.addEventListener("click", () => promptNewGroup(album));
   }
 
   function renderPagination(page, total) {
