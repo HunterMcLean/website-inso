@@ -26530,6 +26530,472 @@
       "createdAt": "June 03, 2026 07:32 PM",
       "screenshot": "assets/screenshots/mews-mews-com.jpg",
       "screenshotCapturedAt": "2026-06-03T19:36:51Z"
+    },
+    {
+      "name": "Biograph",
+      "url": "https://www.biograph.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Healthcare"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Premium",
+        "Elite",
+        "Established",
+        "Serious",
+        "Modern"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "biograph.com",
+      "id": "biograph-biograph-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/biograph-biograph-com.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:04Z"
+    },
+    {
+      "name": "Runner",
+      "url": "https://runner.now",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "runner.now",
+      "id": "runner-runner-now",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/runner-runner-now.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:07Z"
+    },
+    {
+      "name": "Daylight",
+      "url": "https://godaylight.com",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "Energy/Infrastructure"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Natural",
+        "Approachable",
+        "Friendly",
+        "Premium"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "godaylight.com",
+      "id": "daylight-godaylight-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/daylight-godaylight-com.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:11Z"
+    },
+    {
+      "name": "Orchid",
+      "url": "https://orchid.ai",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Friendly",
+        "Approachable",
+        "Modern",
+        "Playful",
+        "Bright"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "orchid.ai",
+      "id": "orchid-orchid-ai",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/orchid-orchid-ai.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:16Z"
+    },
+    {
+      "name": "ReadMe",
+      "url": "https://readme.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Dev Tools"
+      ],
+      "designAesthetic": [
+        "Maximalist"
+      ],
+      "wordAssociations": [
+        "Technical",
+        "Modern",
+        "Playful",
+        "Dynamic",
+        "Bright"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "readme.com",
+      "id": "readme-readme-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/readme-readme-com.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:22Z"
+    },
+    {
+      "name": "Contra Labs",
+      "url": "https://contralabs.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Editorial",
+        "Authoritative",
+        "Serious"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "contralabs.com",
+      "id": "contra-labs-contralabs-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/contra-labs-contralabs-com.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:26Z"
+    },
+    {
+      "name": "Kastle",
+      "url": "https://www.kastle.ai",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "AI",
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Technical",
+        "Authoritative",
+        "Serious",
+        "Modern",
+        "Established"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "kastle.ai",
+      "id": "kastle-kastle-ai",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/kastle-kastle-ai.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:30Z"
+    },
+    {
+      "name": "Tempo",
+      "url": "https://tempo.xyz",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Blockchain/Web3",
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Authoritative",
+        "Premium",
+        "Established"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "tempo.xyz",
+      "id": "tempo-tempo-xyz",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/tempo-tempo-xyz.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:33Z"
+    },
+    {
+      "name": "Corgi",
+      "url": "https://www.corgi.insure",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "FinTech"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Friendly",
+        "Approachable",
+        "Playful",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "corgi.insure",
+      "id": "corgi-corgi-insure",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/corgi-corgi-insure.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:35Z"
+    },
+    {
+      "name": "Perplexity Personal Computer",
+      "url": "https://www.perplexity.ai/personal-computer",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Premium",
+        "Subtle"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "perplexity.ai",
+      "id": "perplexity-personal-computer-perplexity-ai",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/perplexity-personal-computer-perplexity-ai.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:39Z"
+    },
+    {
+      "name": "Norma",
+      "url": "https://nor.ma",
+      "companyType": [
+        "B2C"
+      ],
+      "companyIndustry": [],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Subtle",
+        "Premium",
+        "Serious"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "nor.ma",
+      "id": "norma-nor-ma",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/norma-nor-ma.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:43Z"
+    },
+    {
+      "name": "Central",
+      "url": "https://centralhq.com",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "HR Tech",
+        "AI"
+      ],
+      "designAesthetic": [
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Approachable",
+        "Established",
+        "Serious"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "centralhq.com",
+      "id": "central-centralhq-com",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/central-centralhq-com.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:46Z"
+    },
+    {
+      "name": "Billow",
+      "url": "https://www.billow.so",
+      "companyType": [
+        "B2B"
+      ],
+      "companyIndustry": [
+        "Sales Tech"
+      ],
+      "designAesthetic": [
+        "Dark Mode",
+        "Minimalist"
+      ],
+      "wordAssociations": [
+        "Modern",
+        "Technical",
+        "Subtle",
+        "Dynamic"
+      ],
+      "source": "claude-add",
+      "siteStructure": [],
+      "typefaces": [],
+      "industryLeader": false,
+      "unconventional": false,
+      "domain": "billow.so",
+      "id": "billow-billow-so",
+      "standoutElements": {
+        "Overall Styles": [],
+        "Atoms/Molecules/Organisms": [],
+        "Components": [],
+        "Pages": []
+      },
+      "createdAt": "July 27, 2026 04:42 PM",
+      "screenshot": "assets/screenshots/billow-billow-so.jpg",
+      "screenshotCapturedAt": "2026-07-27T16:43:50Z"
     }
   ]
 }
