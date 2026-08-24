@@ -27,6 +27,7 @@
     albums: [],               // [{id, name, siteIds:[], createdAt}] — persisted to localStorage
     activeAlbum: null,        // album id currently being viewed
     sharedAlbum: null,        // {name, ids, groups, siteGroups} decoded from ?album= URL param (read-only)
+    pendingShareId: null,     // ?share=<id> living link id, fetched async on boot
     gridCols: 3,              // 3 or 2 — persisted to localStorage
     editShowUntagged: false,  // edit view: show only entries missing wordAssociations
     activeSection: null,      // sections view: currently selected component name
@@ -89,6 +90,8 @@
     applyEditAuthUI();
     updateHeroCopy();   // applies shared-album-mode class before first render
     render();
+    // Living share link (?share=<id>) — fetched async, then re-renders
+    if (state.pendingShareId) loadLivingShare(state.pendingShareId);
   }
 
   // ------- Favorites -------
@@ -159,9 +162,11 @@
     const sub     = document.getElementById("hero-sub");
     const caution = document.getElementById("hero-caution");
     const shareBtn = document.getElementById("share-album-btn");
+    const livingBtn = document.getElementById("living-link-btn");
     const banner  = document.getElementById("shared-album-banner");
     // Hide sidebar + filter bar when viewing a shared album URL
-    document.body.classList.toggle("shared-album-mode", !!state.sharedAlbum);
+    document.body.classList.toggle("shared-album-mode", !!state.sharedAlbum || !!state.pendingShareId);
+    if (livingBtn) livingBtn.hidden = true;
     if (state.sharedAlbum) {
       h1.textContent  = state.sharedAlbum.name;
       sub.textContent = `Shared album · ${state.sharedAlbum.ids.length} site${state.sharedAlbum.ids.length !== 1 ? "s" : ""}`;
@@ -174,6 +179,14 @@
       caution.hidden = true; banner.hidden = true;
       shareBtn.hidden = false;
       shareBtn.dataset.albumId = state.activeAlbum;
+      // Living link is a token-gated write action
+      if (livingBtn) {
+        livingBtn.hidden = !getEditToken();
+        livingBtn.dataset.albumId = state.activeAlbum;
+        livingBtn.innerHTML = (album && album.shareId)
+          ? `<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M5.5 8.5l3-3M6 3.5l.7-.7a2.2 2.2 0 0 1 3.1 3.1l-.7.7M8 10.5l-.7.7a2.2 2.2 0 0 1-3.1-3.1l.7-.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg> Update living link`
+          : `<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M5.5 8.5l3-3M6 3.5l.7-.7a2.2 2.2 0 0 1 3.1 3.1l-.7.7M8 10.5l-.7.7a2.2 2.2 0 0 1-3.1-3.1l.7-.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg> Living link`;
+      }
     } else if (state.showFavorites) {
       h1.textContent  = "Your favorited websites.";
       sub.textContent = "All of your saved sites, in one place. Add custom tags and sort by your own filters.";
@@ -545,7 +558,14 @@
 
   function checkSharedAlbumUrl() {
     try {
-      const raw = new URLSearchParams(location.search).get("album");
+      const params = new URLSearchParams(location.search);
+      // Living link: ?share=<id> — fetched asynchronously after boot
+      const shareId = params.get("share");
+      if (shareId && /^[a-z0-9]{6,16}$/.test(shareId)) {
+        state.pendingShareId = shareId;
+        return;
+      }
+      const raw = params.get("album");
       if (!raw) return;
       const payload = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(raw)))));
       if (payload.n && Array.isArray(payload.i)) {
@@ -557,6 +577,68 @@
         };
       }
     } catch(e) {}
+  }
+
+  // ── Living share links (stable URL, backed by data/shares/<id>.json) ──
+  function genShareId() {
+    let s = "";
+    while (s.length < 10) s += Math.random().toString(36).slice(2);
+    return s.slice(0, 10);
+  }
+
+  // Fetch a living share record and render it (read-only, grouped if it has categories)
+  async function loadLivingShare(id) {
+    // Show a lightweight loading state in the hero
+    document.body.classList.add("shared-album-mode");
+    const h1 = document.getElementById("hero-headline");
+    const sub = document.getElementById("hero-sub");
+    if (h1) h1.textContent = "Loading shared album…";
+    if (sub) sub.textContent = "";
+    try {
+      const res = await fetch(`data/shares/${id}.json?cb=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const rec = await res.json();
+      if (!rec || !Array.isArray(rec.siteIds)) throw new Error("bad record");
+      state.sharedAlbum = {
+        name: rec.name || "Shared album",
+        ids: rec.siteIds,
+        groups: Array.isArray(rec.groups) ? rec.groups : [],
+        siteGroups: (rec.siteGroups && typeof rec.siteGroups === "object") ? rec.siteGroups : {},
+      };
+      state.pendingShareId = null;
+      updateHeroCopy();
+      render();
+    } catch (e) {
+      state.pendingShareId = null;
+      if (h1) h1.textContent = "Shared album not found";
+      if (sub) sub.textContent = "This link may be invalid or the album was removed.";
+    }
+  }
+
+  // Publish (or update) the active album as a living link with a stable URL
+  async function publishLivingShare(album) {
+    const token = getEditToken();
+    if (!token) {
+      alert("Living links need edit access. Click the lock icon in the header to unlock, then try again.");
+      return null;
+    }
+    const id = album.shareId || genShareId();
+    const sg = {};
+    (album.siteIds || []).forEach(sid => {
+      const gs = albumGetSiteGroups(album, sid);
+      if (gs.length) sg[sid] = gs;
+    });
+    const body = { id, name: album.name, siteIds: album.siteIds, groups: album.groups || [], siteGroups: sg };
+    const res = await fetch("/.netlify/functions/publish-share", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Edit-Token": token },
+      body: JSON.stringify(body),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+    album.shareId = id;
+    saveAlbums();
+    return location.origin + location.pathname + "?share=" + id;
   }
 
   function renderAlbumAddSectionHtml(siteId) {
@@ -2064,6 +2146,27 @@
       }).catch(() => {
         prompt("Copy this link:", url);
       });
+    });
+
+    // Living link button — publish/update a stable, updatable share URL
+    const livingLinkBtn = document.getElementById("living-link-btn");
+    livingLinkBtn.addEventListener("click", async () => {
+      const album = state.albums.find(a => a.id === state.activeAlbum);
+      if (!album) return;
+      const orig = livingLinkBtn.innerHTML;
+      livingLinkBtn.disabled = true;
+      livingLinkBtn.textContent = album.shareId ? "Updating…" : "Publishing…";
+      try {
+        const url = await publishLivingShare(album);
+        if (!url) { livingLinkBtn.innerHTML = orig; livingLinkBtn.disabled = false; return; }
+        try { await navigator.clipboard.writeText(url); } catch (e) { prompt("Copy this living link:", url); }
+        livingLinkBtn.textContent = "✓ Living link copied — live in ~30s";
+        setTimeout(() => { livingLinkBtn.disabled = false; updateHeroCopy(); }, 3000);
+      } catch (err) {
+        livingLinkBtn.disabled = false;
+        livingLinkBtn.innerHTML = orig;
+        alert("Couldn't publish the living link: " + (err && err.message ? err.message : err));
+      }
     });
     document.querySelectorAll("dialog .dialog-close").forEach(b => b.addEventListener("click", () => b.closest("dialog").close()));
     document.getElementById("detail").addEventListener("click", e => { if (e.target.tagName === "DIALOG") e.target.close(); });

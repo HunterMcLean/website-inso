@@ -195,6 +195,13 @@ body.shared-album-mode .filter-bar { display: none; }
   transition: border-color 120ms, color 120ms;
 }
 .share-album-btn:hover { border-color: var(--text-3); color: var(--text); }
+.living-link-btn {
+  background: transparent;
+  border-color: rgba(99,179,237,0.4);
+  color: #7dd3fc;
+}
+.living-link-btn:hover { border-color: #7dd3fc; color: #a5e0ff; }
+.living-link-btn:disabled { opacity: 0.7; cursor: default; }
 
 /* Shared album banner */
 .shared-album-banner {

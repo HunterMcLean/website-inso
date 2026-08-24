@@ -80,10 +80,12 @@ web-inspo-library/
 │   ├── schema.json                    # canonical taxonomy
 │   ├── notion-mapping-report.json     # historical reference, not deployed
 │   ├── figma-stubs-added.json         # historical reference, not deployed
+│   ├── shares/                        # <id>.json living-share records (written by publish-share.js, read as static files)
 │   └── *-report.json                  # screenshot/import reports, not deployed
 ├── netlify/
 │   └── functions/
-│       └── save-inspiration.js        # editor save endpoint
+│       ├── save-inspiration.js        # editor save endpoint
+│       └── publish-share.js           # "living" album share links (writes data/shares/<id>.json)
 ├── netlify.toml                       # build + functions config
 ├── scripts/
 │   ├── add_entry.py                   # CLI: add a single entry
