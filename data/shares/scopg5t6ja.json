@@ -1,0 +1,107 @@
+{
+  "id": "scopg5t6ja",
+  "name": "Osano",
+  "siteIds": [
+    "readme-readme-com",
+    "kastle-kastle-ai",
+    "complex-law-complexlaw-co-uk",
+    "anchor-getanchor-co",
+    "ease-health-easehealth-com",
+    "chatbase-chatbase-co",
+    "mintlify-mintlify-com",
+    "peec-ai-peec-ai",
+    "wrangle-wrangle-ai",
+    "harvest-getharvest-com",
+    "gradial-gradial-com",
+    "cresta-cresta-com",
+    "perk-figma",
+    "clay-figma",
+    "front-figma",
+    "lattice-figma",
+    "localyzer-localyzer-io",
+    "stacker-stackerhq-com",
+    "adora-adora-so",
+    "jasper-jasper-ai",
+    "intercom-intercom-com",
+    "aave-aave-com",
+    "letters-letters-app"
+  ],
+  "groups": [
+    "Mild",
+    "Middle Ground",
+    "Wild"
+  ],
+  "siteGroups": {
+    "readme-readme-com": [
+      "Wild"
+    ],
+    "kastle-kastle-ai": [
+      "Middle Ground"
+    ],
+    "complex-law-complexlaw-co-uk": [
+      "Wild"
+    ],
+    "anchor-getanchor-co": [
+      "Middle Ground"
+    ],
+    "ease-health-easehealth-com": [
+      "Middle Ground"
+    ],
+    "chatbase-chatbase-co": [
+      "Mild"
+    ],
+    "mintlify-mintlify-com": [
+      "Mild"
+    ],
+    "peec-ai-peec-ai": [
+      "Mild"
+    ],
+    "wrangle-wrangle-ai": [
+      "Mild"
+    ],
+    "harvest-getharvest-com": [
+      "Middle Ground"
+    ],
+    "gradial-gradial-com": [
+      "Middle Ground"
+    ],
+    "cresta-cresta-com": [
+      "Mild"
+    ],
+    "perk-figma": [
+      "Wild"
+    ],
+    "clay-figma": [
+      "Wild"
+    ],
+    "front-figma": [
+      "Middle Ground"
+    ],
+    "lattice-figma": [
+      "Wild"
+    ],
+    "localyzer-localyzer-io": [
+      "Wild"
+    ],
+    "stacker-stackerhq-com": [
+      "Mild"
+    ],
+    "adora-adora-so": [
+      "Wild"
+    ],
+    "jasper-jasper-ai": [
+      "Wild"
+    ],
+    "intercom-intercom-com": [
+      "Mild",
+      "Middle Ground"
+    ],
+    "aave-aave-com": [
+      "Mild"
+    ],
+    "letters-letters-app": [
+      "Middle Ground"
+    ]
+  },
+  "updatedAt": "2026-08-24T23:01:18.468Z"
+}
