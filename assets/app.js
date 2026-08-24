@@ -26,7 +26,7 @@
     activeCustomTags: new Set(), // tag names currently active as filters
     albums: [],               // [{id, name, siteIds:[], createdAt}] — persisted to localStorage
     activeAlbum: null,        // album id currently being viewed
-    sharedAlbum: null,        // {name, ids} decoded from ?album= URL param (read-only)
+    sharedAlbum: null,        // {name, ids, groups, siteGroups} decoded from ?album= URL param (read-only)
     gridCols: 3,              // 3 or 2 — persisted to localStorage
     editShowUntagged: false,  // edit view: show only entries missing wordAssociations
     activeSection: null,      // sections view: currently selected component name
@@ -528,8 +528,18 @@
   }
 
   function generateShareUrl(album) {
-    const payload = JSON.stringify({ n: album.name, i: album.siteIds });
-    const b64 = btoa(unescape(encodeURIComponent(payload)));
+    const payload = { n: album.name, i: album.siteIds };
+    // Include album-scoped groups so the shared view can show the categorization
+    if (album.groups && album.groups.length) {
+      const sg = {};
+      (album.siteIds || []).forEach(id => {
+        const gs = albumGetSiteGroups(album, id);
+        if (gs.length) sg[id] = gs;
+      });
+      payload.g = album.groups;   // ordered group names
+      payload.s = sg;             // { siteId: [groupName,...] }
+    }
+    const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
     return location.origin + location.pathname + "?album=" + encodeURIComponent(b64);
   }
 
@@ -539,7 +549,12 @@
       if (!raw) return;
       const payload = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(raw)))));
       if (payload.n && Array.isArray(payload.i)) {
-        state.sharedAlbum = { name: payload.n, ids: payload.i };
+        state.sharedAlbum = {
+          name: payload.n,
+          ids: payload.i,
+          groups: Array.isArray(payload.g) ? payload.g : [],
+          siteGroups: (payload.s && typeof payload.s === "object") ? payload.s : {},
+        };
       }
     } catch(e) {}
   }
@@ -768,6 +783,19 @@
       return;
     }
     sectionsWrap.hidden = true;
+
+    // Shared album (read-only) WITH categories → grouped view
+    if (state.sharedAlbum && state.sharedAlbum.groups && state.sharedAlbum.groups.length) {
+      grid.hidden = true; tableWrap.hidden = true; albumWrap.hidden = false;
+      document.body.classList.remove("album-mode");
+      renderSharedAlbumGrouped();
+      const n = state.sharedAlbum.ids.length;
+      document.getElementById("count").textContent = `${n} site${n !== 1 ? "s" : ""}`;
+      renderPagination(0, 0);
+      renderActiveChips();
+      document.getElementById("empty").classList.add("hidden");
+      return;
+    }
 
     // Album organize view: viewing one of your own albums (not a shared read-only album)
     if (state.view === "browse" && state.activeAlbum && !state.sharedAlbum) {
@@ -1598,6 +1626,48 @@
 
     const newBtn = wrap.querySelector(".ao-newgroup");
     if (newBtn) newBtn.addEventListener("click", () => promptNewGroup(album));
+  }
+
+  // Read-only grouped view for a SHARED album link that carries categories
+  function renderSharedAlbumGrouped() {
+    const wrap = document.getElementById("album-organize-wrap");
+    const sa = state.sharedAlbum;
+    const byId = id => state.entries.find(e => e.id === id);
+    const sites = sa.ids.map(byId).filter(Boolean);
+    const groupsOf = id => (sa.siteGroups && sa.siteGroups[id]) || [];
+
+    const sections = [];
+    sa.groups.forEach(g => {
+      const members = sites.filter(e => groupsOf(e.id).includes(g));
+      if (members.length) sections.push(renderSharedGroupSection(g, members, false));
+    });
+    const ungrouped = sites.filter(e => !groupsOf(e.id).length);
+    if (ungrouped.length) sections.push(renderSharedGroupSection("Other", ungrouped, true));
+
+    wrap.innerHTML = sections.join("") ||
+      `<p class="sections-empty">This shared album has no sites.</p>`;
+
+    // Wire read-only card interactions (open detail, fav, visit) — no group editing
+    wrap.querySelectorAll(".card").forEach(c => c.addEventListener("click", ev => {
+      if (ev.target.closest(".card-visit-btn") || ev.target.closest(".card-fav-btn")) return;
+      openDetail(c.dataset.id);
+    }));
+    wrap.querySelectorAll(".card-fav-btn").forEach(btn => btn.addEventListener("click", e => {
+      e.stopPropagation();
+      toggleFavorite(btn.dataset.favId);
+    }));
+    wrap.querySelectorAll(".card-visit-btn").forEach(a => a.addEventListener("click", e => e.stopPropagation()));
+  }
+
+  function renderSharedGroupSection(title, members, isOther) {
+    return `
+      <section class="album-group${isOther ? " is-ungrouped" : ""}">
+        <div class="album-group-head">
+          <h3 class="album-group-title">${escapeHtml(title)}</h3>
+          <span class="album-group-count">${members.length}</span>
+        </div>
+        <div class="grid album-group-grid">${members.map(renderCard).join("")}</div>
+      </section>`;
   }
 
   function renderPagination(page, total) {
