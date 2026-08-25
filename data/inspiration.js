@@ -10604,59 +10604,6 @@ window.INSPIRATION_DATA = {
       "screenshotUpdatedAt": "2026-07-27T16:44:04Z"
     },
     {
-      "id": "jasper-jasper-ai",
-      "name": "Jasper",
-      "url": "https://www.jasper.ai",
-      "domain": "jasper.ai",
-      "screenshot": null,
-      "companyType": [
-        "B2B"
-      ],
-      "companyIndustry": [
-        "MarTech"
-      ],
-      "siteStructure": [],
-      "designAesthetic": [
-        "Grids"
-      ],
-      "standoutElements": {
-        "Overall Styles": [
-          "Color Usage",
-          "Gradient Usage",
-          "Illustrations/Animations"
-        ],
-        "Atoms/Molecules/Organisms": [],
-        "Components": [
-          "Footer",
-          "Mega Menu",
-          "Switchback",
-          "Tabbed Switcher"
-        ],
-        "Pages": [
-          "Pricing Page",
-          "Product/Solution Page"
-        ]
-      },
-      "wordAssociations": [
-        "Approachable",
-        "Bright",
-        "Dynamic",
-        "Mainstream",
-        "Modern",
-        "Playful",
-        "Trendy",
-        "Youthful"
-      ],
-      "industryLeader": false,
-      "unconventional": false,
-      "typefaces": [],
-      "createdAt": "May 1, 2024 5:13 PM",
-      "source": "notion-seed",
-      "companySize": [
-        "Enterprise"
-      ]
-    },
-    {
       "id": "international-chamber-of-commerce-iccwbo-org",
       "name": "International Chamber of Commerce",
       "url": "https://iccwbo.org",
@@ -17175,20 +17122,36 @@ window.INSPIRATION_DATA = {
     {
       "id": "jasper-jasper-ai",
       "name": "Jasper",
-      "url": "jasper.ai",
+      "url": "https://www.jasper.ai",
       "domain": "jasper.ai",
       "screenshot": "assets/screenshots/jasper-jasper-ai.jpg",
-      "companyType": [],
+      "companyType": [
+        "B2B"
+      ],
       "companyIndustry": [
         "MarTech"
       ],
       "siteStructure": [],
-      "designAesthetic": [],
+      "designAesthetic": [
+        "Grids"
+      ],
       "standoutElements": {
-        "Overall Styles": [],
+        "Overall Styles": [
+          "Color Usage",
+          "Gradient Usage",
+          "Illustrations/Animations"
+        ],
         "Atoms/Molecules/Organisms": [],
-        "Components": [],
-        "Pages": []
+        "Components": [
+          "Footer",
+          "Mega Menu",
+          "Switchback",
+          "Tabbed Switcher"
+        ],
+        "Pages": [
+          "Pricing Page",
+          "Product/Solution Page"
+        ]
       },
       "wordAssociations": [
         "Approachable",
@@ -17196,7 +17159,12 @@ window.INSPIRATION_DATA = {
         "Experiential",
         "Friendly",
         "Modern",
-        "Trendy"
+        "Trendy",
+        "Bright",
+        "Dynamic",
+        "Mainstream",
+        "Playful",
+        "Youthful"
       ],
       "industryLeader": true,
       "unconventional": false,
