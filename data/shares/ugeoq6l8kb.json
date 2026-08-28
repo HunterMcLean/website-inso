@@ -1,0 +1,148 @@
+{
+  "id": "ugeoq6l8kb",
+  "name": "Reference Inspo",
+  "siteIds": [
+    "norma-nor-ma",
+    "twenty-twenty-com",
+    "spade-spade-com",
+    "chatbase-chatbase-co",
+    "peec-ai-peec-ai",
+    "solidroad-solidroad-com",
+    "wist-wist-chat",
+    "giga-ai-giga-ai",
+    "wrangle-wrangle-ai",
+    "mistral-mistral-ai",
+    "perk-figma",
+    "fin-figma",
+    "speakeasy-figma",
+    "sanity-figma",
+    "stripe-figma",
+    "wise-business-figma",
+    "sana-labs-figma",
+    "cursor-figma",
+    "front-figma",
+    "zapier-figma",
+    "lattice-figma",
+    "superhuman-figma",
+    "daylight-godaylight-com",
+    "readme-readme-com",
+    "defined-vc-definedvc-com",
+    "poly-poly-app",
+    "retool-retool-com",
+    "intercom-intercom-com"
+  ],
+  "groups": [
+    "Brand Application/Art Direction",
+    "Composition/Refinement",
+    "Functionality",
+    "Motion"
+  ],
+  "siteGroups": {
+    "norma-nor-ma": [
+      "Composition/Refinement"
+    ],
+    "twenty-twenty-com": [
+      "Composition/Refinement",
+      "Brand Application/Art Direction"
+    ],
+    "spade-spade-com": [
+      "Brand Application/Art Direction",
+      "Composition/Refinement"
+    ],
+    "chatbase-chatbase-co": [
+      "Brand Application/Art Direction",
+      "Composition/Refinement"
+    ],
+    "peec-ai-peec-ai": [
+      "Composition/Refinement"
+    ],
+    "solidroad-solidroad-com": [
+      "Functionality",
+      "Composition/Refinement"
+    ],
+    "wist-wist-chat": [
+      "Brand Application/Art Direction",
+      "Composition/Refinement"
+    ],
+    "giga-ai-giga-ai": [
+      "Functionality",
+      "Composition/Refinement",
+      "Brand Application/Art Direction"
+    ],
+    "wrangle-wrangle-ai": [
+      "Functionality",
+      "Composition/Refinement"
+    ],
+    "mistral-mistral-ai": [
+      "Brand Application/Art Direction",
+      "Functionality"
+    ],
+    "perk-figma": [
+      "Brand Application/Art Direction"
+    ],
+    "fin-figma": [
+      "Composition/Refinement",
+      "Functionality"
+    ],
+    "speakeasy-figma": [
+      "Functionality",
+      "Composition/Refinement",
+      "Brand Application/Art Direction"
+    ],
+    "sanity-figma": [
+      "Brand Application/Art Direction"
+    ],
+    "stripe-figma": [
+      "Composition/Refinement",
+      "Functionality",
+      "Brand Application/Art Direction"
+    ],
+    "wise-business-figma": [
+      "Brand Application/Art Direction"
+    ],
+    "sana-labs-figma": [
+      "Composition/Refinement"
+    ],
+    "cursor-figma": [
+      "Composition/Refinement"
+    ],
+    "front-figma": [
+      "Brand Application/Art Direction"
+    ],
+    "zapier-figma": [
+      "Functionality",
+      "Composition/Refinement",
+      "Brand Application/Art Direction"
+    ],
+    "lattice-figma": [
+      "Brand Application/Art Direction",
+      "Composition/Refinement"
+    ],
+    "superhuman-figma": [
+      "Functionality",
+      "Brand Application/Art Direction"
+    ],
+    "daylight-godaylight-com": [
+      "Motion"
+    ],
+    "readme-readme-com": [
+      "Motion"
+    ],
+    "defined-vc-definedvc-com": [
+      "Motion"
+    ],
+    "poly-poly-app": [
+      "Motion"
+    ],
+    "retool-retool-com": [
+      "Brand Application/Art Direction",
+      "Composition/Refinement",
+      "Functionality"
+    ],
+    "intercom-intercom-com": [
+      "Functionality",
+      "Composition/Refinement"
+    ]
+  },
+  "updatedAt": "2026-08-28T18:01:25.307Z"
+}
